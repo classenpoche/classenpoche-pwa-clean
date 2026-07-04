@@ -167,10 +167,14 @@ function finish(score) {
   showLevelUp(gained);
 
   app.innerHTML = `
-    <h2>Résultat 🎯</h2>
-    <p>Score : ${score}</p>
-    <p>+${gained} XP</p>
-    <button onclick="location.reload()">Accueil</button>
+    <h2>🎉 Résultat</h2>
+
+    <div class="result-card">
+      <p>Score : <strong>${score}</strong></p>
+      <p>XP gagné : <strong>+${gained}</strong></p>
+    </div>
+
+    <button onclick="home()">🏠 Retour à l'accueil</button>
   `;
 }
 
