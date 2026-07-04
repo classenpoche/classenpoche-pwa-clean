@@ -46,3 +46,33 @@ button {
   display: none;
   font-weight: bold;
 }
+.card-btn, .level-btn, .course-btn, .answer-btn {
+  width: 90%;
+  max-width: 350px;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 14px;
+  border: none;
+  font-size: 16px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.level-btn {
+  background: #ecf0f1;
+}
+
+.course-btn {
+  background: #fdfdfd;
+}
+
+.answer-btn {
+  background: #ffffff;
+}
+
+.result-card {
+  background: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 12px;
+}
