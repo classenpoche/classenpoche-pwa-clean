@@ -1,3 +1,6 @@
+function home() {
+  console.log("HOME OK");
+
 function startQuiz(courseId) {
   const quiz = quizzes[courseId];
 
