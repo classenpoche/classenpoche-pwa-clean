@@ -95,6 +95,42 @@ function startQuiz(courseId) {
   let i = 0;
   let score = 0;
 
+  function render() {
+    if (i >= quiz.length) return finish(score);
+
+    const q = quiz[i];
+
+    app.innerHTML = `
+      <h2>❓ ${q.q}</h2>
+      <p>Question ${i + 1} / ${quiz.length}</p>
+    `;
+
+    q.choices.forEach((c, index) => {
+      const btn = document.createElement("button");
+      btn.className = "answer-btn";
+      btn.textContent = c;
+
+      btn.onclick = () => {
+        if (index === q.answer) {
+          score++;
+          btn.style.background = "#2ecc71";
+        } else {
+          btn.style.background = "#e74c3c";
+        }
+
+        setTimeout(() => {
+          i++;
+          render();
+        }, 400);
+      };
+
+      app.appendChild(btn);
+    });
+  }
+
+  render();
+}
+
   function renderQuestion() {
     if (i >= quiz.length) return finish(score);
 
