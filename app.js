@@ -27,3 +27,29 @@ function openQuiz(name) {
     content.textContent = "Questions d'histoire à venir...";
   }
 }
+let deferredPrompt;
+
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+
+  showInstallButton();
+});
+
+function showInstallButton() {
+  const btn = document.createElement("button");
+  btn.textContent = "⬇ Installer l'app";
+  btn.className = "big-btn";
+  btn.style.background = "#27ae60";
+
+  btn.onclick = async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      btn.remove();
+    }
+  };
+
+  document.body.appendChild(btn);
+}
