@@ -41,16 +41,20 @@ function home() {
 /* ---------------- LEVELS ---------------- */
 
 function showLevels(subjectId) {
-  app.innerHTML = `<h2>Niveaux</h2>`;
+  app.innerHTML = `<h2>🎯 Niveaux</h2>`;
 
-  levels
-    .filter(l => l.subject === subjectId)
-    .forEach(l => {
-      const btn = document.createElement("button");
-      btn.textContent = l.name;
-      btn.onclick = () => showCourses(subjectId, l.id);
-      app.appendChild(btn);
-    });
+  const filtered = levels.filter(l => l.subject === subjectId);
+
+  filtered.forEach(l => {
+    const btn = document.createElement("button");
+    btn.className = "level-btn";
+    btn.innerHTML = `
+      🟢 ${l.name}<br>
+      <small>Débloque ce niveau</small>
+    `;
+    btn.onclick = () => showCourses(subjectId, l.id);
+    app.appendChild(btn);
+  });
 
   back(home);
 }
