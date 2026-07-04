@@ -84,3 +84,6 @@ function addXP(subject, xp) {
 
   localStorage.setItem("progress", JSON.stringify(progress));
 }
+window.showLevelUp = function(level) {
+    console.log("Level up :", level);
+};
