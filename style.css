@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background: #4a6cf7;
+  background: #2c3e50;
   color: white;
   padding: 15px;
 }
@@ -43,12 +43,8 @@ button:active {
   left: 50%;
   transform: translate(-50%, -50%);
   background: gold;
-  padding: 30px;
-  font-size: 24px;
-  border-radius: 20px;
-  display: none;
-}
-
-.hidden {
+  padding: 25px;
+  font-size: 22px;
+  border-radius: 15px;
   display: none;
 }
