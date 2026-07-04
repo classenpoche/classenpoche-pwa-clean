@@ -58,7 +58,15 @@ let progress = JSON.parse(localStorage.getItem("progress") || "{}");
 function getLevel(subject) {
   return progress[subject]?.level || 1;
 }
+function showLevelUp(level) {
+  const div = document.createElement("div");
+  div.innerHTML = `🎉 Niveau ${level} atteint !`;
+  div.className = "levelup";
 
+  document.body.appendChild(div);
+
+  setTimeout(() => div.remove(), 2000);
+}
 function addXP(subject, xp) {
   if (!progress[subject]) {
     progress[subject] = { xp: 0, level: 1, badges: [] };
