@@ -1,4 +1,3 @@
-
 export const courses = [
   {
     id: "math_6e_add",
