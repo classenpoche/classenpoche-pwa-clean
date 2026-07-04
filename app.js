@@ -1,3 +1,4 @@
+console.log("START");
 import { subjects } from "./data/subjects.js";
 import { levels } from "./data/levels.js";
 import { courses } from "./data/courses.js";
@@ -6,7 +7,9 @@ import { quizzes } from "./data/quizzes.js";
 const app = document.getElementById("app");
 const xpDisplay = document.getElementById("xp");
 const levelupBox = document.getElementById("levelup");
-
+console.log("app:", app);
+console.log("xp:", xpDisplay);
+console.log("levelup:", levelupBox);
 let state = {
   xp: parseInt(localStorage.getItem("xp") || "0")
 };
