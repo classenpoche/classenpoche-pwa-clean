@@ -62,16 +62,22 @@ function showLevels(subjectId) {
 /* ---------------- COURSES ---------------- */
 
 function showCourses(subjectId, levelId) {
-  app.innerHTML = `<h2>Cours</h2>`;
+  app.innerHTML = `<h2>📘 Cours</h2>`;
 
-  courses
-    .filter(c => c.subject === subjectId && c.level === levelId)
-    .forEach(c => {
-      const btn = document.createElement("button");
-      btn.textContent = c.title;
-      btn.onclick = () => startQuiz(c.id);
-      app.appendChild(btn);
-    });
+  const filtered = courses.filter(
+    c => c.subject === subjectId && c.level === levelId
+  );
+
+  filtered.forEach(c => {
+    const btn = document.createElement("button");
+    btn.className = "course-btn";
+    btn.innerHTML = `
+      📖 ${c.title}<br>
+      <small>Commencer le quiz</small>
+    `;
+    btn.onclick = () => startQuiz(c.id);
+    app.appendChild(btn);
+  });
 
   back(() => showLevels(subjectId));
 }
