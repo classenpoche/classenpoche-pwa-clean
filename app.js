@@ -1,89 +1,145 @@
-function go(screenId) {
-  document.querySelectorAll('.screen').forEach(s => {
-    s.classList.remove('active');
+import { subjects } from "./data/subjects.js";
+import { levels } from "./data/levels.js";
+import { courses } from "./data/courses.js";
+import { quizzes } from "./data/quizzes.js";
+
+const app = document.getElementById("app");
+const xpDisplay = document.getElementById("xp");
+const levelupBox = document.getElementById("levelup");
+
+let state = {
+  xp: parseInt(localStorage.getItem("xp") || "0")
+};
+
+function save() {
+  localStorage.setItem("xp", state.xp);
+  xpDisplay.textContent = "XP : " + state.xp;
+}
+
+save();
+
+/* ---------------- HOME ---------------- */
+
+function home() {
+  app.innerHTML = "<h2>Matières</h2>";
+
+  subjects.forEach(s => {
+    const btn = document.createElement("button");
+    btn.textContent = s.name;
+    btn.onclick = () => showLevels(s.id);
+    app.appendChild(btn);
+  });
+}
+
+/* ---------------- LEVELS ---------------- */
+
+function showLevels(subjectId) {
+  app.innerHTML = "<h2>Niveaux</h2>";
+
+  levels.forEach(l => {
+    const btn = document.createElement("button");
+    btn.textContent = l.name;
+    btn.onclick = () => showCourses(subjectId, l.id);
+    app.appendChild(btn);
   });
 
-  document.getElementById(screenId).classList.add('active');
+  backButton(home);
 }
 
-function openQuiz(name) {
-  go('quiz');
+/* ---------------- COURSES ---------------- */
 
-  const title = document.getElementById('quiz-title');
-  const content = document.getElementById('quiz-content');
+function showCourses(subjectId, levelId) {
+  app.innerHTML = "<h2>Cours</h2>";
 
-  if (name === 'maths') {
-    title.textContent = "Quiz Maths";
-    content.textContent = "Questions de mathématiques à venir...";
-  }
+  const filtered = courses.filter(
+    c => c.subject === subjectId && c.level === levelId
+  );
 
-  if (name === 'francais') {
-    title.textContent = "Quiz Français";
-    content.textContent = "Questions de français à venir...";
-  }
+  filtered.forEach(c => {
+    const btn = document.createElement("button");
+    btn.textContent = c.title;
+    btn.onclick = () => startQuiz(c.id);
+    app.appendChild(btn);
+  });
 
-  if (name === 'histoire') {
-    title.textContent = "Quiz Histoire";
-    content.textContent = "Questions d'histoire à venir...";
-  }
+  backButton(() => showLevels(subjectId));
 }
-let deferredPrompt;
 
-window.addEventListener("beforeinstallprompt", (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
+/* ---------------- QUIZ ---------------- */
 
-  showInstallButton();
-});
+function startQuiz(courseId) {
+  const quiz = quizzes[courseId];
 
-function showInstallButton() {
-  const btn = document.createElement("button");
-  btn.textContent = "⬇ Installer l'app";
-  btn.className = "big-btn";
-  btn.style.background = "#27ae60";
+  let i = 0;
+  let score = 0;
 
-  btn.onclick = async () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      await deferredPrompt.userChoice;
-      deferredPrompt = null;
-      btn.remove();
+  function showQuestion() {
+    if (i >= quiz.length) {
+      finishQuiz(score);
+      return;
     }
-  };
 
-  document.body.appendChild(btn);
-}
-let progress = JSON.parse(localStorage.getItem("progress") || "{}");
+    const q = quiz[i];
 
-function getLevel(subject) {
-  return progress[subject]?.level || 1;
-}
-function showLevelUp(level) {
-  const div = document.createElement("div");
-  div.innerHTML = `🎉 Niveau ${level} atteint !`;
-  div.className = "levelup";
+    app.innerHTML = `
+      <div class="card">
+        <h2>${q.q}</h2>
+      </div>
+    `;
 
-  document.body.appendChild(div);
+    q.choices.forEach((c, index) => {
+      const btn = document.createElement("button");
+      btn.textContent = c;
 
-  setTimeout(() => div.remove(), 2000);
-}
-function addXP(subject, xp) {
-  if (!progress[subject]) {
-    progress[subject] = { xp: 0, level: 1, badges: [] };
+      btn.onclick = () => {
+        if (index === q.answer) score++;
+        i++;
+        showQuestion();
+      };
+
+      app.appendChild(btn);
+    });
   }
 
-  progress[subject].xp += xp;
-
-  if (progress[subject].xp >= progress[subject].level * 100) {
-    progress[subject].level++;
-    progress[subject].xp = 0;
-
-    showLevelUp(progress[subject].level);
-    unlockBadge(subject);
-  }
-
-  localStorage.setItem("progress", JSON.stringify(progress));
+  showQuestion();
 }
-window.showLevelUp = function(level) {
-    console.log("Level up :", level);
-};
+
+/* ---------------- FIN QUIZ ---------------- */
+
+function finishQuiz(score) {
+  const gained = score * 10;
+  state.xp += gained;
+  save();
+
+  showLevelUp(gained);
+
+  app.innerHTML = `
+    <h2>Résultat</h2>
+    <p>Score : ${score}</p>
+    <p>+${gained} XP</p>
+    <button onclick="location.reload()">Accueil</button>
+  `;
+}
+
+/* ---------------- LEVEL UP ---------------- */
+
+function showLevelUp(xp) {
+  levelupBox.textContent = "LEVEL UP + " + xp + " XP";
+  levelupBox.style.display = "block";
+
+  setTimeout(() => {
+    levelupBox.style.display = "none";
+  }, 1500);
+}
+
+/* ---------------- BACK BUTTON ---------------- */
+
+function backButton(fn) {
+  const btn = document.createElement("button");
+  btn.textContent = "⬅ Retour";
+  btn.onclick = fn;
+  app.appendChild(btn);
+}
+
+/* START */
+home();
