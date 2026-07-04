@@ -1,9 +1,9 @@
 console.log("START");
 console.log(document.getElementById("app"));
-import { subjects } from "/data/subjects.js";
-import { levels } from "/data/levels.js";
-import { courses } from "/data/courses.js";
-import { quizzes } from "/data/quizzes.js";
+import { subjects } from "./data/subjects.js";
+import { levels } from "./data/levels.js";
+import { courses } from "./data/courses.js";
+import { quizzes } from "./data/quizzes.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
