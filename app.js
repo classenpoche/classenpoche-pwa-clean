@@ -23,13 +23,16 @@ saveXP();
 function home() {
   app.innerHTML = `
     <h1>📚 Classenpoche</h1>
-    <p>Choisis une matière</p>
+    <p>Choisis une matière pour commencer</p>
   `;
 
   subjects.forEach(s => {
     const btn = document.createElement("button");
-    btn.className = "big-btn";
-    btn.textContent = s.name;
+    btn.className = "card-btn";
+    btn.innerHTML = `
+      <strong>${s.name}</strong><br>
+      <small>Commencer les exercices</small>
+    `;
     btn.onclick = () => showLevels(s.id);
     app.appendChild(btn);
   });
