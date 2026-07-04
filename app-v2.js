@@ -1,6 +1,4 @@
 
-console.log(">>> START FILE EXECUTION <<<");
-
 console.log("APP JS CHARGÉ ✔");
 console.log("START");
 console.log(document.getElementById("app"));
