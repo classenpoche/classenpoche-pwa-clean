@@ -1,45 +1,30 @@
 console.log("START");
-import { subjects } from "./data/subjects.js";
-import { levels } from "./data/levels.js";
-import { courses } from "./data/courses.js";
-import { quizzes } from "./data/quizzes.js";
+document.addEventListener("DOMContentLoaded", () => {
 
-const app = document.getElementById("app");
-const xpDisplay = document.getElementById("xp");
-const levelupBox = document.getElementById("levelup");
-console.log("app:", app);
-console.log("xp:", xpDisplay);
-console.log("levelup:", levelupBox);
-let state = {
-  xp: parseInt(localStorage.getItem("xp") || "0")
-};
+  const app = document.getElementById("app");
+  const xpDisplay = document.getElementById("xp");
+  const levelupBox = document.getElementById("levelup");
 
-function saveXP() {
-  localStorage.setItem("xp", state.xp);
-  xpDisplay.textContent = "XP : " + state.xp;
-}
+  let state = {
+    xp: parseInt(localStorage.getItem("xp") || "0")
+  };
 
-saveXP();
+  function save() {
+    localStorage.setItem("xp", state.xp);
+    xpDisplay.textContent = "XP : " + state.xp;
+  }
 
-/* ---------------- HOME ---------------- */
+  console.log("DOM READY");
 
-function home() {
-  app.innerHTML = `
-    <h1>📚 Classenpoche</h1>
-    <p>Choisis une matière pour commencer</p>
-  `;
+  save();
 
-  subjects.forEach(s => {
-    const btn = document.createElement("button");
-    btn.className = "card-btn";
-    btn.innerHTML = `
-      <strong>${s.name}</strong><br>
-      <small>Commencer les exercices</small>
-    `;
-    btn.onclick = () => showLevels(s.id);
-    app.appendChild(btn);
-  });
-}
+  function home() {
+    app.innerHTML = "<h2>HOME OK</h2>";
+  }
+
+  home();
+
+});
 
 /* ---------------- LEVELS ---------------- */
 
