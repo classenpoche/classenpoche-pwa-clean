@@ -13,59 +13,8 @@
 </head>
 
 <body>
-
-<!-- APP CONTAINER -->
-<div id="app">
-
-  <!-- HOME -->
-  <section class="screen active" id="home">
-    <h1>Classenpoche</h1>
-    <p>Apprendre simplement</p>
-
-    <button class="big-btn" onclick="go('quizzes')">📚 Quiz</button>
-    <button class="big-btn secondary" onclick="go('about')">ℹ️ À propos</button>
-  </section>
-
-  <!-- QUIZ LIST -->
-  <section class="screen" id="quizzes">
-    <h2>Quiz disponibles</h2>
-
-    <button class="quiz-btn" onclick="openQuiz('maths')">➗ Maths</button>
-    <button class="quiz-btn" onclick="openQuiz('francais')">📖 Français</button>
-    <button class="quiz-btn" onclick="openQuiz('histoire')">🏛️ Histoire</button>
-
-    <button class="back-btn" onclick="go('home')">⬅ Retour</button>
-  </section>
-
-  <!-- QUIZ SCREEN -->
-  <section class="screen" id="quiz">
-    <h2 id="quiz-title">Quiz</h2>
-
-    <p id="quiz-content">Contenu du quiz ici</p>
-
-    <button class="back-btn" onclick="go('quizzes')">⬅ Retour</button>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="screen" id="about">
-    <h2>À propos</h2>
-    <p>Classenpoche - version PWA éducative</p>
-
-    <button class="back-btn" onclick="go('home')">⬅ Retour</button>
-  </section>
-
-</div>
-
-<script src="app.js"></script>
-
-<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js');
-}
-</script>
-<div id="xp"></div>
+  <div id="xp"></div>
   <div id="levelup"></div>
-
   <div id="app"></div>
 
   <script type="module" src="app.js"></script>
