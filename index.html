@@ -13,10 +13,19 @@
 </head>
 
 <body>
-  <div id="xp"></div>
-  <div id="levelup"></div>
-  <div id="app"></div>
 
-  <script type="module" src="app.js"></script>
+<div id="xp"></div>
+<div id="levelup"></div>
+
+<div id="app"></div>
+
+<script type="module" src="app.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
 </body>
 </html>
