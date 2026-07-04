@@ -1,7 +1,7 @@
 
 console.log(">>> START FILE EXECUTION <<<");
 
-console.log("APP JS OK v2.1");
+console.log("APP JS CHARGÉ ✔");
 console.log("START");
 console.log(document.getElementById("app"));
 import { subjects } from "./data/subjects.js";
@@ -14,8 +14,7 @@ console.log("levels", levels);
 console.log("courses", courses);
 console.log("quizzes", quizzes);
 
-document.getElementById("app").innerHTML =
-  "<h1>IMPORTS OK</h1>";
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const app = document.getElementById("app");
