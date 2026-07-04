@@ -1,3 +1,4 @@
+console.log("APP JS OK v2.1");
 console.log("START");
 console.log(document.getElementById("app"));
 import { subjects } from "./data/subjects.js";
