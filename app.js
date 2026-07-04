@@ -1,4 +1,4 @@
-document.getElementById("app").innerHTML =
-    "<h2>APP.JS FONCTIONNE</h2>";
+console.log("APP JS CHARGÉ");
 
-console.log("APP OK");
+document.getElementById("app").innerHTML =
+  "<h2 style='color:green'>APP OK - JS fonctionne</h2>";
