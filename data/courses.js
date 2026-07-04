@@ -1,6 +1,6 @@
 export const courses = [
   {
-    id: "math_6e_add",
+    id: "6math.htm",
     subject: "math",
     level: "6e",
     title: "Les additions"
