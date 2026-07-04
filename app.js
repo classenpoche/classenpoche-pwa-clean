@@ -5,6 +5,13 @@ import { levels } from "./data/levels.js";
 import { courses } from "./data/courses.js";
 import { quizzes } from "./data/quizzes.js";
 
+console.log("subjects", subjects);
+console.log("levels", levels);
+console.log("courses", courses);
+console.log("quizzes", quizzes);
+
+document.getElementById("app").innerHTML =
+  "<h1>IMPORTS OK</h1>";
 document.addEventListener("DOMContentLoaded", () => {
 
   const app = document.getElementById("app");
