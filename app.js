@@ -14,7 +14,7 @@ function startQuiz(courseId) {
       finishQuiz(score);
       return;
     }
-
+console.log("JS START OK");
     const q = quiz[i];
 
     app.innerHTML = "";
