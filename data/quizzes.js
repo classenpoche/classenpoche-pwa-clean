@@ -1,4 +1,3 @@
-
 export const quizzes = {
   "math_6e_add": [
     {
