@@ -53,3 +53,26 @@ function showInstallButton() {
 
   document.body.appendChild(btn);
 }
+let progress = JSON.parse(localStorage.getItem("progress") || "{}");
+
+function getLevel(subject) {
+  return progress[subject]?.level || 1;
+}
+
+function addXP(subject, xp) {
+  if (!progress[subject]) {
+    progress[subject] = { xp: 0, level: 1, badges: [] };
+  }
+
+  progress[subject].xp += xp;
+
+  if (progress[subject].xp >= progress[subject].level * 100) {
+    progress[subject].level++;
+    progress[subject].xp = 0;
+
+    showLevelUp(progress[subject].level);
+    unlockBadge(subject);
+  }
+
+  localStorage.setItem("progress", JSON.stringify(progress));
+}
