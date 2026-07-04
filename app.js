@@ -1,3 +1,4 @@
+alert("VERSION ACTUELLE APP.JS");
 console.log("VERSION 999");
 console.log("APP JS OK v2.1");
 console.log("START");
