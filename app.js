@@ -1,32 +1,18 @@
-console.log("subjects", subjects);
-console.log("levels", levels);
-console.log("courses", courses);
-console.log("quizzes", quizzes);
-
-
 import { subjects } from "./data/subjects.js";
 import { levels } from "./data/levels.js";
 import { courses } from "./data/courses.js";
 import { quizzes } from "./data/quizzes.js";
 
 const app = document.getElementById("app");
-const xpDisplay = document.getElementById("xp");
-const levelupBox = document.getElementById("levelup");
+const levelup = document.getElementById("levelup");
 
-let state = {
-  xp: parseInt(localStorage.getItem("xp") || "0")
-};
-
-function save() {
-  localStorage.setItem("xp", state.xp);
-  xpDisplay.textContent = "XP : " + state.xp;
-}
-
-save();
+let xp = parseInt(localStorage.getItem("xp") || "0");
 
 /* ---------------- HOME ---------------- */
 
 function home() {
+  renderHeader();
+
   app.innerHTML = "<h2>Matières</h2>";
 
   subjects.forEach(s => {
@@ -40,6 +26,8 @@ function home() {
 /* ---------------- LEVELS ---------------- */
 
 function showLevels(subjectId) {
+  renderHeader();
+
   app.innerHTML = "<h2>Niveaux</h2>";
 
   levels.forEach(l => {
@@ -49,12 +37,14 @@ function showLevels(subjectId) {
     app.appendChild(btn);
   });
 
-  backButton(home);
+  back(home);
 }
 
 /* ---------------- COURSES ---------------- */
 
 function showCourses(subjectId, levelId) {
+  renderHeader();
+
   app.innerHTML = "<h2>Cours</h2>";
 
   const filtered = courses.filter(
@@ -68,7 +58,7 @@ function showCourses(subjectId, levelId) {
     app.appendChild(btn);
   });
 
-  backButton(() => showLevels(subjectId));
+  back(() => showLevels(subjectId));
 }
 
 /* ---------------- QUIZ ---------------- */
@@ -77,30 +67,24 @@ function startQuiz(courseId) {
   const quiz = quizzes[courseId];
 
   if (!quiz) {
-    app.innerHTML = `
-      <h2>❌ Quiz introuvable</h2>
-      <p>courseId: ${courseId}</p>
-      <button onclick="location.reload()">Retour</button>
-    `;
+    app.innerHTML = "<h2>Quiz introuvable</h2>";
     return;
   }
 
   let i = 0;
   let score = 0;
 
-  function showQuestion() {
+  function next() {
+    renderHeader();
+
     if (i >= quiz.length) {
-      finishQuiz(score);
+      finish(score);
       return;
     }
 
     const q = quiz[i];
 
-    app.innerHTML = `
-      <div class="card">
-        <h2>${q.q}</h2>
-      </div>
-    `;
+    app.innerHTML = `<div class="card"><h2>${q.q}</h2></div>`;
 
     q.choices.forEach((c, index) => {
       const btn = document.createElement("button");
@@ -109,53 +93,22 @@ function startQuiz(courseId) {
       btn.onclick = () => {
         if (index === q.answer) score++;
         i++;
-        showQuestion();
+        next();
       };
 
       app.appendChild(btn);
     });
   }
 
-  showQuestion();
+  next();
 }
 
-  function showQuestion() {
-    if (i >= quiz.length) {
-      finishQuiz(score);
-      return;
-    }
+/* ---------------- FIN ---------------- */
 
-    const q = quiz[i];
-
-    app.innerHTML = `
-      <div class="card">
-        <h2>${q.q}</h2>
-      </div>
-    `;
-
-    q.choices.forEach((c, index) => {
-      const btn = document.createElement("button");
-      btn.textContent = c;
-
-      btn.onclick = () => {
-        if (index === q.answer) score++;
-        i++;
-        showQuestion();
-      };
-
-      app.appendChild(btn);
-    });
-  }
-
-  showQuestion();
-}
-
-/* ---------------- FIN QUIZ ---------------- */
-
-function finishQuiz(score) {
+function finish(score) {
   const gained = score * 10;
-  state.xp += gained;
-  save();
+  xp += gained;
+  localStorage.setItem("xp", xp);
 
   showLevelUp(gained);
 
@@ -167,20 +120,26 @@ function finishQuiz(score) {
   `;
 }
 
-/* ---------------- LEVEL UP ---------------- */
+/* ---------------- UI HEADER ---------------- */
 
-function showLevelUp(xp) {
-  levelupBox.textContent = "LEVEL UP + " + xp + " XP";
-  levelupBox.style.display = "block";
-
-  setTimeout(() => {
-    levelupBox.style.display = "none";
-  }, 1500);
+function renderHeader() {
+  // rien d'ancien ne peut survivre
 }
 
-/* ---------------- BACK BUTTON ---------------- */
+/* ---------------- LEVEL UP ---------------- */
 
-function backButton(fn) {
+function showLevelUp(xpGain) {
+  levelup.textContent = "LEVEL UP + " + xpGain + " XP";
+  levelup.style.display = "block";
+
+  setTimeout(() => {
+    levelup.style.display = "none";
+  }, 1200);
+}
+
+/* ---------------- BACK ---------------- */
+
+function back(fn) {
   const btn = document.createElement("button");
   btn.textContent = "⬅ Retour";
   btn.onclick = fn;
