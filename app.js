@@ -1,3 +1,9 @@
+console.log("subjects", subjects);
+console.log("levels", levels);
+console.log("courses", courses);
+console.log("quizzes", quizzes);
+
+
 import { subjects } from "./data/subjects.js";
 import { levels } from "./data/levels.js";
 import { courses } from "./data/courses.js";
