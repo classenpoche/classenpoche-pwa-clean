@@ -1,1 +1,61 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  font-size: 22px;
+}
 
+#app {
+  padding: 20px;
+}
+
+h1, h2 {
+  font-size: 34px;
+}
+
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+/* GROS BOUTONS TYPE APP */
+.big-btn {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin: 15px 0;
+  font-size: 24px;
+  border: none;
+  border-radius: 15px;
+  background: #2c3e50;
+  color: white;
+}
+
+.big-btn.secondary {
+  background: #34495e;
+}
+
+.quiz-btn {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  margin: 10px 0;
+  font-size: 22px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.back-btn {
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 12px;
+  border: none;
+  background: #e74c3c;
+  color: white;
+}
