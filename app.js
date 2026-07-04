@@ -5,18 +5,18 @@ import { quizzes } from "./data/quizzes.js";
 
 const app = document.getElementById("app");
 const xpDisplay = document.getElementById("xp");
-const levelupBox = document.getElementById("levelup");
+const levelup = document.getElementById("levelup");
 
 let state = {
   xp: parseInt(localStorage.getItem("xp") || "0")
 };
 
-function save() {
+function saveXP() {
   localStorage.setItem("xp", state.xp);
   xpDisplay.textContent = "XP : " + state.xp;
 }
 
-save();
+saveXP();
 
 /* ---------------- HOME ---------------- */
 
@@ -43,7 +43,7 @@ function showLevels(subjectId) {
     app.appendChild(btn);
   });
 
-  backButton(home);
+  back(home);
 }
 
 /* ---------------- COURSES ---------------- */
@@ -62,7 +62,7 @@ function showCourses(subjectId, levelId) {
     app.appendChild(btn);
   });
 
-  backButton(() => showLevels(subjectId));
+  back(() => showLevels(subjectId));
 }
 
 /* ---------------- QUIZ ---------------- */
@@ -73,19 +73,15 @@ function startQuiz(courseId) {
   let i = 0;
   let score = 0;
 
-  function showQuestion() {
-    if (i >= quiz.length) {
-      finishQuiz(score);
+  function next() {
+    if (!quiz || i >= quiz.length) {
+      finish(score);
       return;
     }
 
     const q = quiz[i];
 
-    app.innerHTML = `
-      <div class="card">
-        <h2>${q.q}</h2>
-      </div>
-    `;
+    app.innerHTML = `<div class="card"><h2>${q.q}</h2></div>`;
 
     q.choices.forEach((c, index) => {
       const btn = document.createElement("button");
@@ -94,22 +90,22 @@ function startQuiz(courseId) {
       btn.onclick = () => {
         if (index === q.answer) score++;
         i++;
-        showQuestion();
+        next();
       };
 
       app.appendChild(btn);
     });
   }
 
-  showQuestion();
+  next();
 }
 
 /* ---------------- FIN QUIZ ---------------- */
 
-function finishQuiz(score) {
+function finish(score) {
   const gained = score * 10;
   state.xp += gained;
-  save();
+  saveXP();
 
   showLevelUp(gained);
 
@@ -117,24 +113,24 @@ function finishQuiz(score) {
     <h2>Résultat</h2>
     <p>Score : ${score}</p>
     <p>+${gained} XP</p>
-    <button onclick="location.reload()">Accueil</button>
+    <button onclick="(${home.toString()})()">Accueil</button>
   `;
 }
 
 /* ---------------- LEVEL UP ---------------- */
 
 function showLevelUp(xp) {
-  levelupBox.textContent = "LEVEL UP + " + xp + " XP";
-  levelupBox.style.display = "block";
+  levelup.style.display = "block";
+  levelup.textContent = "LEVEL UP + " + xp + " XP";
 
   setTimeout(() => {
-    levelupBox.style.display = "none";
-  }, 1500);
+    levelup.style.display = "none";
+  }, 1200);
 }
 
-/* ---------------- BACK BUTTON ---------------- */
+/* ---------------- BACK ---------------- */
 
-function backButton(fn) {
+function back(fn) {
   const btn = document.createElement("button");
   btn.textContent = "⬅ Retour";
   btn.onclick = fn;
@@ -143,4 +139,3 @@ function backButton(fn) {
 
 /* START */
 home();
-
