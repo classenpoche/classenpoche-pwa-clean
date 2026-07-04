@@ -70,8 +70,48 @@ function showCourses(subjectId, levelId) {
 function startQuiz(courseId) {
   const quiz = quizzes[courseId];
 
+  if (!quiz) {
+    app.innerHTML = `
+      <h2>❌ Quiz introuvable</h2>
+      <p>courseId: ${courseId}</p>
+      <button onclick="location.reload()">Retour</button>
+    `;
+    return;
+  }
+
   let i = 0;
   let score = 0;
+
+  function showQuestion() {
+    if (i >= quiz.length) {
+      finishQuiz(score);
+      return;
+    }
+
+    const q = quiz[i];
+
+    app.innerHTML = `
+      <div class="card">
+        <h2>${q.q}</h2>
+      </div>
+    `;
+
+    q.choices.forEach((c, index) => {
+      const btn = document.createElement("button");
+      btn.textContent = c;
+
+      btn.onclick = () => {
+        if (index === q.answer) score++;
+        i++;
+        showQuestion();
+      };
+
+      app.appendChild(btn);
+    });
+  }
+
+  showQuestion();
+}
 
   function showQuestion() {
     if (i >= quiz.length) {
