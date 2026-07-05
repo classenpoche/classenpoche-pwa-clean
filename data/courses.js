@@ -15,6 +15,23 @@ export const courses = [
   },
 
   // FRANÇAIS
+
+{
+  id: "fra-1",
+  subject: "francais",
+  level: "1",
+  title: "Les accords du participe passé",
+  lesson: `
+    <h2>📘 Cours : Accord du participe passé</h2>
+    <p>Le participe passé s'accorde...</p>
+    <ul>
+      <li>Avec être → accord avec le sujet</li>
+      <li>Avec avoir → accord parfois avec le COD</li>
+    </ul>
+  `
+}
+
+  
   {
     id: "fr_6e_gram",
     subject: "fr",
