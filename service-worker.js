@@ -4,13 +4,14 @@ const CACHE_NAME = "classenpoche-v1";
 const ASSETS = [
   "./",
   "./index.html",
-  "./app.js",
+  "./app-v2.js",
   "./style.css",
-  "./subjects.js",
-  "./levels.js",
-  "./courses.js",
-  "./quizzes.js"
+  "./data/subjects.js",
+  "./data/levels.js",
+  "./data/courses.js",
+  "./data/quizzes.js"
 ];
+
 
 // INSTALL
 self.addEventListener("install", (event) => {
