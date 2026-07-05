@@ -169,6 +169,39 @@ function startQuiz(courseId) {
   };
 }
 
+function runQuiz(quiz, courseId) {
+
+  let i = 0;
+  let score = 0;
+
+  function render() {
+
+    if (i >= quiz.length) return finish(score, courseId);
+
+    const q = quiz[i];
+
+    app.innerHTML = `
+      <h2>${q.q}</h2>
+      <p>${i + 1} / ${quiz.length}</p>
+    `;
+
+    q.choices.forEach((c, index) => {
+      const btn = document.createElement("button");
+      btn.textContent = c;
+
+      btn.onclick = () => {
+        if (index === q.answer) score++;
+        i++;
+        render();
+      };
+
+      app.appendChild(btn);
+    });
+  }
+
+  render();
+}
+  
     function render() {
 
       if (i >= quiz.length) return finish(score, courseId);
