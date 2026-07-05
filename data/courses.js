@@ -12,7 +12,16 @@ export const courses = [
     subject: "math",
     level: "6e",
     title: "Les fractions"
-  },
+  }
+  {
+  id: "math-1",
+  subject: "math",
+  level: "1",
+  title: "Les fractions",
+  lesson: "Une fraction représente une partie d’un tout. Exemple : 1/2 = une moitié."
+},
+
+  
 
   // FRANÇAIS
   {
