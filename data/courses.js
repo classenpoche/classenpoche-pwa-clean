@@ -18,7 +18,7 @@ export const courses = [
   subject: "math",
   level: "1",
   title: "Les fractions"
-}
+},
 
   
   // FRANÇAIS
