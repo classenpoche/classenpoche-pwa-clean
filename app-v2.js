@@ -3,8 +3,6 @@ import { subjects } from "./data/subjects.js";
 import { levels } from "./data/levels.js";
 import { courses } from "./data/courses.js";
 import { quizzes } from "./data/quizzes.js";
-import { lessons } from "./data/lessons.js";
-
 
 console.log("subjects", subjects);
 console.log("levels", levels);
@@ -148,31 +146,17 @@ console.log("courses =", courses);
 
   // ---------------- QUIZ ----------------
 
-function startQuiz(courseId) {
+  function startQuiz(courseId) {
 
-  const course = courses.find(c => c.id === courseId);
-  const quiz = quizzes[courseId];
+    const quiz = quizzes[courseId];
 
-  if (!quiz) {
-    app.innerHTML = "<p>Quiz introuvable</p>";
-    return;
-  }
+    if (!quiz) {
+      app.innerHTML = "<p>Quiz introuvable</p>";
+      return;
+    }
 
-  const lesson = lessons[courseId] || "Pas de cours disponible";
-
-  app.innerHTML = `
-    <div style="padding:15px; line-height:1.5">
-      <h2>📘 Cours</h2>
-      <pre style="white-space:pre-wrap">${lesson}</pre>
-
-      <button id="startQuizBtn">🚀 Commencer le quiz</button>
-    </div>
-  `;
-
-  document.getElementById("startQuizBtn").onclick = () => {
-    runQuiz(quiz, courseId);
-  };
-}
+    let i = 0;
+    let score = 0;
 
     function render() {
 
