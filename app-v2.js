@@ -1,5 +1,4 @@
-console.log("APP CHARGÉ");
-
+console.log("🔥 APP-V2 CHARGÉ");
 import { subjects } from "./data/subjects.js";
 import { levels } from "./data/levels.js";
 import { courses } from "./data/courses.js";
