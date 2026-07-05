@@ -1,21 +1,14 @@
 console.log("🔥 APP-V2 CHARGÉ");
+
 import { subjects } from "./data/subjects.js";
 import { levels } from "./data/levels.js";
 import { courses } from "./data/courses.js";
 import { quizzes } from "./data/quizzes.js";
 
-console.log("subjects", subjects);
-console.log("levels", levels);
-console.log("courses", courses);
-console.log("quizzes", quizzes);
-
-console.log("COURSES ACTIFS :", courses);
-
 document.addEventListener("DOMContentLoaded", () => {
 
   const app = document.getElementById("app");
   const xpDisplay = document.getElementById("xp");
-  console.log("XP DISPLAY =", xpDisplay);
   const levelupBox = document.getElementById("levelup");
 
   if (!app || !xpDisplay || !levelupBox) {
@@ -25,33 +18,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ---------------- STATE ----------------
 
+  let state = {
+    xp: Number(localStorage.getItem("xp") ?? 0) || 0,
+    completed: JSON.parse(localStorage.getItem("completed") || "[]"),
+    streak: Number(localStorage.getItem("streak") ?? 0) || 0,
+    lastVisit: localStorage.getItem("lastVisit") || null
+  };
 
-let state = {
-  xp: Number(localStorage.getItem("xp") ?? 0) || 0,
-  completed: JSON.parse(localStorage.getItem("completed") || "[]"),
-  streak: Number(localStorage.getItem("streak") ?? 0) || 0,
-  lastVisit: localStorage.getItem("lastVisit") || null
-};
+  // ---------------- RENDER ----------------
 
-// 🔥 AJOUT IMPORTANT
+  function renderTopBar() {
+    xpDisplay.textContent = `XP : ${state.xp} 🔥 Streak : ${state.streak}`;
+  }
 
-xpDisplay.textContent = `XP : ${state.xp} 🔥 Streak : ${state.streak}`;  
+  // ---------------- SAVE ----------------
 
-function renderTopBar() {
-  xpDisplay.textContent = `XP : ${state.xp} 🔥 Streak : ${state.streak}`;
-}
-  updateStreak();
-renderTopBar();
   function save() {
     localStorage.setItem("xp", state.xp);
     localStorage.setItem("completed", JSON.stringify(state.completed));
     localStorage.setItem("streak", state.streak);
     localStorage.setItem("lastVisit", state.lastVisit);
 
-    xpDisplay.textContent = `XP : ${state.xp} 🔥 Streak : ${state.streak}`;
+    renderTopBar();
   }
 
-  // ---------------- STREAK SYSTEM ----------------
+  // ---------------- STREAK ----------------
 
   function updateStreak() {
     const today = new Date().toDateString();
@@ -67,21 +58,11 @@ renderTopBar();
 
       state.lastVisit = today;
     }
-
-    save();
   }
 
-updateStreak();
-save(); // ⭐ AJOUT IMPORTANT
-
-  function save() {
-  localStorage.setItem("xp", state.xp);
-  localStorage.setItem("completed", JSON.stringify(state.completed));
-  localStorage.setItem("streak", state.streak);
-  localStorage.setItem("lastVisit", state.lastVisit);
-
-  renderTopBar(); // ⭐ important
-}
+  // INIT
+  updateStreak();
+  save();
 
   // ---------------- BADGES ----------------
 
@@ -103,10 +84,7 @@ save(); // ⭐ AJOUT IMPORTANT
   // ---------------- HOME ----------------
 
   function home() {
-    app.innerHTML = `
-      <h1>📚 Classenpoche</h1>
-      <p>Choisis une matière</p>
-    `;
+    app.innerHTML = `<h1>📚 Classenpoche</h1><p>Choisis une matière</p>`;
 
     subjects.forEach(s => {
       const btn = document.createElement("button");
@@ -120,8 +98,7 @@ save(); // ⭐ AJOUT IMPORTANT
 
   function showLevels(subjectId) {
     app.innerHTML = `<h2>Niveaux</h2>`;
-console.log("subjectId =", subjectId);
-console.log("courses =", courses);
+
     levels.forEach(l => {
 
       const isLocked = !courses.some(c =>
@@ -130,7 +107,6 @@ console.log("courses =", courses);
 
       const btn = document.createElement("button");
       btn.textContent = isLocked ? `🔒 ${l.name}` : `🟢 ${l.name}`;
-
       btn.disabled = isLocked;
 
       if (!isLocked) {
@@ -156,7 +132,6 @@ console.log("courses =", courses);
 
         const btn = document.createElement("button");
         btn.textContent = done ? `✅ ${c.title}` : `📘 ${c.title}`;
-
         btn.onclick = () => startQuiz(c.id);
 
         app.appendChild(btn);
@@ -167,62 +142,33 @@ console.log("courses =", courses);
 
   // ---------------- QUIZ ----------------
 
-function startQuiz(courseId) {
+  function startQuiz(courseId) {
 
-  const course = courses.find(c => c.id === courseId);
-  const quiz = quizzes[courseId];
+    const course = courses.find(c => c.id === courseId);
+    const quiz = quizzes[courseId];
 
-  if (!quiz) {
-    app.innerHTML = "<p>Quiz introuvable</p>";
-    return;
-  }
-
-  // 1. afficher le cours d'abord
-  app.innerHTML = `
-    <div class="lesson">
-      ${course.lesson || "<p>Pas de cours disponible</p>"}
-      <button id="startQuizBtn">🚀 Commencer le quiz</button>
-    </div>
-  `;
-
-  document.getElementById("startQuizBtn").onclick = () => {
-    runQuiz(quiz, courseId);
-  };
-}
-
-function runQuiz(quiz, courseId) {
-
-  let i = 0;
-  let score = 0;
-
-  function render() {
-
-    if (i >= quiz.length) return finish(score, courseId);
-
-    const q = quiz[i];
+    if (!quiz) {
+      app.innerHTML = "<p>Quiz introuvable</p>";
+      return;
+    }
 
     app.innerHTML = `
-      <h2>${q.q}</h2>
-      <p>${i + 1} / ${quiz.length}</p>
+      <div class="lesson">
+        ${course.lesson || "<p>Pas de cours disponible</p>"}
+        <button id="startQuizBtn">🚀 Commencer le quiz</button>
+      </div>
     `;
 
-    q.choices.forEach((c, index) => {
-      const btn = document.createElement("button");
-      btn.textContent = c;
-
-      btn.onclick = () => {
-        if (index === q.answer) score++;
-        i++;
-        render();
-      };
-
-      app.appendChild(btn);
-    });
+    document.getElementById("startQuizBtn").onclick = () => {
+      runQuiz(quiz, courseId);
+    };
   }
 
-  render();
-}
-  
+  function runQuiz(quiz, courseId) {
+
+    let i = 0;
+    let score = 0;
+
     function render() {
 
       if (i >= quiz.length) return finish(score, courseId);
@@ -235,7 +181,6 @@ function runQuiz(quiz, courseId) {
       `;
 
       q.choices.forEach((c, index) => {
-
         const btn = document.createElement("button");
         btn.textContent = c;
 
