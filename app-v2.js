@@ -36,7 +36,7 @@ let state = {
 // 🔥 AJOUT IMPORTANT
 updateStreak();
 save();
-  
+xpDisplay.textContent = `XP : ${state.xp} 🔥 Streak : ${state.streak}`;  
   function save() {
     localStorage.setItem("xp", state.xp);
     localStorage.setItem("completed", JSON.stringify(state.completed));
