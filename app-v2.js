@@ -1,7 +1,5 @@
-console.log(Date.now());
-console.log("APP JS CHARGÉ ✔");
-console.log("START");
-console.log(document.getElementById("app"));
+console.log("APP CHARGÉ");
+
 import { subjects } from "./data/subjects.js";
 import { levels } from "./data/levels.js";
 import { courses } from "./data/courses.js";
@@ -102,7 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showLevels(subjectId) {
     app.innerHTML = `<h2>Niveaux</h2>`;
-
+console.log("subjectId =", subjectId);
+console.log("courses =", courses);
     levels.forEach(l => {
 
       const isLocked = !courses.some(c =>
