@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ---------------- STATE ----------------
 
+
 let state = {
   xp: Number(localStorage.getItem("xp") ?? 0) || 0,
   completed: JSON.parse(localStorage.getItem("completed") || "[]"),
@@ -32,6 +33,10 @@ let state = {
   lastVisit: localStorage.getItem("lastVisit") || null
 };
 
+// 🔥 AJOUT IMPORTANT
+updateStreak();
+save();
+  
   function save() {
     localStorage.setItem("xp", state.xp);
     localStorage.setItem("completed", JSON.stringify(state.completed));
