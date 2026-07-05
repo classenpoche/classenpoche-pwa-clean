@@ -16,5 +16,5 @@ export const lessons = {
 13. 5/4 > 1.
 14. On apprend à additionner des fractions.
 15. Exemple : 1/2 + 1/2 = 1.
-`
+`"math-2": `...15 lignes de cours...`
 };
