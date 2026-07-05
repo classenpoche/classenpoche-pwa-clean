@@ -3,7 +3,8 @@ export const quizzes = {
   // MATHS
   math_6e_add: [
     {
-      q: "Début du rappel de cours : révise tes tables d'addition ... etc ... blaalalalalalalalallal. question : 2 + 2 = ?",
+      q: "Début du rappel de cours : révise tes tables d'addition ... etc ... blaalalalalalalalallal,
+        1ère question : 2 + 2 = ?",
       choices: ["3", "4", "5"],
       answer: 1
     },
