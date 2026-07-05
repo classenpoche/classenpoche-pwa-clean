@@ -60,7 +60,8 @@ let state = {
     save();
   }
 
-  updateStreak();
+updateStreak();
+save(); // ⭐ AJOUT IMPORTANT
 
   // ---------------- BADGES ----------------
 
