@@ -146,17 +146,28 @@ console.log("courses =", courses);
 
   // ---------------- QUIZ ----------------
 
-  function startQuiz(courseId) {
+function startQuiz(courseId) {
 
-    const quiz = quizzes[courseId];
+  const course = courses.find(c => c.id === courseId);
+  const quiz = quizzes[courseId];
 
-    if (!quiz) {
-      app.innerHTML = "<p>Quiz introuvable</p>";
-      return;
-    }
+  if (!quiz) {
+    app.innerHTML = "<p>Quiz introuvable</p>";
+    return;
+  }
 
-    let i = 0;
-    let score = 0;
+  // 1. afficher le cours d'abord
+  app.innerHTML = `
+    <div class="lesson">
+      ${course.lesson || "<p>Pas de cours disponible</p>"}
+      <button id="startQuizBtn">🚀 Commencer le quiz</button>
+    </div>
+  `;
+
+  document.getElementById("startQuizBtn").onclick = () => {
+    runQuiz(quiz, courseId);
+  };
+}
 
     function render() {
 
