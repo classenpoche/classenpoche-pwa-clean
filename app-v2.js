@@ -3,6 +3,8 @@ import { subjects } from "./data/subjects.js";
 import { levels } from "./data/levels.js";
 import { courses } from "./data/courses.js";
 import { quizzes } from "./data/quizzes.js";
+import { lessons } from "./data/lessons.js";
+
 
 console.log("subjects", subjects);
 console.log("levels", levels);
