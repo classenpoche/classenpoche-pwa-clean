@@ -148,12 +148,29 @@ console.log("courses =", courses);
 
   function startQuiz(courseId) {
 
-    const quiz = quizzes[courseId];
+  const course = courses.find(c => c.id === courseId);
+  const quiz = quizzes[courseId];
 
-    if (!quiz) {
-      app.innerHTML = "<p>Quiz introuvable</p>";
-      return;
-    }
+  if (!quiz) {
+    app.innerHTML = "<p>Quiz introuvable</p>";
+    return;
+  }
+
+  const lesson = lessons[courseId] || "Pas de cours disponible";
+
+  app.innerHTML = `
+    <div style="padding:15px; line-height:1.5">
+      <h2>📘 Cours</h2>
+      <pre style="white-space:pre-wrap">${lesson}</pre>
+
+      <button id="startQuizBtn">🚀 Commencer le quiz</button>
+    </div>
+  `;
+
+  document.getElementById("startQuizBtn").onclick = () => {
+    runQuiz(quiz, courseId);
+  };
+}
 
     let i = 0;
     let score = 0;
