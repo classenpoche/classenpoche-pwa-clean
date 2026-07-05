@@ -1,4 +1,4 @@
-console.log("🔥 APP-V2 CHARGÉ");
+console.log("🔥 VERSION ACTIVE APP-V2 2026");
 
 import { subjects } from "./data/subjects.js";
 import { levels } from "./data/levels.js";
