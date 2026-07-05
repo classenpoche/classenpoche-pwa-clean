@@ -13,14 +13,7 @@ export const courses = [
     level: "6e",
     title: "Les fractions"
   },
-{
-  id: "math-2",
-  subject: "math",
-  level: "1",
-  title: "Les fractions"
-},
 
-  
   // FRANÇAIS
   {
     id: "fr_6e_gram",
