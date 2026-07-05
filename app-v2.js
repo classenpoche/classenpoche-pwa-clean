@@ -25,12 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ---------------- STATE ----------------
 
-  let state = {
-    xp: parseInt(localStorage.getItem("xp") || "0"),
-    completed: JSON.parse(localStorage.getItem("completed") || "[]"),
-    streak: parseInt(localStorage.getItem("streak") || "0"),
-    lastVisit: localStorage.getItem("lastVisit") || null
-  };
+let state = {
+  xp: Number(localStorage.getItem("xp") ?? 0) || 0,
+  completed: JSON.parse(localStorage.getItem("completed") || "[]"),
+  streak: Number(localStorage.getItem("streak") ?? 0) || 0,
+  lastVisit: localStorage.getItem("lastVisit") || null
+};
 
   function save() {
     localStorage.setItem("xp", state.xp);
