@@ -12,6 +12,7 @@ console.log("levels", levels);
 console.log("courses", courses);
 console.log("quizzes", quizzes);
 
+console.log("COURSES ACTIFS :", courses);
 
 document.addEventListener("DOMContentLoaded", () => {
 
