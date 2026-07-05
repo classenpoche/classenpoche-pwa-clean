@@ -1,5 +1,5 @@
 export const subjects = [
-  { id: "math", name: "Mathématiques" },
+  { id: "mathématiques", name: "Mathématiques" },
   { id: "fr", name: "Français" },
   { id: "ang", name: "Anglais" }
 ];
