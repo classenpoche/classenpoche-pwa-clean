@@ -34,9 +34,14 @@ let state = {
 };
 
 // 🔥 AJOUT IMPORTANT
-updateStreak();
-save();
+
 xpDisplay.textContent = `XP : ${state.xp} 🔥 Streak : ${state.streak}`;  
+
+function renderTopBar() {
+  xpDisplay.textContent = `XP : ${state.xp} 🔥 Streak : ${state.streak}`;
+}
+  updateStreak();
+renderTopBar();
   function save() {
     localStorage.setItem("xp", state.xp);
     localStorage.setItem("completed", JSON.stringify(state.completed));
@@ -68,6 +73,15 @@ xpDisplay.textContent = `XP : ${state.xp} 🔥 Streak : ${state.streak}`;
 
 updateStreak();
 save(); // ⭐ AJOUT IMPORTANT
+
+  function save() {
+  localStorage.setItem("xp", state.xp);
+  localStorage.setItem("completed", JSON.stringify(state.completed));
+  localStorage.setItem("streak", state.streak);
+  localStorage.setItem("lastVisit", state.lastVisit);
+
+  renderTopBar(); // ⭐ important
+}
 
   // ---------------- BADGES ----------------
 
