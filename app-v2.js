@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const app = document.getElementById("app");
   const xpDisplay = document.getElementById("xp");
+  console.log("XP DISPLAY =", xpDisplay);
   const levelupBox = document.getElementById("levelup");
 
   if (!app || !xpDisplay || !levelupBox) {
