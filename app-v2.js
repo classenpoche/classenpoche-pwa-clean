@@ -172,14 +172,7 @@ function startQuiz(courseId) {
   document.getElementById("startQuizBtn").onclick = () => {
     runQuiz(quiz, courseId);
   };
-}  function startQuiz(courseId) {
-
-    const quiz = quizzes[courseId];
-
-    if (!quiz) {
-      app.innerHTML = "<p>Quiz introuvable</p>";
-      return;
-    }
+}
 
     let i = 0;
     let score = 0;
