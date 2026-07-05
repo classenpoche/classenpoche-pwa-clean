@@ -4,7 +4,7 @@ export const quizzes = {
   math_6e_add: [
     {
       q: "Début du rappel de cours : révise tes tables d'addition ... etc ... blaalalalalalalalallal,
-        1ère vraie question : 2 + 2 = ?",
+        1 ere vraie question : 2 + 2 = ?",
       choices: ["3", "4", "5"],
       answer: 1
     },
