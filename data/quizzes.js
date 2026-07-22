@@ -7,18 +7,11 @@ export const quizzes = {
       choices: ["3", "4", "5"],
       answer: 1
     },
-    {
+   {
       q: "5 + 3 = ?",
       choices: ["6", "7", "8"],
       answer: 2
-    }
-	  },
-  
-	{
-      q: "9 + 7 = ? ",
-      choices: ["12", "16", "14"],
-      answer: 1
-    }
+     }
 ],
 
   math_6e_frac: [
