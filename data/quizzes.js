@@ -11,6 +11,11 @@ export const quizzes = {
       q: "5 + 3 = ?",
       choices: ["6", "7", "8"],
       answer: 2
+     },
+     {
+      q: "14 + 7 = ?",
+      choices: ["24", "19", "21"],
+      answer: 2
      }
 ],
 
