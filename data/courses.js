@@ -27,6 +27,12 @@ export const courses = [
     level: "5e",
     title: "La conjugaison"
   },
+  {
+    id: "fr_4e_conj",
+    subject: "fr",
+    level: "4e",
+    title: "La conjugaison"
+  },
 
   // ANGLAIS
   {
