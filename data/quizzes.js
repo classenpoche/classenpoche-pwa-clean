@@ -47,6 +47,18 @@ export const quizzes = {
       answer: 1
     }
   ],
+  
+  fr_4e_conj: [
+    {
+      q: "Futur de 'venir' :",
+      choices: [
+        "je viens",
+        "je suis venu",
+        "je vendai"
+      ],
+      answer: 2
+    }
+  ],
 
   // ANGLAIS
   ang_6e_vocab: [
