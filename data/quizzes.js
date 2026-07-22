@@ -12,12 +12,14 @@ export const quizzes = {
       choices: ["6", "7", "8"],
       answer: 2
     }
-  ],
-	   {
+	  },
+  
+	{
       q: "9 + 7 = ? ",
       choices: ["12", "16", "14"],
       answer: 1
-    },
+    }
+],
 
   math_6e_frac: [
     {
