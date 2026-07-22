@@ -24,7 +24,7 @@ export const subjects = [
     name: "🧬 SVT"
   },
    {
-    id: ""Classenpoche"
+    id: ""Classenpoche",
     name: "📖 Retour aux cours"
   }
 ];
