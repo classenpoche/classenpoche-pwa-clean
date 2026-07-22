@@ -22,5 +22,9 @@ export const subjects = [
   {
     id: "svt",
     name: "🧬 SVT"
+  },
+   {
+    id: "Retour aux cours",
+    name: "📖 Classenpoche"
   }
 ];
