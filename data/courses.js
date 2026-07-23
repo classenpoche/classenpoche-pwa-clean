@@ -1,6 +1,12 @@
 export const courses = [
-
   // MATHS
+  {
+    id: "fr_cm2_conj",
+    subject: "fr",
+    level: "cm2",
+    title: "La conjugaison"
+  },
+  
   {
     id: "math_6e_add",
     subject: "math",
