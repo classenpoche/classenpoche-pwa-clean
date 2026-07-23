@@ -1,8 +1,8 @@
 
 export const levels = [
 {
-    id: "CM2",
-    name: "Cm2"
+    id: "cm2",
+    name: "cm2"
   },
 
   {
