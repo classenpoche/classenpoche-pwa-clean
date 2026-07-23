@@ -31,9 +31,9 @@ export const quizzes = {
 
 fr_cm2_conj: [
     {
-      q: "je partirai est :",
+      q: "'je partirai' est :",
       choices: ["au présent", "au futur", "au conditionnel"],
-      answer: 1
+      answer: 2
     }
   ],
   
