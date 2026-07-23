@@ -1,5 +1,10 @@
 
 export const levels = [
+{
+    id: "CM2",
+    name: "Cm2"
+  },
+
   {
     id: "6e",
     name: "6ème"
