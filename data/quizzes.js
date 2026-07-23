@@ -28,6 +28,15 @@ export const quizzes = {
   ],
 
   // FRANÇAIS
+
+fr_cm2_gram: [
+    {
+      q: "je partirai est :",
+      choices: ["au présent", "au futur", "au conditionnel"],
+      answer: 1
+    }
+  ],
+  
   fr_6e_gram: [
     {
       q: "Le verbe dans 'Je mange' est :",
