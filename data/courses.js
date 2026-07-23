@@ -22,6 +22,12 @@ export const courses = [
 
   // FRANÇAIS
   {
+    id: "fr_cm2_conj",
+    subject: "fr",
+    level: "cm2",
+    title: "La conjugaison"
+  },
+  {
     id: "fr_6e_gram",
     subject: "fr",
     level: "6e",
