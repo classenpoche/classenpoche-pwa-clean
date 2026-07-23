@@ -29,7 +29,7 @@ export const quizzes = {
 
   // FRANÇAIS
 
-fr_cm2_gram: [
+fr_cm2_conj: [
     {
       q: "je partirai est :",
       choices: ["au présent", "au futur", "au conditionnel"],
