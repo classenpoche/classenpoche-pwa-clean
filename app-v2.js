@@ -81,7 +81,7 @@ let state = {
 
   // ---------------- HOME ----------------
 
- function home() {
+function home() {
 
   app.innerHTML = `
     <h1>📚 Classenpoche</h1>
@@ -89,7 +89,6 @@ let state = {
   `;
 
 
-  // Boutons des matières
   subjects.forEach(s => {
 
     const btn = document.createElement("button");
@@ -103,21 +102,25 @@ let state = {
   });
 
 
-  // Bouton retour vers le site des cours
   const retourBtn = document.createElement("button");
 
   retourBtn.textContent = "📖 Retour aux cours";
 
+  retourBtn.style.display = "block";
+  retourBtn.style.margin = "20px auto";
+  retourBtn.style.padding = "15px";
+  retourBtn.style.fontSize = "18px";
+
+
   retourBtn.onclick = () => {
-
-    window.location.href =
-      "http://psteger.free.fr/index.html";
-
+    window.location.href = "http://psteger.free.fr/index.html";
   };
 
 
   app.appendChild(retourBtn);
 
+
+  console.log("Bouton retour ajouté");
 }
 
   // ---------------- LEVELS ----------------
