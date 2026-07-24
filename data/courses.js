@@ -19,6 +19,14 @@ export const courses = [
     title: "Les fractions"
   },
 
+  {
+    id: "math_5e_equa",
+    subject: "math",
+    level: "5e",
+    title: "Les équations"
+  },
+
+  
   // FRANÇAIS
   {
     id: "fr_cm2_conj",
