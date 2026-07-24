@@ -212,7 +212,7 @@ console.log("courses =", courses);
   // ---------------- FIN QUIZ ----------------
 
   
-  function finish(score, courseId) {
+ /* function finish(score, courseId) {
 
     const gained = score * 10;
     state.xp += gained;
@@ -239,9 +239,119 @@ console.log("courses =", courses);
     `;
 
     document.getElementById("homeBtn").onclick = home;
-  }
+  }*/
 
+  //Affichage des résultats version 6ème
 
+/* =====================================================
+   AFFICHAGE DES RÉSULTATS (Version 6ème)
+===================================================== */
+
+function afficherResultat(score, total) {
+
+    const pourcentage = Math.round(score * 100 / total);
+
+    let etoiles = "";
+    let titre = "";
+    let message = "";
+    let couleur = "";
+
+    if (pourcentage === 100) {
+        etoiles = "⭐⭐⭐";
+        titre = "🎉 Excellent !";
+        message = "Tu as tout réussi !";
+        couleur = "#22c55e";
+    }
+
+    else if (pourcentage >= 80) {
+        etoiles = "⭐⭐⭐";
+        titre = "👏 Très bien !";
+        message = "Tu peux passer au cours suivant.";
+        couleur = "#22c55e";
+    }
+
+    else if (pourcentage >= 60) {
+        etoiles = "⭐⭐";
+        titre = "😊 Bien joué !";
+        message = "Encore un petit effort.";
+        couleur = "#3b82f6";
+    }
+
+    else if (pourcentage >= 40) {
+        etoiles = "⭐";
+        titre = "🙂 Continue !";
+        message = "Relis le cours puis recommence.";
+        couleur = "#f59e0b";
+    }
+
+    else {
+        etoiles = "🌱";
+        titre = "💪 Courage !";
+        message = "Relis le cours avant de refaire le quiz.";
+        couleur = "#ef4444";
+    }
+
+    document.body.innerHTML = `
+
+    <div style="
+        max-width:500px;
+        margin:40px auto;
+        padding:25px;
+        font-family:Arial,sans-serif;
+        text-align:center;
+        background:white;
+        border-radius:18px;
+        box-shadow:0 8px 25px rgba(0,0,0,.15);
+    ">
+
+        <div style="font-size:42px;">
+            ${etoiles}
+        </div>
+
+        <h1 style="color:${couleur};margin-top:15px;">
+            ${titre}
+        </h1>
+
+        <p style="font-size:22px;font-weight:bold;">
+            ${score} bonne(s) réponse(s) sur ${total}
+        </p>
+
+        <div style="
+            font-size:46px;
+            font-weight:bold;
+            color:${couleur};
+            margin:20px 0;
+        ">
+            ${pourcentage} %
+        </div>
+
+        <p style="
+            font-size:22px;
+            line-height:1.5;
+        ">
+            ${message}
+        </p>
+
+        <button
+            onclick="location.reload();"
+            style="
+                margin-top:25px;
+                padding:15px 35px;
+                font-size:20px;
+                border:none;
+                border-radius:12px;
+                background:#2563eb;
+                color:white;
+                cursor:pointer;
+            ">
+            🔄 Recommencer
+        </button>
+
+    </div>
+
+    `;
+
+}
   
   // ---------------- BACK ----------------
 
