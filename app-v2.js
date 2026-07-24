@@ -243,82 +243,69 @@ console.log("courses =", courses);
   }*/
 
 //Nouveau code pour meilleur affichage du score
-function showResults(score, totalQuestions, xpWon){
+<div id="resultScreen" class="result-screen hidden">
 
-    state.xp += xpWon;
+    <div class="result-card">
 
-    save();
+        <div class="confetti">🎉</div>
 
-    document.getElementById("scoreText").textContent =
-        `${score} / ${totalQuestions}`;
+        <h1 id="resultTitle">Bravo !</h1>
 
-    document.getElementById("xpEarned").textContent =
-        `+${xpWon} XP`;
+        <p id="resultMessage">
+            Tu as terminé le quiz !
+        </p>
 
-    const percent = Math.round(score / totalQuestions * 100);
+        <div id="stars" class="stars">
+            ⭐⭐⭐☆☆
+        </div>
 
-    let stars = "";
+        <div class="result-box">
 
-    if(percent==100){
+            <div class="result-line">
+                <span>✅ Bonnes réponses</span>
+                <strong id="scoreText">8 / 10</strong>
+            </div>
 
-        stars="⭐⭐⭐⭐⭐";
+            <div class="result-line">
+                <span>✨ XP gagnés</span>
+                <strong id="xpEarned">+80 XP</strong>
+            </div>
 
-        resultTitle.textContent="🏆 Excellent !";
+        </div>
 
-        resultMessage.textContent="Sans aucune erreur !";
+        <div class="progress-zone">
 
-    }
-    else if(percent>=80){
+            <div class="progress-label">
+                Niveau suivant
+            </div>
 
-        stars="⭐⭐⭐⭐☆";
+            <div class="progress-bar">
 
-        resultTitle.textContent="😀 Bravo !";
+                <div id="progressFill"
+                     class="progress-fill">
+                </div>
 
-        resultMessage.textContent="Très bon travail !";
+            </div>
 
-    }
-    else if(percent>=60){
+            <div id="progressText">
+                170 / 200 XP
+            </div>
 
-        stars="⭐⭐⭐☆☆";
+        </div>
 
-        resultTitle.textContent="🙂 Bien joué !";
+        <div id="badgeZone"></div>
 
-        resultMessage.textContent="Tu progresses !";
+        <button id="nextQuizBtn" class="btn-green">
+            ▶ Quiz suivant
+        </button>
 
-    }
-    else{
+        <button id="homeBtn" class="btn-blue">
+            🏠 Accueil
+        </button>
 
-        stars="⭐⭐☆☆☆";
+    </div>
 
-        resultTitle.textContent="😊 Continue !";
-
-        resultMessage.textContent="Tu vas y arriver !";
-
-    }
-
-    document.getElementById("stars").textContent=stars;
-
-    const current = state.xp % 200;
-
-    document.getElementById("progressFill").style.width =
-        (current/200*100)+"%";
-
-    document.getElementById("progressText").textContent =
-        `${current} / 200 XP`;
-
-    const badge=document.getElementById("badgeZone");
-
-    badge.innerHTML="";
-
-    if(current===0){
-
-        badge.innerHTML=`
-            <div class="badge">
-            🏅 Nouveau niveau débloqué !
-            </div>`;
-    }
-
-}
+</div>
   
   // ---------------- BACK ----------------
 
