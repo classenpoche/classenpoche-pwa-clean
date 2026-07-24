@@ -1,4 +1,4 @@
-console.log("ðŸ”¥ APP-V2 CHARGÃ‰");
+console.log("🔥 APP-V2 CHARGÉ");
 import { subjects } from "./data/subjects.js";
 import { levels } from "./data/levels.js";
 import { courses } from "./data/courses.js";
@@ -37,7 +37,7 @@ let state = {
     localStorage.setItem("streak", state.streak);
     localStorage.setItem("lastVisit", state.lastVisit);
 
-    xpDisplay.textContent = `XP : ${state.xp} ðŸ”¥ Streak : ${state.streak}`;
+    xpDisplay.textContent = `XP : ${state.xp} 🔥 Streak : ${state.streak}`;
   }
 
   // ---------------- STREAK SYSTEM ----------------
@@ -65,9 +65,9 @@ let state = {
   // ---------------- BADGES ----------------
 
   function checkBadges() {
-    if (state.xp >= 50) showBadge("ðŸ¥‰ DÃ©butant");
-    if (state.xp >= 150) showBadge("ðŸ¥ˆ IntermÃ©diaire");
-    if (state.xp >= 300) showBadge("ðŸ¥‡ Expert");
+    if (state.xp >= 50) showBadge("🥉 Débutant");
+    if (state.xp >= 150) showBadge("🥈 Intermédiaire");
+    if (state.xp >= 300) showBadge("🥇 Expert");
   }
 
   function showBadge(text) {
@@ -83,8 +83,8 @@ let state = {
 
   function home() {
     app.innerHTML = `
-      <h1>ðŸ“š Classenpoche</h1>
-      <p>Choisis une matiÃ¨re</p>
+      <h1>📚 Classenpoche</h1>
+      <p>Choisis une matière</p>
     `;
 
     subjects.forEach(s => {
@@ -108,7 +108,7 @@ console.log("courses =", courses);
       );
 
       const btn = document.createElement("button");
-      btn.textContent = isLocked ? `ðŸ”’ ${l.name}` : `ðŸŸ¢ ${l.name}`;
+      btn.textContent = isLocked ? `🔒 ${l.name}` : `🟢 ${l.name}`;
 
       btn.disabled = isLocked;
 
@@ -134,7 +134,7 @@ console.log("courses =", courses);
         const done = state.completed.includes(c.id);
 
         const btn = document.createElement("button");
-        btn.textContent = done ? `âœ… ${c.title}` : `ðŸ“˜ ${c.title}`;
+        btn.textContent = done ? `✅ ${c.title}` : `📘 ${c.title}`;
 
         btn.onclick = () => startQuiz(c.id);
 
@@ -209,10 +209,10 @@ console.log("courses =", courses);
     }, 1200);
 
     app.innerHTML = `
-      <h2>ðŸŽ‰ RÃ©sultat</h2>
+      <h2>🎉 Résultat</h2>
       <p>Score : ${score}</p>
       <p>XP +${gained}</p>
-      <button id="homeBtn">ðŸ  Accueil</button>
+      <button id="homeBtn">🏠 Accueil</button>
     `;
 
     document.getElementById("homeBtn").onclick = home;
@@ -222,7 +222,7 @@ console.log("courses =", courses);
 
   function back(fn) {
     const btn = document.createElement("button");
-    btn.textContent = "â¬… Retour";
+    btn.textContent = "⬅ Retour";
     btn.onclick = fn;
     app.appendChild(btn);
   }
