@@ -211,7 +211,9 @@ console.log("courses =", courses);
 
   // ---------------- FIN QUIZ ----------------
 
-  function finish(score, courseId) {
+//ancien affichage
+  
+  /*function finish(score, courseId) {
 
     const gained = score * 10;
     state.xp += gained;
@@ -238,8 +240,86 @@ console.log("courses =", courses);
     `;
 
     document.getElementById("homeBtn").onclick = home;
-  }
+  }*/
 
+//Nouveau code pour meilleur affichage du score
+function showResults(score, totalQuestions, xpWon){
+
+    state.xp += xpWon;
+
+    save();
+
+    document.getElementById("scoreText").textContent =
+        `${score} / ${totalQuestions}`;
+
+    document.getElementById("xpEarned").textContent =
+        `+${xpWon} XP`;
+
+    const percent = Math.round(score / totalQuestions * 100);
+
+    let stars = "";
+
+    if(percent==100){
+
+        stars="⭐⭐⭐⭐⭐";
+
+        resultTitle.textContent="🏆 Excellent !";
+
+        resultMessage.textContent="Sans aucune erreur !";
+
+    }
+    else if(percent>=80){
+
+        stars="⭐⭐⭐⭐☆";
+
+        resultTitle.textContent="😀 Bravo !";
+
+        resultMessage.textContent="Très bon travail !";
+
+    }
+    else if(percent>=60){
+
+        stars="⭐⭐⭐☆☆";
+
+        resultTitle.textContent="🙂 Bien joué !";
+
+        resultMessage.textContent="Tu progresses !";
+
+    }
+    else{
+
+        stars="⭐⭐☆☆☆";
+
+        resultTitle.textContent="😊 Continue !";
+
+        resultMessage.textContent="Tu vas y arriver !";
+
+    }
+
+    document.getElementById("stars").textContent=stars;
+
+    const current = state.xp % 200;
+
+    document.getElementById("progressFill").style.width =
+        (current/200*100)+"%";
+
+    document.getElementById("progressText").textContent =
+        `${current} / 200 XP`;
+
+    const badge=document.getElementById("badgeZone");
+
+    badge.innerHTML="";
+
+    if(current===0){
+
+        badge.innerHTML=`
+            <div class="badge">
+            🏅 Nouveau niveau débloqué !
+            </div>`;
+    }
+
+}
+  
   // ---------------- BACK ----------------
 
   function back(fn) {
