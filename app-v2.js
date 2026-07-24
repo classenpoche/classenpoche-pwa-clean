@@ -81,19 +81,44 @@ let state = {
 
   // ---------------- HOME ----------------
 
-  function home() {
-    app.innerHTML = `
-      <h1>📚 Classenpoche</h1>
-      <p>Choisis une matière</p>
-    `;
+ function home() {
 
-    subjects.forEach(s => {
-      const btn = document.createElement("button");
-      btn.textContent = s.name;
-      btn.onclick = () => showLevels(s.id);
-      app.appendChild(btn);
-    });
-  }
+  app.innerHTML = `
+    <h1>📚 Classenpoche</h1>
+    <p>Choisis une matière</p>
+  `;
+
+
+  // Boutons des matières
+  subjects.forEach(s => {
+
+    const btn = document.createElement("button");
+
+    btn.textContent = s.name;
+
+    btn.onclick = () => showLevels(s.id);
+
+    app.appendChild(btn);
+
+  });
+
+
+  // Bouton retour vers le site des cours
+  const retourBtn = document.createElement("button");
+
+  retourBtn.textContent = "📖 Retour aux cours";
+
+  retourBtn.onclick = () => {
+
+    window.location.href =
+      "http://psteger.free.fr/index.html";
+
+  };
+
+
+  app.appendChild(retourBtn);
+
+}
 
   // ---------------- LEVELS ----------------
 
