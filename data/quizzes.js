@@ -1,6 +1,25 @@
 export const quizzes = {
 
   // MATHS
+
+math_cm2_add:[
+{
+      q: "10*1,25 = ?",
+      choices: ["12,5", "0,125", "1250"],
+      answer: 0
+    },
+   {
+      q: "12*1000 ?",
+      choices: ["1,2", "12", "12000"],
+      answer: 2
+     },
+     {
+      q: "100*96 ?",
+      choices: ["960", "9600", "9,6"],
+      answer: 1
+     }
+],
+  
   math_6e_add: [
     {
       q: "2 + 2 = ?",
