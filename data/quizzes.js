@@ -46,6 +46,15 @@ math_cm2_add:[
     }
   ],
 
+    math_5e_equa: [
+    {
+      q: "6 + X = 9  X= ?",
+      choices: ["4", "15", "3"],
+      answer: 2
+    }
+  ],
+
+  
   // FRANÇAIS
 
 fr_cm2_conj: [
