@@ -211,9 +211,8 @@ console.log("courses =", courses);
 
   // ---------------- FIN QUIZ ----------------
 
-//ancien affichage
   
-  /*function finish(score, courseId) {
+  function finish(score, courseId) {
 
     const gained = score * 10;
     state.xp += gained;
@@ -240,72 +239,9 @@ console.log("courses =", courses);
     `;
 
     document.getElementById("homeBtn").onclick = home;
-  }*/
+  }
 
-//Nouveau code pour meilleur affichage du score
-<div id="resultScreen" class="result-screen hidden">
 
-    <div class="result-card">
-
-        <div class="confetti">🎉</div>
-
-        <h1 id="resultTitle">Bravo !</h1>
-
-        <p id="resultMessage">
-            Tu as terminé le quiz !
-        </p>
-
-        <div id="stars" class="stars">
-            ⭐⭐⭐☆☆
-        </div>
-
-        <div class="result-box">
-
-            <div class="result-line">
-                <span>✅ Bonnes réponses</span>
-                <strong id="scoreText">8 / 10</strong>
-            </div>
-
-            <div class="result-line">
-                <span>✨ XP gagnés</span>
-                <strong id="xpEarned">+80 XP</strong>
-            </div>
-
-        </div>
-
-        <div class="progress-zone">
-
-            <div class="progress-label">
-                Niveau suivant
-            </div>
-
-            <div class="progress-bar">
-
-                <div id="progressFill"
-                     class="progress-fill">
-                </div>
-
-            </div>
-
-            <div id="progressText">
-                170 / 200 XP
-            </div>
-
-        </div>
-
-        <div id="badgeZone"></div>
-
-        <button id="nextQuizBtn" class="btn-green">
-            ▶ Quiz suivant
-        </button>
-
-        <button id="homeBtn" class="btn-blue">
-            🏠 Accueil
-        </button>
-
-    </div>
-
-</div>
   
   // ---------------- BACK ----------------
 
