@@ -188,8 +188,8 @@ console.log("courses =", courses);
   }
 
   // ---------------- FIN QUIZ ----------------
-
-  function finish(score, courseId) {
+//...........ancienne fonction fin de quizz..............
+  /*function finish(score, courseId) {
 
     const gained = score * 10;
     state.xp += gained;
@@ -216,8 +216,146 @@ console.log("courses =", courses);
     `;
 
     document.getElementById("homeBtn").onclick = home;
-  }
+  }*/
+//...............Nouvelle fonction fin de quizz finish().............
+// ---------------- FIN QUIZ ----------------
 
+function finish(score, courseId) {
+
+    const quiz = quizzes[courseId];
+    const total = quiz.length;
+
+    const pourcentage = Math.round((score / total) * 100);
+
+    const gained = score * 10;
+
+    state.xp += gained;
+
+
+    if (!state.completed.includes(courseId)) {
+        state.completed.push(courseId);
+    }
+
+
+    save();
+    checkBadges();
+
+
+    let emoji = "";
+    let titre = "";
+    let message = "";
+    let etoiles = "";
+
+
+    if (pourcentage === 100) {
+
+        emoji = "🏆";
+        titre = "Excellent !";
+        message = "Parfait ! Tu maîtrises cette leçon.";
+        etoiles = "⭐⭐⭐⭐⭐";
+
+    } 
+    
+    else if (pourcentage >= 80) {
+
+        emoji = "🎉";
+        titre = "Très bien !";
+        message = "Bravo, tes connaissances sont solides.";
+        etoiles = "⭐⭐⭐⭐";
+
+    } 
+    
+    else if (pourcentage >= 60) {
+
+        emoji = "👏";
+        titre = "Bien joué !";
+        message = "Encore quelques efforts et ce sera parfait.";
+        etoiles = "⭐⭐⭐";
+
+    } 
+    
+    else if (pourcentage >= 40) {
+
+        emoji = "📚";
+        titre = "À revoir";
+        message = "Relis le cours puis essaie encore.";
+        etoiles = "⭐⭐";
+
+    } 
+    
+    else {
+
+        emoji = "💪";
+        titre = "Continue tes efforts !";
+        message = "Reprends la leçon et recommence le quiz.";
+        etoiles = "⭐";
+
+    }
+
+
+    app.innerHTML = `
+
+    <div class="result-card">
+
+        <div style="font-size:50px">
+            ${emoji}
+        </div>
+
+
+        <h1>
+            ${titre}
+        </h1>
+
+
+        <div style="
+            font-size:35px;
+            margin:15px;
+        ">
+            ${etoiles}
+        </div>
+
+
+        <h2>
+            ${score} / ${total}
+        </h2>
+
+
+        <h2>
+            Score : ${pourcentage} %
+        </h2>
+
+
+        <p style="
+            font-size:20px;
+            line-height:1.5;
+        ">
+            ${message}
+        </p>
+
+
+        <div style="
+            margin-top:20px;
+            font-size:22px;
+        ">
+            🏆 +${gained} XP
+        </div>
+
+
+        <button id="homeBtn">
+            🏠 Retour aux matières
+        </button>
+
+    </div>
+
+    `;
+
+
+    document
+        .getElementById("homeBtn")
+        .onclick = home;
+
+}
+  
   // ---------------- BACK ----------------
 
   function back(fn) {
