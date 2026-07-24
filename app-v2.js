@@ -461,7 +461,65 @@ console.log("courses =", courses);
    AFFICHAGE DES RÉSULTATS (Version 6ème)
 ===================================================== */
 
-function afficherResultat(score, total) {
+// ---------------- FIN QUIZ ----------------
+
+function finish(score, courseId) {
+
+    const quiz = quizzes[courseId];
+
+    const total = quiz.length;
+
+    const gained = score * 10;
+
+    state.xp += gained;
+
+    if (!state.completed.includes(courseId)) {
+        state.completed.push(courseId);
+    }
+
+    save();
+    checkBadges();
+
+
+    app.innerHTML = `
+
+    <div class="result-card">
+
+        <h1>🎉 Résultat</h1>
+
+        <div style="font-size:45px">
+            ${score >= total * 0.8 ? "⭐⭐⭐" : "⭐"}
+        </div>
+
+        <h2>
+            ${score} bonne(s) réponse(s) sur ${total}
+        </h2>
+
+        <h2>
+            Score : ${Math.round(score*100/total)} %
+        </h2>
+
+        <p>
+            🏆 Tu gagnes ${gained} XP
+        </p>
+
+        <button id="homeBtn">
+            🏠 Accueil
+        </button>
+
+    </div>
+
+    `;
+
+
+    document
+    .getElementById("homeBtn")
+    .onclick = home;
+
+}
+
+  
+/*function afficherResultat(score, total) {
 
     const pourcentage = Math.round(score * 100 / total);
 
@@ -565,7 +623,7 @@ function afficherResultat(score, total) {
 
     `;
 
-}
+}*/
   
   // ---------------- BACK ----------------
 
