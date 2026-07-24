@@ -1,6 +1,11 @@
 export const courses = [
   // MATHS
-  
+  {
+    id: "math_cm2_add",
+    subject: "math",
+    level: "cm2",
+    title: "Calcul"
+  },
   {
     id: "math_6e_add",
     subject: "math",
