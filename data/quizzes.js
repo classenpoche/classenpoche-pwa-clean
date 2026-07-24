@@ -54,6 +54,15 @@ math_cm2_add:[
     }
   ],
 
+math_5e_equa: [
+    {
+      q: "6X = 3 donc X= ?",
+      choices: ["1/3", "6/3", "1/2"],
+      answer: 2
+    }
+  ],
+
+  
   
   // FRANÇAIS
 
