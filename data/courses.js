@@ -52,7 +52,12 @@ export const courses = [
     level: "4e",
     title: "La conjugaison"
   },
-
+ {
+    id: "fr_1e_huma",
+    subject: "fr",
+    level: "1e",
+    title: "L'humanisme"
+  },
   // ANGLAIS
   {
     id: "ang_6e_vocab",
