@@ -106,6 +106,18 @@ fr_cm2_conj: [
     }
   ],
 
+fr_1e_huma:[
+{
+      q: "Les lettres humaines repr&eacute;sentent:",
+      choices: [
+        "Les connaissances profanes",
+        "Les connaissances divines",
+        "Je ne sais pas"
+      ],
+      answer: 0
+    }
+  ],
+  
   // ANGLAIS
   ang_6e_vocab: [
     {
