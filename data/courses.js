@@ -48,7 +48,12 @@ export const courses = [
     title: "Formes de phrases"
   },
 
-
+ {
+    id: "fr_cm2_phrase",
+    subject: "fr",
+    level: "cm2",
+    title: "Groupe sujet"
+  },
 
 
   
