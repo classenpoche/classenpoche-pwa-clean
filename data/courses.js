@@ -35,6 +35,19 @@ export const courses = [
     title: "La conjugaison"
   },
   {
+    id: "fr_cm2_phrase",
+    subject: "fr",
+    level: "cm2",
+    title: "Les types de phrase"
+  },
+  
+    
+
+
+
+
+  
+  {
     id: "fr_6e_gram",
     subject: "fr",
     level: "6e",
