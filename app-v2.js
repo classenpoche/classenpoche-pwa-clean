@@ -31,52 +31,14 @@ let state = {
   lastVisit: localStorage.getItem("lastVisit") || null
 };
 
- /* function save() {
+  function save() {
     localStorage.setItem("xp", state.xp);
     localStorage.setItem("completed", JSON.stringify(state.completed));
     localStorage.setItem("streak", state.streak);
     localStorage.setItem("lastVisit", state.lastVisit);
 
     xpDisplay.textContent = `XP : ${state.xp} 🔥 Streak : ${state.streak}`;
-  }*/
-
-  function updateXP(){
-
-  const display = document.getElementById("xp");
-
-  if(display){
-
-    display.textContent =
-    `XP : ${state.xp} 🔥 Streak : ${state.streak}`;
-
   }
-
-}
-
-
-function save(){
-
-    localStorage.setItem("xp", state.xp);
-
-    localStorage.setItem(
-      "completed",
-      JSON.stringify(state.completed)
-    );
-
-    localStorage.setItem(
-      "streak",
-      state.streak
-    );
-
-    localStorage.setItem(
-      "lastVisit",
-      state.lastVisit
-    );
-
-
-    updateXP();
-
-}
 
   // ---------------- STREAK SYSTEM ----------------
 
@@ -99,7 +61,6 @@ function save(){
   }
 
   updateStreak();
-  updateXP();
 
   // ---------------- BADGES ----------------
 
@@ -225,7 +186,7 @@ console.log("courses =", courses);
     let i = 0;
     let score = 0;
 
-    /*function render() {
+    function render() {
 
       if (i >= quiz.length) return finish(score, courseId);
 
@@ -234,33 +195,7 @@ console.log("courses =", courses);
       app.innerHTML = `
         <h2>${q.q}</h2>
         <p>${i + 1} / ${quiz.length}</p>
-      `;*/
-
-    function render(){
-
-  if(i >= quiz.length){
-      finish(score, courseId);
-      return;
-  }
-
-
-  const q = quiz[i];
-
-
-  app.replaceChildren();
-
-
-  const title = document.createElement("h2");
-  title.textContent = q.q;
-
-
-  const progress = document.createElement("p");
-  progress.textContent =
-  `${i + 1} / ${quiz.length}`;
-
-
-  app.appendChild(title);
-  app.appendChild(progress);
+      `;
 
       q.choices.forEach((c, index) => {
 
@@ -280,37 +215,7 @@ console.log("courses =", courses);
     render();
   }
 
-  // ---------------- FIN QUIZ ----------------
-//...........ancienne fonction fin de quizz..............
-  /*function finish(score, courseId) {
 
-    const gained = score * 10;
-    state.xp += gained;
-
-    if (!state.completed.includes(courseId)) {
-      state.completed.push(courseId);
-    }
-
-    save();
-    checkBadges();
-
-    levelupBox.textContent = `+${gained} XP`;
-    levelupBox.style.display = "block";
-
-    setTimeout(() => {
-      levelupBox.style.display = "none";
-    }, 1200);
-
-    app.innerHTML = `
-      <h2>🎉 Résultat</h2>
-      <p>Score : ${score}</p>
-      <p>XP +${gained}</p>
-      <button id="homeBtn">🏠 Accueil</button>
-    `;
-
-    document.getElementById("homeBtn").onclick = home;
-  }*/
-//...............Nouvelle fonction fin de quizz finish().............
 // ---------------- FIN QUIZ ----------------
 
 function finish(score, courseId) {
@@ -384,10 +289,9 @@ function finish(score, courseId) {
         etoiles = "⭐";
 
     }
-  //nouvelle ligne
-app.replaceChildren();
 
-app.innerHTML = `
+
+    app.innerHTML = `
 
     <div class="result-card">
 
