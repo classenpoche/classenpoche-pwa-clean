@@ -73,6 +73,16 @@ fr_cm2_conj: [
       answer: 2
     }
   ],
+
+  fr_cm2_phrase: [
+    {
+      q: "'1- A quoi sert une phrase déclarative ?
+ :",
+      choices: [" à poser une question"," à donner un ordre
+"," à faire savoir quelque chose"],
+      answer: 2
+    }
+  ],
   
   fr_6e_gram: [
     {
