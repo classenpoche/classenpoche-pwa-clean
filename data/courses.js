@@ -41,7 +41,12 @@ export const courses = [
     title: "Les types de phrase"
   },
   
-    
+    {
+    id: "fr_cm2_phrase",
+    subject: "fr",
+    level: "cm2",
+    title: "Forme de phrases"
+  },
 
 
 
