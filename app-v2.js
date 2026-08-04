@@ -31,14 +31,52 @@ let state = {
   lastVisit: localStorage.getItem("lastVisit") || null
 };
 
-  function save() {
+ /* function save() {
     localStorage.setItem("xp", state.xp);
     localStorage.setItem("completed", JSON.stringify(state.completed));
     localStorage.setItem("streak", state.streak);
     localStorage.setItem("lastVisit", state.lastVisit);
 
     xpDisplay.textContent = `XP : ${state.xp} 🔥 Streak : ${state.streak}`;
+  }*/
+
+  function updateXP(){
+
+  const display = document.getElementById("xp");
+
+  if(display){
+
+    display.textContent =
+    `XP : ${state.xp} 🔥 Streak : ${state.streak}`;
+
   }
+
+}
+
+
+function save(){
+
+    localStorage.setItem("xp", state.xp);
+
+    localStorage.setItem(
+      "completed",
+      JSON.stringify(state.completed)
+    );
+
+    localStorage.setItem(
+      "streak",
+      state.streak
+    );
+
+    localStorage.setItem(
+      "lastVisit",
+      state.lastVisit
+    );
+
+
+    updateXP();
+
+}
 
   // ---------------- STREAK SYSTEM ----------------
 
@@ -61,6 +99,7 @@ let state = {
   }
 
   updateStreak();
+  updateXP();
 
   // ---------------- BADGES ----------------
 
@@ -186,7 +225,7 @@ console.log("courses =", courses);
     let i = 0;
     let score = 0;
 
-    function render() {
+    /*function render() {
 
       if (i >= quiz.length) return finish(score, courseId);
 
@@ -195,7 +234,33 @@ console.log("courses =", courses);
       app.innerHTML = `
         <h2>${q.q}</h2>
         <p>${i + 1} / ${quiz.length}</p>
-      `;
+      `;*/
+
+    function render(){
+
+  if(i >= quiz.length){
+      finish(score, courseId);
+      return;
+  }
+
+
+  const q = quiz[i];
+
+
+  app.replaceChildren();
+
+
+  const title = document.createElement("h2");
+  title.textContent = q.q;
+
+
+  const progress = document.createElement("p");
+  progress.textContent =
+  `${i + 1} / ${quiz.length}`;
+
+
+  app.appendChild(title);
+  app.appendChild(progress);
 
       q.choices.forEach((c, index) => {
 
@@ -319,9 +384,10 @@ function finish(score, courseId) {
         etoiles = "⭐";
 
     }
+  //nouvelle ligne
+app.replaceChildren();
 
-
-    app.innerHTML = `
+app.innerHTML = `
 
     <div class="result-card">
 
