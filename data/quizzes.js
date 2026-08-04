@@ -83,13 +83,13 @@ fr_cm2_conj: [
   ],
 
 
-  fr_cm2_phrase: [
+ /* fr_cm2_phrase: [
     {
       q: "La forme négative de "J'aime les bonbons" :",
       choices: ["J'aime pas les bonbons"," Je n'aime pas les bonbons","Je ne mange pas les bonbons"],
       answer: 1
     }
-  ],
+  ],*/
 
  /* fr_cm2_phrase: [
     {
