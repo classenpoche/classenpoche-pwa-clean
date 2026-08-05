@@ -83,17 +83,17 @@ fr_cm2_conj: [
   ],
 
 
- /* fr_cm2_phrase: [
+ fr_cm2_phrase: [
     {
-      q: "La forme négative de "J'aime les bonbons" :",
+      q: "La forme négative de 'J'aime les bonbons' :",
       choices: ["J'aime pas les bonbons"," Je n'aime pas les bonbons","Je ne mange pas les bonbons"],
       answer: 1
     }
-  ],*/
+  ],
 
  /* fr_cm2_phrase: [
     {
-      q: "Le Groupe Verbal de : "Les enfants de CM2 surfent sur le Web" est :",
+      q: "Le Groupe Verbal de : 'Les enfants de CM2 surfent sur le Web' est :",
       choices: ["Les enfants de CM2", "surfent", "surfent sur le Web"],
       answer: 2
     }
