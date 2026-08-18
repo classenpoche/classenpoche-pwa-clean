@@ -1,0 +1,257 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'École Nomade</title>
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    body { background: #f5f7ff; }
+    .hero {
+      background: #cc2200;
+      color: #fff;
+      padding: 20px 16px 18px;
+      text-align: center;
+    }
+    .hero h1 { margin: 0; font-size: 1.7rem; color: #fff !important; }
+    .main { max-width: 680px; margin: 0 auto; padding: 20px 16px 48px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #cc2200; color: #fff !important; padding: 10px 20px;
+      border-radius: 50px; font-size: 1rem !important; font-weight: 700;
+      margin-bottom: 20px; text-decoration: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    }
+    .section { background: #fff; border-radius: 14px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,80,.09); }
+    .sec-title {
+      background: #cc220018; color: #cc2200;
+      font-size: 1.05rem; font-weight: 800; padding: 12px 16px;
+      border-bottom: 2px solid #cc220030;
+    }
+    .sec-links { padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+    .link-btn {
+      display: block; padding: 14px 12px; border-radius: 8px;
+      color: #1a1a2e !important; font-size: 1.05rem !important;
+      text-decoration: none !important; font-weight: 500;
+      transition: background .15s; touch-action: manipulation;
+    }
+    .link-btn::before { content: "▶ "; font-size: .7em; color: #cc2200; }
+    .link-btn:hover, .link-btn:active { background: #cc220012; color: #cc2200 !important; }
+    @media (max-width: 480px) {
+      .link-btn { padding: 16px 12px; font-size: 1.1rem !important; }
+    }
+  </style>
+
+
+<title>6&egrave;me pr&eacute;histoire</title>
+<!-- #EndEditable --> 
+</head>
+<body bgcolor="#FFFFFF" text="#000099" link="#0000FF" vlink="#CC0000" alink="#FF0000">
+
+<!-- #BeginEditable "Texte_normal" --> 
+<table border="0" cellpadding="0" cellspacing="0" width="15%">
+  <tr> 
+    <td height="1985" valign="top"> 
+      <h1 align="left"><font face="Comic Sans MS" size="1"
+             color="#333333"> <font color="#FF0000"><b><font size="6">L</font><font size="6">a 
+        pr&eacute;histoire</font></b></font></font></h1>
+      <div align="justify"><font face="Comic Sans MS" size="1" color="#000099">r&eacute;alis&eacute; 
+        par<br>
+        Eric RANGUIN<br>
+        (Coll&egrave;ge L&eacute;onard <br>
+        de VINCI,<br>
+        ROMORANTIN)<br>
+        </font><font color="#000099"><a href="6hist.htm"><font size="6"><b>Retour</b></font></a> 
+        </font>
+      <form name="quest" method="get">
+        <font size="6" color="#000099"><b><strong>1</strong> 
+          - Quel est le nom de la p&eacute;riode <br>
+          la plus ancienne de la pr&eacute;histoire ?</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="1" value="a" onclick="Engine(1, this.value)">
+          a - le n&eacute;olithique</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="1" value="b" onclick="Engine(1, this.value)">
+          b - l'antiquit&eacute;</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="1" value="c" onclick="Engine(1, this.value)">
+          c - le pal&eacute;olithique</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="1" value="d" onclick="Engine(1, this.value)">
+          d - les temps anciens</b></font><font color="#000099"><b> 
+          </b></font>
+        <font size="6" color="#000099"><b>2 - Quel est 
+          le nom de la p&eacute;riode <br>
+          la plus longue de la pr&eacute;histoire ?</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio"
+             name="2" value="a" onclick="Engine(2, this.value)">
+          a - l'antiquit&eacute;</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="2" value="b" onclick="Engine(2, this.value)">
+          b - le pal&eacute;olithique</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="2" value="c" onclick="Engine(2, this.value)">
+          c - le n&eacute;olithique</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="2" value="d" onclick="Engine(2, this.value)">
+          d - les longs temps</b></font><font color="#000099"><b> 
+          </b></font>
+        <font size="6" color="#000099"><b>3 - Quelle 
+          invention marque <br>
+          le d&eacute;but du n&eacute;olithique ?</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio"
+             name="3" value="a" onclick="Engine(3, this.value)">
+          a - l'agriculture</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="3" value="b" onclick="Engine(3, this.value)">
+          b - les peintures rupestres</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="3"
+             value="c" onclick="Engine(3, this.value)">
+          c - le feu</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio"
+             name="3" value="d" onclick="Engine(3, this.value)">
+          d - l'&eacute;criture</b></font><font color="#000099"><b> 
+          </b></font>
+        <font size="6" color="#000099"><b>4 - Quelle 
+          invention marque <br>
+          la fin de la pr&eacute;histoire?</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio"
+             name="4" value="a" onclick="Engine(4, this.value)">
+          a - l'agriculture</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="4" value="b" onclick="Engine(4, this.value)">
+          b - le feu</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="4" value="c" onclick="Engine(4, this.value)">
+          c - l'&eacute;criture</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="4" value="d" onclick="Engine(4, this.value)">
+          d - le fusil</b></font><font color="#000099"><b> 
+          </b></font>
+        <font size="6" color="#000099"><b>5 - Quel mot 
+          ne concerne pas <br>
+          le n&eacute;olithique ?</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio"
+             name="5" value="a" onclick="Engine(5, this.value)">
+          a - le bl&eacute;</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="5" value="b" onclick="Engine(5, this.value)">
+          b - l'&eacute;levage</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="5" value="c" onclick="Engine(5, this.value)">
+          c - la pierre polie</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="5"
+             value="d" onclick="Engine(5, this.value)">
+          d - la pierre taill&eacute;e</b></font><font color="#000099"><b> 
+          </b></font>
+        <font size="6" color="#000099"><b>6 - Quelle 
+          est l'&eacute;poque <br>
+          des menhirs et des dolmens ?</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio"
+             name="6" value="a" onclick="Engine(6, this.value)">
+          a - le pal&eacute;olithique</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="6" value="b" onclick="Engine(6, this.value)">
+          b - celle des Gaulois</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="6"
+             value="c" onclick="Engine(6, this.value)">
+          c - l'antiquit&eacute;</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio"
+             name="6" value="d" onclick="Engine(6, this.value)">
+          d - le n&eacute;olithique</b></font><font color="#000099"><b> 
+          </b></font>
+        <font size="6" color="#000099"><b>7 -&nbsp; 
+          A quoi sert un menhir ?</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="7" value="a" onclick="Engine(7, this.value)">
+          a - &agrave; indiquer une direction</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="7"
+             value="b" onclick="Engine(7, this.value)">
+          b - &agrave; construire des habitations</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="7" value="c" onclick="Engine(7, this.value)">
+          c - &agrave; adorer le soleil</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="7"
+             value="d" onclick="Engine(7, this.value)">
+          d - &agrave; enterrer les morts</b></font><font color="#000099"><b> 
+          </b></font>
+        <font size="6" color="#000099"><b>8 - A quoi 
+          sert un dolmen ?</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="8" value="a" onclick="Engine(8, this.value)">
+          a - &agrave; indiquer une direction</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="8"
+             value="b" onclick="Engine(8, this.value)">
+          b - &agrave; adorer le soleil</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio"
+             name="8" value="c" onclick="Engine(8, this.value)">
+          c - &agrave; se prot&eacute;ger de la pluie</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="8"
+             value="d" onclick="Engine(8, this.value)">
+          d - &agrave; enterrer les morts</b></font><font color="#000099"><b> 
+          </b></font>
+        <font size="6" color="#000099"><b>9 - Quel mot 
+          ne concerne pas<br>
+          le pal&eacute;olithique ?</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio"
+             name="9" value="a" onclick="Engine(9, this.value)">
+          a - la pierre taill&eacute;e</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="9" value="b" onclick="Engine(9, this.value)">
+          b - la chasse</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="9" value="c" onclick="Engine(9, this.value)">
+          c - l'agriculture</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="9" value="d" onclick="Engine(9, this.value)">
+          d - la cueillette</b></font><font color="#000099"><b> 
+          </b></font>
+        <font size="6" color="#000099"><b>10 - L'homme 
+          du n&eacute;olithique est surtout :</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="10"
+             value="a" onclick="Engine(10, this.value)">
+          a - un chasseur</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio"
+             name="10" value="b" onclick="Engine(10, this.value)">
+          b - un nomade</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio"
+             name="10" value="c" onclick="Engine(10, this.value)">
+          c - un s&eacute;dentaire</b></font><font color="#000099"><b> 
+          </b></font><font size="6" color="#000099"><b><br>
+          <input type="radio" name="10" value="d" onclick="Engine(10, this.value)">
+          d - un scribe</b></font><font color="#000099"><b> </b></font>
+        <font face="Comic Sans MS" color="#000099">&nbsp;</font> <font color="#000099"> 
+          <input type="button"
+             name="Resultats" value="R&eacute;sultats" onclick="NextLevel()">
+          <br>
+          <a href="6hist.htm"><font size="6">Retour</font> </a></font>
+      </form>
+      <p align="center">&nbsp; 
+    </td>
+  </tr>
+</table>
+<!-- #EndEditable --> 
+<script src="./classenpoche-responsive.js"></script>
+</body><!-- #EndTemplate -->
+</html>

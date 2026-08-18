@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'École Nomade</title>
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    body { background: #f5f7ff; }
+    .hero {
+      background: #cc2200;
+      color: #fff;
+      padding: 20px 16px 18px;
+      text-align: center;
+    }
+    .hero h1 { margin: 0; font-size: 1.7rem; color: #fff !important; }
+    .main { max-width: 680px; margin: 0 auto; padding: 20px 16px 48px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #cc2200; color: #fff !important; padding: 10px 20px;
+      border-radius: 50px; font-size: 1rem !important; font-weight: 700;
+      margin-bottom: 20px; text-decoration: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    }
+    .section { background: #fff; border-radius: 14px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,80,.09); }
+    .sec-title {
+      background: #cc220018; color: #cc2200;
+      font-size: 1.05rem; font-weight: 800; padding: 12px 16px;
+      border-bottom: 2px solid #cc220030;
+    }
+    .sec-links { padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+    .link-btn {
+      display: block; padding: 14px 12px; border-radius: 8px;
+      color: #1a1a2e !important; font-size: 1.05rem !important;
+      text-decoration: none !important; font-weight: 500;
+      transition: background .15s; touch-action: manipulation;
+    }
+    .link-btn::before { content: "▶ "; font-size: .7em; color: #cc2200; }
+    .link-btn:hover, .link-btn:active { background: #cc220012; color: #cc2200 !important; }
+    @media (max-width: 480px) {
+      .link-btn { padding: 16px 12px; font-size: 1.1rem !important; }
+    }
+  </style>
+
+
+<title>6&egrave;me la phrase questions</title>
+<script language="JavaScript">
+<!--hide from old browsers
+
+var firsttryright=0
+
+function checkme(notries, sanswer, canswer)  {
+  	if (sanswer==canswer) {
+  					if (notries==1)  {
+  						firsttryright+=1;
+  						document.status.firsttry.value=(firsttryright)};
+  					return "correct !"}
+ 				else {
+ 					return "Faux !"}
+					}
+
+//  -->
+</script>
+<!-- #EndEditable --> 
+</head>
+<body bgcolor="#FFFFFF" text="#000099" link="#0000FF" vlink="#CC0000" alink="#FF0000">
+
+<!-- #BeginEditable "Texte_normal" --> 
+<HR width="110" align="left">
+<div align="justify"><font size="12"> <font size="12" color="#000099" >LA 
+  PHRASE </font></font> 
+<HR width="110" align="left">
+<font size="12" color="#000099" ><a href="6fra.htm">Retour 
+menu</a><br>
+</font> 
+<ol>
+  <form>
+    <li><font color="#000099" size="12">"Veux-tu jouer 
+      avec moi ?" est une phrase :&nbsp;&nbsp; <br>
+      <select name='select' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>D&eacute;clarative</option>
+        <option>Imp&eacute;rative</option>
+        <option>Interrogative</option>
+      </select>
+      &nbsp; <br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='Interrogative'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="12">"Que c'est 
+      bon !" est une phrase :<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>D&eacute;clarative</option>
+        <option>Imp&eacute;rative</option>
+        <option>Exclamative</option>
+      </SELECT>
+      &nbsp;<br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='Exclamative'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="12">La forme n&eacute;gative 
+      de "J'aime les bonbons" :<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option>choisissez </option>
+        <option> "j aime pas les bombons"</option>
+        <option>"je n aime pas les bombons"</option>
+        <option>"je ne mange pas les bombons"</option>
+      </SELECT>
+      &nbsp;<br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='"je n aime pas les bombons"'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="12">Le Groupe Sujet 
+      de :"Les enfants de cm1/cm2 surfent sur le WEB"&nbsp;est : <br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option> "Les enfants"</option>
+        <option>"Les enfants de CM1"</option>
+        <option>"Les CM1"</option>
+      </SELECT>
+      &nbsp;<br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='"Les enfants de CM1"'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="12">Le Groupe Verbal de : "Les enfants de 
+      CM1 surfent sur le WEB." est : &nbsp;<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>"Les enfants de CM1"</option>
+        <option>"surfent sur le WAP."</option>
+        <option>"surfent"</option>
+      </SELECT>
+      &nbsp;</font><font size="12"><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='"surfent"'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <table cellpadding="3" cellspacing="3" width="15%" align="left" bgcolor="#FFFFCC">
+    <tr> 
+      <td align="left" width="15%"> 
+        <form name="status">
+          <font size="12" color="#000099" >Vous avez<br>
+            obtenu<br>
+            <input type="text" name="firsttry" value="0" size="4" maxlength="3">
+            r&eacute;ponses<br>
+            correctes au<br>
+            premier essai . </font>
+          <font size="12" color="#000099" ><a href="6fra.htm">Retour 
+            menu</a></font> 
+        </form>
+      </td>
+    </tr>
+  </table>
+  &nbsp;
+</ol>
+<!-- #EndEditable --> 
+<script src="./classenpoche-responsive.js"></script>
+</body><!-- #EndTemplate -->
+<script src="classenpoche-responsive.js"></script>
+</html>
