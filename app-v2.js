@@ -325,23 +325,24 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
 
 
-            document
-                .getElementById("backCourses")
-                .addEventListener(
-                    "click",
-                    () => {
+document
+    .getElementById("backQuiz")
+    .addEventListener(
+        "click",
+        () => {
 
-                        showCourses(
-                            course.subject,
-                            course.level
-                        );
-
-                    }
-                );
-
-            return;
+            showCourses(
+                course.subject,
+                course.level
+            );
 
         }
+    );
+
+
+
+            
+       
 
 
         let questionIndex = 0;
