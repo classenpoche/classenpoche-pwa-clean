@@ -302,28 +302,42 @@ document.addEventListener("DOMContentLoaded", () => {
             quizzes[course.id];
 
 
-        if (!questions) {
+       if (!questions) {
 
-            app.innerHTML = `
+    app.innerHTML = `
+
+        <button id="backCourses">
+            ← Cours
+        </button>
+
+        <h1>⚠️ Quiz introuvable</h1>
+
+        <p>
+            Aucun quiz n'est associé à :
+            <strong>
+                ${course.title}
+            </strong>
+        </p>
+
+    `;
 
 
-<button id="backQuiz" class="back-course-btn">
-    ← Retour aux cours
-</button>
+    document
+        .getElementById("backCourses")
+        .addEventListener(
+            "click",
+            () => {
 
-           
+                showCourses(
+                    course.subject,
+                    course.level
+                );
 
-                <h1>⚠️ Quiz introuvable</h1>
+            }
+        );
 
-                <p>
-                    Aucun quiz n'est associé à :
-                    <strong>
-                        ${course.title}
-                    </strong>
-                </p>
-
-            `;
-
+    return;
+}
 
 document
     .getElementById("backQuiz")
