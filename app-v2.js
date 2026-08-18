@@ -307,7 +307,7 @@ document.addEventListener("DOMContentLoaded", () => {
             app.innerHTML = `
 
 
-<button id="backQuiz">
+<button id="backQuiz" class="back-course-btn">
     ← Retour aux cours
 </button>
 
