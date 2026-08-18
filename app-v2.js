@@ -1,5 +1,5 @@
-console.log("🔥 APP-V2 CHARGÉ");
-
+//console.log("🔥 APP-V2 CHARGÉ");//
+alert("NOUVEL APP-V2");
 import { subjects } from "./data/subjects.js";
 import { levels } from "./data/levels.js";
 import { courses } from "./data/courses.js";
