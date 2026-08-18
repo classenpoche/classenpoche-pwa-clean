@@ -297,9 +297,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             app.innerHTML = `
 
-                <button id="backCourses">
-                    ← Cours
-                </button>
+
+<button id="backQuiz">
+    ← Retour aux cours
+</button>
+
+           
 
                 <h1>⚠️ Quiz introuvable</h1>
 
