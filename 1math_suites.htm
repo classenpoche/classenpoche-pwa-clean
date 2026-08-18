@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'École Nomade</title>
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    body { background: #f5f7ff; }
+    .hero {
+      background: #cc2200;
+      color: #fff;
+      padding: 20px 16px 18px;
+      text-align: center;
+    }
+    .hero h1 { margin: 0; font-size: 1.7rem; color: #fff !important; }
+    .main { max-width: 680px; margin: 0 auto; padding: 20px 16px 48px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #cc2200; color: #fff !important; padding: 10px 20px;
+      border-radius: 50px; font-size: 1rem !important; font-weight: 700;
+      margin-bottom: 20px; text-decoration: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    }
+    .section { background: #fff; border-radius: 14px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,80,.09); }
+    .sec-title {
+      background: #cc220018; color: #cc2200;
+      font-size: 1.05rem; font-weight: 800; padding: 12px 16px;
+      border-bottom: 2px solid #cc220030;
+    }
+    .sec-links { padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+    .link-btn {
+      display: block; padding: 14px 12px; border-radius: 8px;
+      color: #1a1a2e !important; font-size: 1.05rem !important;
+      text-decoration: none !important; font-weight: 500;
+      transition: background .15s; touch-action: manipulation;
+    }
+    .link-btn::before { content: "▶ "; font-size: .7em; color: #cc2200; }
+    .link-btn:hover, .link-btn:active { background: #cc220012; color: #cc2200 !important; }
+    @media (max-width: 480px) {
+      .link-btn { padding: 16px 12px; font-size: 1.1rem !important; }
+    }
+  </style>
+</head>
+<body bgcolor="#FFFFFF" text="#000099" link="#0000FF" vlink="#CC0000" alink="#FF0000">
+
+<p align="left"><font color="#0000FF" size="6"><b><font color="#FF0000" size="6" >Suites 
+  arithm&eacute;tiques <br>
+  et suites g&eacute;om&eacute;triques:</font></b></font></p>
+<p><font color="#0000FF" size="6"><strong>-I- SUITES ARITHMETIQUES :</strong><br>
+  Relation de r&eacute;currence : <br>
+  On dit qu&#8217;une suite (un) est une suite arithm&eacute;tique lorsqu&#8217;il 
+  existe un r&eacute;el r tel que: <strong>un+1=un+r&nbsp;</strong> pour tout 
+  entier n.<br>
+  Le nombre r est appel&eacute;<strong> raison de la suite.</strong><br>
+  Autrement dit, dans une suite arithm&eacute;tique on passe d&#8217;un terme 
+  &agrave; l&#8217;autre en ajoutant toujours le m&ecirc;me nombre.<br>
+  On dit que les suites arithm&eacute;tiques ont un accroissement (ou une diminution) 
+  constant(e). Elles caract&eacute;risent les croissances lin&eacute;aires.</font></p>
+<p><font color="#0000FF" size="6"><strong>Cons&eacute;quence : </strong><br>
+  Pour montrer qu&#8217;une suite est arithm&eacute;tique, il faut et il suffit 
+  de montrer que la diff&eacute;rence entre deux termes cons&eacute;cutifs quelconques 
+  est constante (un+1 - un = r).</font></p>
+<p><font color="#0000FF" size="6"><strong>Th&eacute;or&egrave;me : <br>
+  Soit (un) une suite arithm&eacute;tique de premier terme u0 et de raison r.<br>
+  Alors, pour tout entier naturel n, un = u0 + nr.</strong></font></p>
+<p><font color="#0000FF" size="6"><strong>Remarques : </strong><br>
+  - Les suites arithm&eacute;tiques sont des suites affines. Elles sont repr&eacute;sent&eacute;es 
+  par des droites.<br>
+  - La repr&eacute;sentation graphique d&#8217;une suite arithm&eacute;tique s&#8217;obtient 
+  ais&eacute;ment en tra&ccedil;ant la droite d&#8217;&eacute;quation y = rx + 
+  u0. <br>
+  - Le coefficient directeur de la droite est la raison de la suite et u0 en est 
+  &laquo; l&#8217;ordonn&eacute;e &agrave; l&#8217;origine &raquo;<br>
+  - Si (un) est une suite arithm&eacute;tique, pour tout entier n et p : un - 
+  up = (n - p)r.</font></p>
+<p><font color="#0000FF" size="6"><strong>Propri&eacute;t&eacute;s :</strong><br>
+  Si r &gt; 0, la suite (un) est croissante, si r &lt; 0 la suite (un) est d&eacute;croissante.</font></p>
+<p><font color="#0000FF" size="6"><strong>-II-SUITES GEOMETRIQUES :</strong><br>
+  Relation de r&eacute;currence : <br>
+  On dit qu&#8217;une suite (un) est une suite g&eacute;om&eacute;trique lorsqu&#8217;il 
+  existe un r&eacute;el q tel que <strong>un+1 = qun</strong> pour tout entier 
+  naturel n.<br>
+  Le nombre q est appel&eacute; <strong>raison de la suite.</strong><br>
+  Autrement dit, dans une suite g&eacute;om&eacute;trique on passe d&#8217;un 
+  terme &agrave; l&#8217;autre en multipliant toujours par le m&ecirc;me nombre.<br>
+  On dit que les suites g&eacute;om&eacute;triques ont un accroissement (ou une 
+  diminution) &agrave; taux constant. Elles caract&eacute;risent les croissances 
+  exponentielles.</font></p>
+<p><font color="#0000FF" size="6"><strong>Cons&eacute;quence :</strong> Pour montrer 
+  qu&#8217;une suite de r&eacute;els non nuls est g&eacute;om&eacute;trique, il 
+  faut et il suffit de montrer que le quotient entre deux termes cons&eacute;cutifs 
+  <br>
+  quelconques est constant ( =q).<br>
+  <strong>Th&eacute;or&egrave;me : Soit (un) une suite g&eacute;om&eacute;trique 
+  de premier terme u0 et de raison q.<br>
+  Alors, pour tout entier naturel n, un = u0qn.</strong></font></p>
+<p><font color="#0000FF" size="6"><strong>-III- Autres types de croissance :</strong><br>
+  Il existe d&#8217;autres types de croissance que les croissances lin&eacute;aires 
+  ou exponentielles. Vous connaissez d&eacute;j&agrave; par exemple les croissances 
+  paraboliques correspondant &agrave; la suite de terme g&eacute;n&eacute;ral 
+  un = n2 par exemple.<br>
+  <br>
+  <a href="index.htm">Retour</a></font></font></font></p>
+  
+<p align="center"><img src="images/new-logo.jpg" width="200" valign="center" height="100"></p>
+</body><script src="classenpoche-responsive.js"></script></html>
