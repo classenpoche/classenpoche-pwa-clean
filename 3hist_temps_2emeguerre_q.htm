@@ -1,0 +1,207 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'École Nomade</title>
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    body { background: #f5f7ff; }
+    .hero {
+      background: #cc2200;
+      color: #fff;
+      padding: 20px 16px 18px;
+      text-align: center;
+    }
+    .hero h1 { margin: 0; font-size: 1.7rem; color: #fff !important; }
+    .main { max-width: 680px; margin: 0 auto; padding: 20px 16px 48px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #cc2200; color: #fff !important; padding: 10px 20px;
+      border-radius: 50px; font-size: 1rem !important; font-weight: 700;
+      margin-bottom: 20px; text-decoration: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    }
+    .section { background: #fff; border-radius: 14px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,80,.09); }
+    .sec-title {
+      background: #cc220018; color: #cc2200;
+      font-size: 1.05rem; font-weight: 800; padding: 12px 16px;
+      border-bottom: 2px solid #cc220030;
+    }
+    .sec-links { padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+    .link-btn {
+      display: block; padding: 14px 12px; border-radius: 8px;
+      color: #1a1a2e !important; font-size: 1.05rem !important;
+      text-decoration: none !important; font-weight: 500;
+      transition: background .15s; touch-action: manipulation;
+    }
+    .link-btn::before { content: "▶ "; font-size: .7em; color: #cc2200; }
+    .link-btn:hover, .link-btn:active { background: #cc220012; color: #cc2200 !important; }
+    @media (max-width: 480px) {
+      .link-btn { padding: 16px 12px; font-size: 1.1rem !important; }
+    }
+  </style>
+
+<title>3&egrave;me 2 &egrave;me guerre</title>
+<!-- #EndEditable --> 
+
+</head>
+<body bgcolor="#FFFFFF" text="#000099" link="#0000FF" vlink="#CC0000" alink="#FF0000">
+
+<!-- #BeginEditable "Texte_normal" --> 
+<b><font color="#000099" size="6"
+ >
+<table border="0" cellpadding="0" cellspacing="0" width="110">
+  <tr> 
+    <td height="1864"><font face="Comic Sans MS"
+             size="6"
+><em><font size="6"
+><br>
+      </font></em></font><font size="6"
+ color="red"><em>La 
+      seconde guerre mondiale</em></font><font size="1"><br>
+      <em>r&eacute;alis&eacute; par <br>
+      Emmanuel GAGNEPAIN <br>
+      (Coll&egrave;ge Marcel CARNE) et<br>
+      Franck MARVILLE <br>
+      (Coll&egrave;ge CALMETTE et GUERIN)</em></font></font><font size="1"><em><br>
+      <br>
+      </em></font><a href="index.htm"><font size="1"><em>Retour</em></font></a></font> 
+      <form name="quest" method="get">
+        <font size="6"
+ color="red">1<font color="#000099"> 
+          </font></font>Quelle 
+          est la date du d&eacute;barquement<br>
+          en Normandie ? <br>
+          <input type="radio" name="1" value="a" onclick="Engine(1, this.value)">
+          a 6 juin 1944 <br>
+          <input type="radio"
+             name="1" value="b" onclick="Engine(1, this.value)">
+          b 20 avril 1945 <br>
+          <input type="radio" name="1" value="c"
+             onclick="Engine(1, this.value)">
+          c 18 juin 1940 <br>
+          <input type="radio" name="1" value="d" onclick="Engine(1, this.value)">
+          d 7 d&eacute;cembre 1941 </font>
+        2 O&ugrave; fut 
+          largu&eacute;e <br>
+          la premi&egrave;re bombe atomique ? <br>
+          <input type="radio" name="2" value="a" onclick="Engine(2, this.value)">
+          a Stalingrad <br>
+          <input type="radio"
+             name="2" value="b" onclick="Engine(2, this.value)">
+          b Hiroshima <br>
+          <input type="radio" name="2" value="c" onclick="Engine(2, this.value)">
+          c Tamagoshi <br>
+          <input type="radio"
+             name="2" value="d" onclick="Engine(2, this.value)">
+          d Bikini </font>
+        3 O&ugrave; le 
+          mar&eacute;chal P&eacute;tain rencontre-t-il Hitler ? <br>
+          <input type="radio" name="3" value="a" onclick="Engine(3, this.value)">
+          a Berlin <br>
+          <input type="radio"
+             name="3" value="b" onclick="Engine(3, this.value)">
+          b Paris <br>
+          <input type="radio" name="3" value="c" onclick="Engine(3, this.value)">
+          c Vichy <br>
+          <input type="radio" name="3"
+             value="d" onclick="Engine(3, this.value)">
+          d Montoire </font>
+        4 Qu'est-ce que 
+          le STO ? <br>
+          <input type="radio" name="4"
+             value="a" onclick="Engine(4, this.value)">
+          a service technique ouvrier <br>
+          <input type="radio" name="4" value="b" onclick="Engine(4, this.value)">
+          b sous titrage ougandais <br>
+          <input
+             type="radio" name="4" value="c" onclick="Engine(4, this.value)">
+          c service du travail obligatoire <br>
+          <input type="radio" name="4" value="d" onclick="Engine(4, this.value)">
+          d s&eacute;curit&eacute; du territoire ouest </font>
+        5 Les forces 
+          de l'Axe sont constitu&eacute;es de : <br>
+          <input type="radio" name="5" value="a" onclick="Engine(5, this.value)">
+          a l'Allemagne, Autriche, et l'Italie <br>
+          <input type="radio" name="5" value="b" onclick="Engine(5, this.value)">
+          b Allemagne, Espagne, Japon <br>
+          <input type="radio" name="5" value="c" onclick="Engine(5, this.value)">
+          c Japon, Chine, Etats-UNis <br>
+          <input
+             type="radio" name="5" value="d" onclick="Engine(5, this.value)">
+          d Allemagne, Italie, Japon </font>
+        6 Quelle est 
+          la devise de la "R&eacute;volution Nationale " ? <br>
+          <input type="radio" name="6" value="a" onclick="Engine(6, this.value)">
+          a un empire, un peuple, un guide <br>
+          <input type="radio" name="6" value="b" onclick="Engine(6, this.value)">
+          b travail, famille, patrie <br>
+          <input
+             type="radio" name="6" value="c" onclick="Engine(6, this.value)">
+          c libert&eacute;, &eacute;galit&eacute;, fraternit&eacute; <br>
+          <input type="radio" name="6" value="d" onclick="Engine(6, this.value)">
+          d L'Union fait la force </font>
+        7 En quoi consiste 
+          la "solution finale" ? <br>
+          <input type="radio" name="7" value="a" onclick="Engine(7, this.value)">
+          a Collaborer totalement avec les nazis <br>
+          <input type="radio" name="7" value="b" onclick="Engine(7, this.value)">
+          b Faire une guerre totale aux nazis <br>
+          <input type="radio" name="7" value="c" onclick="Engine(7, this.value)">
+          c Exterminer tous les Juifs d'Europe <br>
+          <input type="radio" name="7" value="d" onclick="Engine(7, this.value)">
+          d Rassembler toutes les forces de r&eacute;sistance contre les nazis 
+          </font>
+        8&nbsp; Quels 
+          sont les trois chefs d'&eacute;tat pr&eacute;sents &agrave; Yalta ? 
+          <br>
+          <input type="radio" name="8"
+             value="a" onclick="Engine(8, this.value)">
+          a Churchill, Roosevelt, Staline <br>
+          <input type="radio" name="8" value="b" onclick="Engine(8, this.value)">
+          b De Gaulle, Truman, Staline <br>
+          <input type="radio" name="8" value="c" onclick="Engine(8, this.value)">
+          c France, P&eacute;tain, Mussolini <br>
+          <input type="radio" name="8" value="d" onclick="Engine(8, this.value)">
+          d Churchill, Hitler, Staline </font>
+        9 Quel est le 
+          continent qui subit le moins de dommages pendant cette guerre ? <br>
+          <input type="radio" name="9" value="a" onclick="Engine(9, this.value)">
+          a Europe <br>
+          <input type="radio"
+             name="9" value="b" onclick="Engine(9, this.value)">
+          b Asie <br>
+          <input type="radio" name="9" value="c" onclick="Engine(9, this.value)">
+          c Afrique <br>
+          <input type="radio"
+             name="9" value="d" onclick="Engine(9, this.value)">
+          d Am&eacute;rique </font>
+        10 Que devient 
+          Hitler &agrave; la fin de la guerre ? <br>
+          <input type="radio" name="10" value="a" onclick="Engine(10, this.value)">
+          a Il est jug&eacute; &agrave; Nuremberg <br>
+          <input type="radio" name="10" value="b" onclick="Engine(10, this.value)">
+          b Il se suicide dans son bunker <br>
+                    <input type="radio" name="10" value="d" onclick="Engine(10, this.value)">
+          c Il fuit en Argentine </font><font
+             size="6"
+><br>
+          &nbsp; </font><font face="Comic Sans MS">
+          <input type="button" name="Resultats"
+             value="R&eacute;sultats" onclick="NextLevel()" onfocus="verifCoord(quest)">
+          <br>
+          </font><a href="3hist.htm"><font size="6"
+ color="#0033CC">Retour</font></a><font
+             color="#0033CC"> </font>
+      </form>
+      &nbsp; 
+    </td>
+  </tr>
+</table>
+<!-- #EndEditable --> 
+<script src="classenpoche-responsive.js"></script>
+</body><!-- #EndTemplate -->
+</html>
