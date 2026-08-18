@@ -215,25 +215,34 @@ document.addEventListener("DOMContentLoaded", () => {
             );
 
 
-        app.innerHTML = `
+       app.innerHTML = `
 
-            <button id="backLevels">
-                ← Niveaux
-            </button>
+    <button id="backQuiz" class="back-course-btn">
+        ← Retour aux cours
+    </button>
 
-            <h1>
-                ${subject ? subject.name : ""}
-            </h1>
+    <h1>
+        ${course.title}
+    </h1>
 
-            <h2>
-                ${level ? level.name : ""}
-            </h2>
+    <p>
+        Question
+        ${questionIndex + 1}
+        /
+        ${questions.length}
+    </p>
 
-            <p>Choisis un cours</p>
+    <div class="quiz-question">
 
-            <div id="courses"></div>
+        <h2>
+            ${question.q}
+        </h2>
 
-        `;
+        <div id="choices"></div>
+
+    </div>
+
+`;
 
 
         document
