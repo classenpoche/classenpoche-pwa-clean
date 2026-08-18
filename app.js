@@ -1,29 +1,125 @@
-function go(screenId) {
-  document.querySelectorAll('.screen').forEach(s => {
-    s.classList.remove('active');
-  });
+console.log("ðŸ”¥ APP-V2 CHARGÃ‰");
 
-  document.getElementById(screenId).classList.add('active');
-}
+import { subjects } from "./data/subjects.js";
+import { levels } from "./data/levels.js";
+import { courses } from "./data/courses.js";
+import { quizzes } from "./data/quizzes.js";
 
-function openQuiz(name) {
-  go('quiz');
+console.log("SUBJECTS :", subjects);
+console.log("LEVELS :", levels);
+console.log("COURSES :", courses);
+console.log("QUIZZES :", quizzes);
 
-  const title = document.getElementById('quiz-title');
-  const content = document.getElementById('quiz-content');
+console.log("DATA OK");
 
-  if (name === 'maths') {
-    title.textContent = "Quiz Maths";
-    content.textContent = "Questions de mathématiques à venir...";
-  }
 
-  if (name === 'francais') {
-    title.textContent = "Quiz Français";
-    content.textContent = "Questions de français à venir...";
-  }
+// =====================================
+// Classenpoche - app-v2.js
+// Version Stable 1.0
+// =====================================
 
-  if (name === 'histoire') {
-    title.textContent = "Quiz Histoire";
-    content.textContent = "Questions d'histoire à venir...";
-  }
-}
+document.addEventListener("DOMContentLoaded", () => {
+
+    // -------------------------------------
+    // Ã‰lÃ©ments principaux
+    // -------------------------------------
+
+    const app = document.getElementById("app");
+    const xpDisplay = document.getElementById("xp");
+
+    if (!app) {
+        console.error("APP absent");
+        return;
+    }
+
+
+    // -------------------------------------
+    // XP / Streak
+    // -------------------------------------
+
+    const xp = Number(localStorage.getItem("xp") || 0);
+    const streak = Number(localStorage.getItem("streak") || 0);
+
+    if (xpDisplay) {
+
+        xpDisplay.textContent =
+            `XP : ${xp} ðŸ”¥ Streak : ${streak}`;
+
+    }
+
+
+    // -------------------------------------
+    // Accueil
+    // -------------------------------------
+
+    app.innerHTML = `
+        <h1>ðŸ“š Classenpoche</h1>
+
+        <p>Choisis une matiÃ¨re</p>
+
+        <div id="subjects"></div>
+    `;
+
+
+    // -------------------------------------
+    // Affichage des matiÃ¨res
+    // -------------------------------------
+
+    const subjectsContainer =
+        document.getElementById("subjects");
+
+
+    subjects.forEach(subject => {
+
+        const button =
+            document.createElement("button");
+
+        button.textContent = subject.name;
+
+        button.className = "subject-btn";
+
+        button.addEventListener("click", () => {
+
+            console.log(
+                "MatiÃ¨re sÃ©lectionnÃ©e :",
+                subject.id
+            );
+
+        });
+
+        subjectsContainer.appendChild(button);
+
+    });
+
+
+    // -------------------------------------
+    // Service Worker
+    // -------------------------------------
+
+    if ("serviceWorker" in navigator) {
+
+        window.addEventListener("load", () => {
+
+            navigator.serviceWorker
+                .register("./service-worker.js")
+
+                .then(() => {
+
+                    console.log("Service Worker actif");
+
+                })
+
+                .catch(error => {
+
+                    console.log(
+                        "Erreur Service Worker :",
+                        error
+                    );
+
+                });
+
+        });
+
+    }
+
+});
