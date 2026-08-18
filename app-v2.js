@@ -1,13 +1,16 @@
 alert("NOUVEL APP-V2");
 
+import { subjects } from "./data/subjects.js";
+
+console.log("SUBJECTS :", subjects);
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const app = document.getElementById("app");
 
     app.innerHTML = `
-        <h1>TEST RÉUSSI</h1>
-        <p>Le nouveau app-v2.js fonctionne.</p>
-        <p>Les imports ne sont pas encore utilisés.</p>
+        <h1>TEST SUBJECTS</h1>
+        <p>Nombre de matières : ${subjects.length}</p>
     `;
 
 });
