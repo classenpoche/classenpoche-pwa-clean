@@ -1,0 +1,346 @@
+ 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'École Nomade</title>
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    body { background: #f5f7ff; }
+    .hero {
+      background: #cc2200;
+      color: #fff;
+      padding: 20px 16px 18px;
+      text-align: center;
+    }
+    .hero h1 { margin: 0; font-size: 1.7rem; color: #fff !important; }
+    .main { max-width: 680px; margin: 0 auto; padding: 20px 16px 48px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #cc2200; color: #fff !important; padding: 10px 20px;
+      border-radius: 50px; font-size: 1rem !important; font-weight: 700;
+      margin-bottom: 20px; text-decoration: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    }
+    .section { background: #fff; border-radius: 14px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,80,.09); }
+    .sec-title {
+      background: #cc220018; color: #cc2200;
+      font-size: 1.05rem; font-weight: 800; padding: 12px 16px;
+      border-bottom: 2px solid #cc220030;
+    }
+    .sec-links { padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+    .link-btn {
+      display: block; padding: 14px 12px; border-radius: 8px;
+      color: #1a1a2e !important; font-size: 1.05rem !important;
+      text-decoration: none !important; font-weight: 500;
+      transition: background .15s; touch-action: manipulation;
+    }
+    .link-btn::before { content: "▶ "; font-size: .7em; color: #cc2200; }
+    .link-btn:hover, .link-btn:active { background: #cc220012; color: #cc2200 !important; }
+    @media (max-width: 480px) {
+      .link-btn { padding: 16px 12px; font-size: 1.1rem !important; }
+    }
+  </style>
+
+<TITLE>Marges, Taux de marque, TVA</TITLE>
+
+</HEAD>
+<BODY onresize=ACELoadMenu() text=#000000 vLink=#ff0000 aLink=#008000 
+link=#0000ff bgColor=#FFFFFF 
+onload=ACELoadMenu()>
+<TABLE dir=ltr cellSpacing=0 cellPadding=0 width="70%" border=0>
+  <TBODY> 
+  <TR> 
+    <TD vAlign=top> 
+      <TABLE borderColorDark=#0000cc width="90%" align=center 
+      borderColorLight=#0000cc border=1>
+        <TBODY> 
+        <TR> 
+          <TD width="24%" height="43"> <FONT face="Arial> 
+            <DIV align=center> 
+              <font face=""Arial, Helvetica, sans-serif" size="6" color="#ff0000"><B>R&eacute;visions 
+              <BR>
+                </B></font>
+            </DIV>
+            </FONT></TD>
+          <TD width="50%" bgColor=#FFFFFF height="43"> <FONT face="Arial, Helvetica, sans-serif size="4" color="#ff0000"> 
+            <DIV align=center><font size="6"><B>MARGES, TAUX, TVA </B></font></DIV>
+            </FONT></TD>
+          <TD width="26%" height="43"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+            <DIV align=center> 
+              <font size="6"><a name="haut"></a><a href="bts.htm"><font size="4">Retour 
+                Sommaire</font></a></font>
+            </DIV>
+            </FONT></TD>
+        </TR>
+        </TBODY> 
+      </TABLE>
+      <DIV align=center> <FONT 
+      face="Arial><BR>
+        &nbsp; </font> 
+        <TABLE cellSpacing=1 borderColorDark=#0000cc width="90%" align=center 
+      borderColorLight=#0000cc border=1>
+          <TBODY> 
+          <TR> 
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"><B><font color="#ff0000" size="4">Remarque 
+              pr&eacute;alable</font></B><font size="4"> : Dans ce genre d'exercice, 
+              il y a souvent un <FONT 
+            color=#0000ff><B>producteur</B></FONT> (qui fabrique un produit) et 
+              des <B><FONT color=#0000ff>distributeurs</FONT></B> (qui vendent 
+              le produits &agrave; des consommateurs). Il importe donc de toujours se 
+              poser la question pour savoir de qui on calcule un prix, une marge, 
+              ...<BR>
+              Il importe aussi d'avoir toujours &agrave; l'esprit que <B><FONT 
+            color=#0000ff>le prix de vente HT du producteur</FONT></B> est le 
+              m&ecirc;me que le<FONT color=#0000ff><B> prix d'achat HT du distributeur.</B></FONT></font> 
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial> 
+        &nbsp;
+        </FONT> 
+        <TABLE cellSpacing=1 borderColorDark=#0000cc width="60%" align=center 
+      borderColorLight=#0000cc border=1>
+          <TBODY> 
+          <TR> 
+            <TD bgColor=#FFFFFF> <FONT face="Arial> 
+              <P align=center><B><font color="#ff0000" size="6">Menu </font></B><font size="6">:</font>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <font size="4">1. <A 
+            href="#tva">Calculs li&eacute;s &agrave; la TVA.</A><BR>
+                2. <A 
+            href="#prod">Marge du producteur et taux de marque</A>.<BR>
+                3. <A 
+            href="#dist">Marge du distributeur, taux de marque et coefficient 
+                multiplicateur.</A><BR>
+                4. <A 
+            href="#mixte">Probl&egrave;me mixte avec producteur et distributeur</A>.</font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial> 
+        &nbsp;
+        </FONT> 
+        <TABLE cellSpacing=1 borderColorDark=#0000cc width="90%" align=center 
+      borderColorLight=#0000cc border=1>
+          <TBODY> 
+          <TR> 
+            <TD bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><B><A name=tva></A><font size="6">1. Calculs li&eacute;s 
+                &agrave; la TVA</font></B></DIV>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial> 
+        &nbsp;
+        </FONT> 
+        <TABLE cellSpacing=1 borderColorDark=#0000cc width="90%" align=center 
+      borderColorLight=#0000cc border=1>
+          <TBODY> 
+          <TR> 
+            <TD> <FONT face="Arial> 
+              <font face=""Arial, Helvetica, sans-serif" size="4">Le taux de 
+                TVA (ttva) est toujours donn&eacute;.<BR>
+                <BR>
+                <FONT color=#0000ff><B>Le calcul du prix TTC</B></FONT> &agrave; partir 
+                du prix HT peut se faire en deux temps :<BR>
+                <BR>
+                - calcul de la TVA : TVA = Prix HT * ttva<BR>
+                - calcul du prix TTC : <B><FONT color=#0000ff>Prix TTC = Prix 
+                HT + TVA</FONT></B>.<BR>
+                On peut aussi faire le calcul en une op&eacute;ration : <B><FONT color=#0000ff>Prix 
+                TTC = Prix HT (1 + ttva)</FONT></B> [ttva est exprim&eacute; de fa&ccedil;on 
+                d&eacute;cimale, de la forme 0,196, par exemple]</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4"><B><FONT 
+            color=#0000ff>exemple</FONT></B> : <B><FONT color=#009900>Prix HT 
+                = 15 euros. ttva = 19.6% = 0.196 ==&gt; Prix TTC = 15 (1 + 0.196) 
+                = 17.94 euros</FONT></B> </font>
+              <P align=left><font face=""Arial, Helvetica, sans-serif" size="4"><B><FONT color=#0000ff>Le 
+                calcul du prix HT</FONT></B> ne peut pas &ecirc;tre d&eacute;compos&eacute;. Il ne 
+                peut &ecirc;tre effectu&eacute; qu'&agrave; partir d'une formule :<BR>
+                <B><FONT color=#0000ff>Prix HT = Prix TTC / (1 + ttva)</FONT></B></font>
+              <P align=left><font size="4"><B><FONT face=""Arial, Helvetica, sans-serif" 
+            color=#0000ff>exemple</FONT></B><FONT 
+            face=""Arial, Helvetica, sans-serif" color=#333333> : <B><FONT 
+            color=#009900>Prix TTC = 28 euros. ttva = 19.6% = 0.196 ==&gt; Prix 
+                HT = 28 / (1 + 0.196) = 23.41 euros</FONT></B></FONT></font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial> 
+        <font size="4"><BR>
+          <A 
+      href="#haut"><FONT 
+      face=""Arial, Helvetica, sans-serif">Retour haut de page</FONT></A></font>
+        </FONT> 
+        <TABLE cellSpacing=1 borderColorDark=#0000cc width="90%" 
+      borderColorLight=#0000cc border=1>
+          <TBODY> 
+          <TR> 
+            <TD bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><B><A name=prod></A><font size="6">2. Marge du 
+                producteur et taux de marque</font></B></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial> 
+              <font face=""Arial, Helvetica, sans-serif" size="4">La fabrication 
+                d'un produit entraine des co&ucirc;ts. Le co&ucirc;t ultime du producteur 
+                est le <B><FONT color=#0000ff>co&ucirc;t de revient</FONT></B>.<BR>
+                Le producteur vend son produit au Prix de vente HT.<BR>
+                La <B><FONT 
+            color=#0000ff>marge</FONT></B> du producteur est la diff&eacute;rence entre 
+                le Prix de Vente HT (<B><FONT color=#009900>PVHT</FONT></B>) et 
+                le co&ucirc;t de revient (<B><FONT color=#009900>CR</FONT></B>)</font>
+              <P align=center><font face=""Arial, Helvetica, sans-serif" size="4" color="#0000ff"><B>Marge 
+                = PVHT - CR<BR>
+                Taux de marque = Marge / PVHT</B></font>
+              <P align=left><font face=""Arial, Helvetica, sans-serif" color="#000000" size="4">Ne 
+                pas confondre le</font><font size="4"><B><FONT 
+            face=""Arial, Helvetica, sans-serif" color=#0000ff> taux de marque</FONT></B><FONT face=""Arial, Helvetica, sans-serif" 
+            color=#333333> avec le</FONT><B><FONT 
+            face=""Arial, Helvetica, sans-serif" color=#0000ff> taux de marge : 
+                Taux de marge = marge / CR</FONT></B></font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial, Helvetica, sans-serif size="6"> 
+        <A href="#haut"><font size="4">Retour haut de page</font></A>
+        </FONT> 
+        <TABLE cellSpacing=1 borderColorDark=#0000cc width="90%" 
+      borderColorLight=#0000cc border=1>
+          <TBODY> 
+          <TR> 
+            <TD bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><B><A name=dist></A><font size="6">3. Marge du 
+                distributeur, taux de marque et coefficient multiplicateur</font></B></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial> 
+              <font face=""Arial, Helvetica, sans-serif" size="4">Par d&eacute;finition, 
+                le distributeur ne fabrique pas. Il n'a donc pas de co&ucirc;t de revient.<BR>
+                Il ach&egrave;te des produits au prix d'achat HT (PAHT) et il les revend 
+                au prix de vente HT (PVHT).<BR>
+                Il peut avoir des charges li&eacute;es &agrave; son activit&eacute;. Dans son cas on 
+                consid&eacute;rera le Co&ucirc;t d'Achat HT (CAHT) :<BR>
+                CAHT = PAHT + charges.<BR>
+                On aura donc deux cas possibles (selon l'&eacute;nonc&eacute;) :<BR>
+                1. <B><FONT color=#009900>Marge du distributeur = PVHT - PAHT</FONT></B> 
+                ou :<BR>
+                2. <FONT 
+            color=#009900><B>Marge du distributeur = PVHT - CAHT</B></FONT><BR>
+                Dans les exercices, le cas le plus fr&eacute;quent est le premier.<BR>
+                Le<B><FONT color=#0000ff> taux de marque</FONT></B> est toujours 
+                &eacute;gal &agrave; <B><FONT color=#009900>marge / PVHT</FONT></B>.</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">Il y a toute 
+                une combinaison d'exercices possibles :</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">- On donne 
+                le PVHT et le taux de marque, il faut chercher :<BR>
+                1) la marge <B><FONT color=#009900>(PVHT x tx de marque)</FONT></B> 
+                et <BR>
+                2) le prix d'achat = <FONT color=#009900><B>PVHT - marge</B></FONT><BR>
+                <BR>
+                - On donne le prix d'achat (PAHT) et le taux de marque (tm), il 
+                faut chercher le prix de vente HT :<BR>
+                <B><FONT 
+            color=#009900>PVHT = PAHT / (1 - tm)</FONT></B></font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">La plupart 
+                du temps, les distributeurs utilisent un coefficient qui leur 
+                permet, &agrave; partir de leur prix d'achat figurant sur leur facture, 
+                de calculer le prix de vente TTC qu'ils doivent mettre sur leurs 
+                &eacute;tiquettes. Ce coefficient s'appelle le coefficient multiplicateur 
+                (cm). On peut &eacute;crire plusieurs formules :<BR>
+                <FONT color=#009900><B>cm = PV<FONT 
+            color=#ff0000>TTC</FONT> / PA<FONT 
+            color=#ff0000>HT</FONT></B></FONT> ou <B><FONT color=#009900>PV<FONT 
+            color=#ff0000>TTC</FONT> = PA<FONT color=#ff0000>HT</FONT> x cm</FONT></B> 
+                ou<B><FONT color=#009900> PA<FONT 
+            color=#ff0000>HT</FONT> = PV<FONT color=#ff0000>TTC</FONT> / cm</FONT></B></font> 
+              
+              <font face=""Arial, Helvetica, sans-serif" size="4"><B><FONT 
+            color=#0000ff>Exemples</FONT></B> :</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">1. PVTTC = 
+                25 euros ; cm = 2 ==&gt; PAHT = 25 / 2 = 12.5 euros.<BR>
+                2. PVTTC = 40 euros ; PAHT = 2.2 ==&gt; cm = 40 / 2.2 = 18.18 
+                euros.<BR>
+                3. PaHT = 15 euros ; cm = 2.4 ==&gt; PVTTC = 15 * 2.4 = 36 euros</font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial, Helvetica, sans-serif size="6"> 
+        <A href="#haut"><font size="4">Retour haut de page</font></A>
+        </FONT> 
+        <TABLE cellSpacing=1 borderColorDark=#0000cc width="90%" 
+      borderColorLight=#0000cc border=1>
+          <TBODY> 
+          <TR> 
+            <TD bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><B><font size="6"><A name=mixte></A>4. Probl&egrave;me 
+                mixte avec producteur et distributeur.</font></B></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">Les 
+              probl&egrave;mes possibles sont divers :<BR>
+              <BR>
+              1. On peut partir du prix de vente TTC du distributeur, de son taux 
+              de marque et demander le prix d'achat (qui est aussi le prix de 
+              vente du producteur)<BR>
+              - calculer le prix de vente HT [<B><FONT color=#009900> PVTTC / 
+              (1 + ttva)</FONT></B> ]<BR>
+              - calculer la marge du distributeur [<B><FONT color=#009900> PVHT 
+              x taux de marque</FONT></B> ]<BR>
+              - calculer le prix d'achat HT [<B><FONT color=#009900> PVHT - marge</FONT></B> 
+              ]<BR>
+              * si on nous donne le taux de marque du producteur, on peut demander 
+              son co&ucirc;t de revient :<BR>
+              <FONT color=#ff0000><B>Rappel</B></FONT> : le prix de vente producteur 
+              = prix d'achat distributeur.<BR>
+              - calculer sa marge [ <B><FONT color=#009900>prix de vente producteur 
+              * tx de marque du producteur</FONT></B> ] <BR>
+              - calculer son co&ucirc;t de revient [ <B><FONT color=#009900>prix de 
+              vente producteur - marge producteur</FONT></B> ]<BR>
+              <BR>
+              2. On peut traiter le probl&egrave;me dans l'autre sens en nous donnant 
+              le co&ucirc;t de revient du producteur (CR) et son taux de marque (tm). 
+              Le coefficient multiplicateur du distributeur (cm), et nous demander 
+              le prix de vente TTC du distributeur.<BR>
+              - calculer le PVHT du producteur [<B><FONT 
+            color=#009900> PVHT = CR / (1 -tm)</FONT></B> ]<BR>
+              - c'est aussi le prix d'achat du distributeur (PAHT)<BR>
+              - calculer le prix de vente TTC du distributeur [ <B><FONT color=#009900>PVTTC 
+              = PAHT x cm</FONT></B> ] </font></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial, Helvetica, sans-serif size="6"> 
+        <A href="#haut"><font size="4">Retour haut de page</font></A>
+        </font></DIV>
+      
+    </TD>
+  </TR>
+  </TBODY> 
+</TABLE>
+<script src="classenpoche-responsive.js"></script>
+</body>
+
+</HTML>
+

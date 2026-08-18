@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'École Nomade</title>
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    body { background: #f5f7ff; }
+    .hero {
+      background: #cc2200;
+      color: #fff;
+      padding: 20px 16px 18px;
+      text-align: center;
+    }
+    .hero h1 { margin: 0; font-size: 1.7rem; color: #fff !important; }
+    .main { max-width: 680px; margin: 0 auto; padding: 20px 16px 48px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #cc2200; color: #fff !important; padding: 10px 20px;
+      border-radius: 50px; font-size: 1rem !important; font-weight: 700;
+      margin-bottom: 20px; text-decoration: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    }
+    .section { background: #fff; border-radius: 14px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,80,.09); }
+    .sec-title {
+      background: #cc220018; color: #cc2200;
+      font-size: 1.05rem; font-weight: 800; padding: 12px 16px;
+      border-bottom: 2px solid #cc220030;
+    }
+    .sec-links { padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+    .link-btn {
+      display: block; padding: 14px 12px; border-radius: 8px;
+      color: #1a1a2e !important; font-size: 1.05rem !important;
+      text-decoration: none !important; font-weight: 500;
+      transition: background .15s; touch-action: manipulation;
+    }
+    .link-btn::before { content: "▶ "; font-size: .7em; color: #cc2200; }
+    .link-btn:hover, .link-btn:active { background: #cc220012; color: #cc2200 !important; }
+    @media (max-width: 480px) {
+      .link-btn { padding: 16px 12px; font-size: 1.1rem !important; }
+    }
+  </style>
+
+<title>L'&eacute;cole nomade</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body bgcolor="#FFFFFF" text="#000099" link="#0000FF" vlink="#CC0000" alink="#FF0000">
+<div align="justify"><font color="#0000FF" size="6" face=""Arial"><B><font face="Times New Roman, Times, serif">Analyse 
+  et pr&eacute;vision des ventes</font></B></FONT>
+<div align="justify"><font color="#0000FF" size="6" face="Times New Roman, Times, serif" helvetica,="Helvetica," sans-serif="sans-serif">Le 
+  principe utilis&eacute; est celui de l'<B>extrapolation</B> : on analyse les 
+  donn&eacute;es issues du pass&eacute;, et on les prolonge dans l'avenir en esp&eacute;rant 
+  que les causes de l'&eacute;volution pass&eacute;e seront les m&ecirc;me qui 
+  influenceront les ventes &agrave; venir. De mani&egrave;re simple, on essaie 
+  de ramener l'&eacute;volution des ventes &agrave; une droite dont il suffit 
+  de calculer l'&eacute;quation. Deux m&eacute;thodes principales : une droite 
+  passant par deux points (le probl&egrave;me consiste &agrave; d&eacute;terminer 
+  quels points) ou une droite passant le plus pr&egrave;s de tous les points : 
+  la droite des moindres carr&eacute;s.<BR>
+  Il se pose ensuite le choix de la m&eacute;thode.<BR>
+  Sans oublier de s'interroger sur les limites de cette technique de pr&eacute;vision 
+  par extrapolation. </font><FONT color="#0000FF" size="6" face=Times New Roman, Times, serif>&nbsp;</FONT>
+<table width="95">
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD width="32"> <FONT face="Arial color="#0000ff" size="6">
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif"><B>ans 
+        (xi)</B></font></DIV>
+      </FONT></TD>
+    <TD width="41"> <FONT face="Arial "size="6">
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1</font></DIV>
+      </FONT></TD>
+    <TD width="18"> <FONT face="Arial "size="6">
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">2</font></DIV>
+      </FONT></TD>
+    <TD width="19"> <FONT face="Arial "size="6">
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">3</font></DIV>
+      </FONT></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <FONT face="Arial color="#0000ff" "size="6">
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif"><B>ventes 
+        (yi) (K .euros)</B></font></DIV>
+      </FONT></TD>
+    <TD> <FONT face="Arial "size="6">
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1 
+        250</font></DIV>
+      </FONT></TD>
+    <TD> <FONT face="Arial "size="6">
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1 
+        300</font></DIV>
+      </FONT></TD>
+    <TD> <FONT face="Arial "size="6">
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1 
+        450</font></DIV>
+      </FONT></TD>
+  </TR>
+</table>
+<table width="59">
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc">
+    <TD width="32"> <FONT face="Arial color="#0000ff" size="6"> 
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif"><B>ans 
+        (xi)</B></font></DIV>
+      </FONT></TD>
+    <TD>&nbsp;</TD>
+    <TD> <FONT face="Arial "size="6"> 
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">4</font></DIV>
+      </FONT></TD>
+    <TD> <FONT face="Arial "size="6"> 
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">5</font></DIV>
+      </FONT></TD>
+    <TD> <FONT face="Arial "size="6"> 
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">6</font></DIV>
+      </FONT></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc">
+    <TD> <FONT face="Arial color="#0000ff" "size="6"> 
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif"><B>ventes 
+        (yi) (K .euros)</B></font></DIV>
+      </FONT></TD>
+    <TD>&nbsp;</TD>
+    <TD> <FONT face="Arial "size="6"> 
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1 
+        600</font></DIV>
+      </FONT></TD>
+    <TD> <FONT face="Arial "size="6"> 
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1 
+        800</font></DIV>
+      </FONT></TD>
+    <TD> <FONT face="Arial "size="6"> 
+      <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">2 
+        100</font></DIV>
+      </FONT></TD>
+  </TR>
+</table>
+<font size="6" face="Times New Roman, Times, serif"><br>
+</font> 
+<font face="Times New Roman, Times, serif" size="6" color="#0000FF"><B>L'&eacute;quation 
+  d'une droite passant par deux points</B> est de la forme y = ax + b.<BR>
+  a = (y2 - y1) / (x2 - x1) et <BR>
+  b = y1 - ax1 ou b = y2 - ax2<BR>
+  On a donc besoin de deux points M1 et M2 de coordonn&eacute;es (x1, y1) et (x2, 
+  y2) </font>
+<font color="#0000FF" size="6" face="Times New Roman, Times, serif">Il y a 
+  deux fa&ccedil;ons principale de choisir les deux points :</font>
+<div align="justify"><FONT face=Times New Roman, Times, serif color="#0000FF" "size="6"><strong>M&eacute;thode 
+  des points extr&ecirc;mes</strong></FONT><font size="6" face="Times New Roman, Times, serif"><strong><font color="#0000FF"><br>
+  </font></strong><font color="#0000FF"> <font helvetica,="Helvetica," sans-serif="sans-serif">Quel 
+  que soit le nombre de points, on choisit pour M1 le premier point de la distribution 
+  et pour M2 le dernier point.<BR>
+  Dans notre exemple : M1(1, 1250) M2(6, 2100)<BR>
+  a = (2100 - 1250) / (6 - 1) = 170<BR>
+  b = 1250 - (1 x 170) = 1080<BR>
+  La pr&eacute;vision pour l'ann&eacute;e 7 est y = (170 x 7) + 1080 = 2270 K.euros 
+  </font><br>
+  <br>
+  <b>M&eacute;thode des doubles moyennes (dite de Mayer)<br>
+  </b>Le principe consiste &agrave; diviser la s&eacute;rie de donn&eacute;es 
+  en deux sous-s&eacute;ries. Les points M1 et M2 sont les points moyens de chaque 
+  sous-s&eacute;rie.<br>
+  x1 = moyenne(1,2,3) y1 = moyenne(1250,1300,1450)<br>
+  x2 = moyenne(4,5,6) y2 = moyenne(1600,1800,2100)<br>
+  soit M1(2, 1333) et M2(5, 1833)<br>
+  a = (1833 - 1333) / (5 - 2) = 166.7<br>
+  b = 1333 - (2 x 166.7) = 999.6<br>
+  Pr&eacute;vision pour x = 7 : y = (166.7 x 7) + 999.6 = 2166,7 K.euros <br>
+  <br>
+  <font helvetica,="Helvetica," sans-serif="sans-serif"><B>La m&eacute;thode des 
+  moindres carr&eacute;s</B> est math&eacute;matiquement la m&eacute;thode la 
+  plus exacte, car la droite passe au plus pr&egrave;s de tous les points. Elle 
+  fait appel &agrave; un tableau de calcul : </font></font></font>
+<table width="74">
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD width="19"> <DIV align=center><font color="#0000ff" size="6" face="Times New Roman, Times, serif"><B>xi</B></font></DIV></TD>
+    <TD width="20"> <DIV align=center><font color="#0000ff" size="6" face="Times New Roman, Times, serif"><B>yi</B></font></DIV></TD>
+    <TD width="13"> <DIV align=center><font color="#0000ff" size="6" face="Times New Roman, Times, serif"><B>xi 
+        - xm</B></font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1250</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">- 
+        2.5</font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">2</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1300</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">- 
+        1.5</font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">3</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1450</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">- 
+        0.5</font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">4</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1600</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">0.5</font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">5</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1800</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1.5</font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">6</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">2100</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">2.5</font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif"><B>M</B> 
+        (<B>xm</B>)</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif"><b>m</b> 
+        (<B>ym</B>)</font></DIV></TD>
+    <TD><font color="#0000FF" size="6" face="Times New Roman, Times, serif">&nbsp;</font> 
+    </TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">4</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1583</font></DIV></TD>
+    <TD><font color="#0000FF" size="6" face="Times New Roman, Times, serif">&nbsp;</font> 
+    </TD>
+  </TR>
+</table>
+<table width="116">
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD width="31"> <DIV align=center><font color="#0000ff" size="6" face="Times New Roman, Times, serif"><B>yi 
+        - ym</B></font></DIV></TD>
+    <TD width="35"> <DIV align=center><font color="#0000ff" size="6" face="Times New Roman, Times, serif"><B>(x 
+        i- xm)(yi - ym)</B></font></DIV></TD>
+    <TD width="34"> <DIV align=center><font color="#0000ff" size="6" face="Times New Roman, Times, serif"><B>(xi 
+        - xm)²</B></font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">-333.3</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">833.3</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">6.25</font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">-283.3</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">425.0</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">2.25</font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">-133.3</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">66.6</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">0.25</font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">16.6</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">8.3</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">0.25</font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">216.6</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">325.0</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">2.25</font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">516.6</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">1291.7</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">6.25</font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD><font color="#0000FF" size="6" face="Times New Roman, Times, serif">&nbsp;</font> 
+    </TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif"><B>S</B> 
+        (<B>SXY</B>) </font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif"><B>S</B> 
+        (<B>SXC</B>) </font></DIV></TD>
+  </TR>
+  <TR bordercolorlight="#0000cc" bordercolordark="#0000cc"> 
+    <TD><font color="#0000FF" size="6" face="Times New Roman, Times, serif">&nbsp;</font> 
+    </TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">2950</font></DIV></TD>
+    <TD> <DIV align=center><font color="#0000FF" size="6" face="Times New Roman, Times, serif">17.5</font></DIV></TD>
+  </TR>
+</table>
+<div align="justify"><font color="#0000FF" size="6" face="Times New Roman, Times, serif" helvetica,="Helvetica," sans-serif="sans-serif">Pour 
+  simplifier les calculs et &eacute;viter une formule un peu compliqu&eacute;e 
+  &agrave; ceux qui sont allergiques aux math&eacute;matiques, on a donn&eacute; 
+  des noms (en vert) aux quatre valeurs n&eacute;cessaires aux calculs </font><font color="#0000FF" size="6" face="Times New Roman, Times, serif"><br>
+  a = SXY / SXC et b = ym - a.xm soit dans notre exemple :<BR>
+  a = 2950 / 17.5 = 168.5 et<BR>
+  b = 1583 - (4 x 168.5) = 909<BR>
+  pr&eacute;vision pour la 7&egrave;me ann&eacute;e : y = (168.5 x 7) + 909 = 
+  2088.5 K.euros<br>
+  <br>
+  <B>Quelle m&eacute;thode choisir ? <br>
+  <br>
+  La m&eacute;thode des points extr&ecirc;mes</B> ignore totalement ce qui se 
+  passe entre la premi&egrave;re et la derni&egrave;re ann&eacute;e. On peut l'utiliser 
+  lorsque les ventes soient assez r&eacute;guli&egrave;res dans le temps.<BR>
+  <B>La m&eacute;thode des doubles moyennes</B> (Mayer) tient davantage compte 
+  des variations interm&eacute;diaires. On peut l'utiliser si l'&eacute;volution 
+  des ventes se fait selon deux paliers bien identifi&eacute;s.<BR>
+  <B>La m&eacute;thode des moindres carr&eacute;s</B> convient davantage lorsque 
+  les ventes sont irr&eacute;guli&egrave;res. Elle a le d&eacute;faut d'&ecirc;tre 
+  plus longue. Elle se pr&ecirc;te bien &agrave; l'utilisation d'un tableur. </font>
+<div align="justify"><FONT face=Times New Roman, Times, serif color="#0000FF" "size="6"><B>Limites 
+  de la technique de pr&eacute;vision par extrapolation</B><br>
+  <font helvetica,="Helvetica," sans-serif="sans-serif">Quelle que soit celle 
+  des trois m&eacute;thodes qu'on utilise, il ne s'agit toujours que d'une mod&eacute;lisation 
+  math&eacute;matique appliqu&eacute;e &agrave; un ph&eacute;nom&egrave;ne commercial 
+  ; c'est-&agrave;-dire humain.<BR>
+  Les ventes n'ob&eacute;issent pas n&eacute;cessairement &agrave; des lois math&eacute;matiques 
+  ; elle peuvent &ecirc;tre influenc&eacute;es :<BR>
+  - par le comportement des consommateurs (mode, lassitude du produit, zapping, 
+  ...)<BR>
+  - par des r&eacute;volutions technologiques qui rendent le produit obsol&egrave;te 
+  (ou ringard)<BR>
+  - par des changements juridiques qui restreignent les conditions d'utilisation 
+  ou de promotion du produit (loi Evin par exemple)<BR>
+  C'est pourquoi toute &eacute;tude quantitative fond&eacute;e sur l'analyse math&eacute;matique 
+  dot &ecirc;tre compl&eacute;t&eacute;e par des analyses de march&eacute; qualitatives 
+  fond&eacute;es sur les &eacute;tudes documentaires et les &eacute;tudes comportementales. 
+  </font></FONT>
+<div align="justify"><font color="#0000FF" size="6" face="Times New Roman, Times, serif"><b><a href="bts.htm"> 
+  Retour</a></b></font>
+<script src="classenpoche-responsive.js"></script>
+</body>
+
+</html>

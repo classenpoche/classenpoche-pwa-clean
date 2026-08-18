@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'École Nomade</title>
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    body { background: #f5f7ff; }
+    .hero {
+      background: #cc2200;
+      color: #fff;
+      padding: 20px 16px 18px;
+      text-align: center;
+    }
+    .hero h1 { margin: 0; font-size: 1.7rem; color: #fff !important; }
+    .main { max-width: 680px; margin: 0 auto; padding: 20px 16px 48px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #cc2200; color: #fff !important; padding: 10px 20px;
+      border-radius: 50px; font-size: 1rem !important; font-weight: 700;
+      margin-bottom: 20px; text-decoration: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    }
+    .section { background: #fff; border-radius: 14px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,80,.09); }
+    .sec-title {
+      background: #cc220018; color: #cc2200;
+      font-size: 1.05rem; font-weight: 800; padding: 12px 16px;
+      border-bottom: 2px solid #cc220030;
+    }
+    .sec-links { padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+    .link-btn {
+      display: block; padding: 14px 12px; border-radius: 8px;
+      color: #1a1a2e !important; font-size: 1.05rem !important;
+      text-decoration: none !important; font-weight: 500;
+      transition: background .15s; touch-action: manipulation;
+    }
+    .link-btn::before { content: "▶ "; font-size: .7em; color: #cc2200; }
+    .link-btn:hover, .link-btn:active { background: #cc220012; color: #cc2200 !important; }
+    @media (max-width: 480px) {
+      .link-btn { padding: 16px 12px; font-size: 1.1rem !important; }
+    }
+  </style>
+
+<TITLE>Les coefficients saisonniers</TITLE>
+
+</HEAD>
+<BODY onresize="ACELoadMenu()" text="#000000" vLink="#ff0000" aLink="#008000" 
+link="#0000ff" bgColor="#FFFFFF"
+onload="ACELoadMenu()">
+<TABLE dir="ltr" cellSpacing=0 cellPadding=0 width="61%" border=0>
+  <TBODY> 
+  <TR> 
+      <TD vAlign="top"> <div align="justify">
+          <TABLE borderColorDark="#0000cc" width="9%" align="left" 
+      borderColorLight=#0000cc border=1>
+            <TBODY>
+              <TR> 
+                <TD height="68"><font face=""Arial" size="6" color="#ff0000"><b><font size="6">R&eacute;visions 
+                 <br>
+                  </font></b></font></font></TD>
+              </TR>
+              <TR> 
+                <TD width="13%" height="68"> <div align="justify"><font color="#ff0000" size="4" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><b>Les 
+                    coefficients trimestriels</b></font></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+          &nbsp;
+          <FONT 
+      face="Arial><BR>
+            </font>
+          &nbsp; 
+          <TABLE cellSpacing=1 borderColorDark=#0000cc width="123" 
+      borderColorLight=#0000cc border=1>
+            <TBODY>
+              <TR> 
+                <TD width="115" bgColor=#FFFFFF> <DIV align=center><font color="#ff0000" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Probl&egrave;me 
+                    pos&eacute;</B></font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD> <font face=""Arial" size="4"><FONT 
+            face=""Arial, Helvetica, sans-serif">Pour un certain nombre d'entreprises, 
+                  les ventes ne sont pas r&eacute;guli&egrave;res toute l'ann&eacute;e, 
+                  mais subissent des fluctuations selon les mois ou les trimestres, 
+                  qu'on appelle variations saisonni&egrave;res. Si l'on repr&eacute;sente 
+                  graphiquement les ventes, &ccedil;a se voit. Mais il est bon 
+                  aussi de le mesurer.<BR>
+                  Il faut se rappeler<A 
+            href="#principes"> le principe de ces calculs</A>. Puis &eacute;tudier 
+                  les <A 
+            href="#meth">deux m&eacute;thodes possibles</A> de calcul :</FONT> 
+                  </font> <font face=""Arial" size="4">- par les coefficients 
+                    moyens (mensuels ou trimestriels).<BR>
+                    - par les coefficients saisonniers (mensuels ou trimestriels) 
+                    ;<BR>
+                    <A 
+            href="#rem">Remarque</A> : le m&ecirc;me raisonnement s'applique aussi 
+                    bien aux ventes mensuelles que trimestrielles.</font> </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+          <FONT 
+      face="Arial><BR>
+          <BR>
+          </FONT> 
+          <TABLE cellSpacing=1 borderColorDark=#0000cc width="35%" 
+      borderColorLight=#0000cc border=1>
+            <TBODY>
+              <TR> 
+                <TD bgColor=#FFFFFF> <DIV align=center><font color="#ff0000" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B><A name=principes></A>1. 
+                    Principes.</B></font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">Le 
+                    mieux est de partir d'un exemple. Etudions les ventes trimestrielles 
+                    d'une entreprise</font></DIV></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+		  
+          <TABLE cellSpacing=1 borderColorDark=#0000cc width="100" 
+      borderColorLight=#0000cc border=1>
+            <TBODY>
+              <TR> 
+                <TD width="10%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Trimestres</B></font></DIV></TD>
+				
+                <TD width="10%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Ventes 
+                    en K.euros</B></font></DIV></TD>
+					
+                <TD width="16%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Repr&eacute;sentation 
+                    graphique</B></font></DIV></TD>
+					
+                <TD width="25%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Analyse 
+                    du graphique</B></font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD width="13%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1<BR>
+                    2<BR>
+                    3<BR>
+                    4<BR>
+                    <B>Total </B></font></DIV></TD>
+                <TD width="18%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">320<BR>
+                    400<BR>
+                    580<BR>
+                    380<BR>
+                    <B>1 680</B></font></DIV></TD>
+                <TD width="16%"> <font face=""Arial" size="4"><IMG height=189 
+            src="file:///D|/BTS%20MUC/Calculs_commerciaux/Les%20coefficients%20saisonniers_fichiers/graph.jpeg" width=318> 
+                  </font></TD>
+                <TD width="23%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">Le 
+                  caract&egrave;re saisonnier est clairement mis en &eacute;vidence 
+                  par le graphique.<BR>
+                  Les ventes du troisi&egrave;me trimestre sont beaucoup plus 
+                  fortes que celles des autres trimestres.<BR>
+                  On peut en d&eacute;duire que c'est une entreprise qui travaille 
+                  surtout l'&eacute;t&eacute; (juillet, ao&ucirc;t, septembre) 
+                  </font></TD>
+              </TR>
+              <TR> 
+                <TD colSpan="4"> <font face=""Arial" size="4">Le principe de ces 
+                  calculs consiste :<BR>
+                  1. trouver des coefficients qui t&eacute;moignent de l'activit&eacute; 
+                  saisonni&egrave;re ;<BR>
+                  2. appliquer ces coefficients &agrave; une pr&eacute;vision 
+                  annuelle pour en d&eacute;duire des pr&eacute;visions saisonni&egrave;res 
+                  (mensuelles ou trimestrielles)</font><FONT face="Arial>&nbsp; </FONT></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </div>
+            <div align="justify"> 
+          <TABLE cellSpacing=1 borderColorDark=#0000cc width="80%" 
+      borderColorLight=#0000cc border=1>
+            <TBODY>
+              <TR bgColor=#FFFFFF> 
+                <TD colSpan=8> <DIV align=center><font color="#ff0000" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B><A name=meth></A>2. 
+                    M&eacute;thodes de calcul des coefficients et applications 
+                    &agrave; la pr&eacute;vision.</B></font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD colSpan=4> <DIV align=center><font face=""Arial" size="4" color="#0000ff"><B>1&egrave;re 
+                    m&eacute;thode : comparaison aux ventes moyennes. </B></font></DIV>
+                  <font face=""Arial" size="4" color="#0000ff"><B>1. Cette m&eacute;thode 
+                    consiste &agrave; :</B></font>
+                  <font face=""Arial" size="4">- calculer les ventes trimestrielles 
+                    moyennes <BR>
+                    = Ventes de l'ann&eacute;e / 4 <BR>
+                    = 1680 / 4 = 420<BR>
+                    - diviser les ventes de chaque trimestre par les ventes trimestrielles 
+                    moyennes :<BR>
+                    </font></TD>
+                <TD colSpan=4> <DIV align=left> 
+                    <font face=""Arial" color="#0000ff" size="4"><B>2&egrave;me 
+                      m&eacute;thode : coefficients proportionnels.</B></font> 
+                    
+                    <font face=""Arial" color="#0000ff" size="4"><B>1. Cette 
+                      m&eacute;thode consiste &agrave; :</B></font>
+                  </DIV>
+                  <font face=""Arial" size="4">- calculer la part des ventes 
+                    de chaque trimestre dans le total annuel <BR>
+                    = Ventes du trimestre / Ventes de l'ann&eacute;e</font>
+                  <font size="4" face=""Arial"><BR>
+                    </font></TD>
+              </TR>
+              <TR> 
+                <TD width="10%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Trimestres</B></font></DIV></TD>
+                <TD width="11%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Ventes</B></font></DIV></TD>
+                <TD width="10%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Op&eacute;rations</B></font></DIV></TD>
+                <TD width="19%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Coefficients</B></font></DIV></TD>
+                <TD width="9%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Trimestre</B></font></DIV></TD>
+                <TD width="7%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Ventes</B></font></DIV></TD>
+                <TD width="15%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Op&eacute;rations</B></font></DIV></TD>
+                <TD width="19%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Coefficients</B></font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1</font></DIV></TD>
+                <TD width="11%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">320</font></DIV></TD>
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">320 
+                    / 420</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.76</font></DIV></TD>
+                <TD width="9%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1</font></DIV></TD>
+                <TD width="7%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">320</font></DIV></TD>
+                <TD width="15%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">320 
+                    / 1680</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.190</font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">2</font></DIV></TD>
+                <TD width="11%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">400</font></DIV></TD>
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">400 
+                    / 420</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.95</font></DIV></TD>
+                <TD width="9%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">2</font></DIV></TD>
+                <TD width="7%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">400</font></DIV></TD>
+                <TD width="15%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">400 
+                    / 1680</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.238</font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">3</font></DIV></TD>
+                <TD width="11%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">580</font></DIV></TD>
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">580 
+                    / 420</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1.38</font></DIV></TD>
+                <TD width="9%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">3</font></DIV></TD>
+                <TD width="7%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">580</font></DIV></TD>
+                <TD width="15%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">580 
+                    / 1680</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.345</font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">4</font></DIV></TD>
+                <TD width="11%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">380</font></DIV></TD>
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">380 
+                    / 420</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.90</font></DIV></TD>
+                <TD width="9%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">4</font></DIV></TD>
+                <TD width="7%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">380</font></DIV></TD>
+                <TD width="15%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">380 
+                    / 1680</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.226</font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD width="10%"><font size="4">&nbsp;</font> </TD>
+                <TD width="11%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1680</font></DIV></TD>
+                <TD width="10%"><font size="4">&nbsp;</font> </TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">4</font></DIV></TD>
+                <TD width="9%"><font size="4">&nbsp;</font> </TD>
+                <TD width="7%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1680</font></DIV></TD>
+                <TD width="15%"><font size="4">&nbsp;</font> </TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1</font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD colSpan=4> <P align=center><font face=""Arial" color="#ff0000" size="4"><B>Le 
+                    total des coefficients est &eacute;gal &agrave; 4</B></font>
+                  <font face=""Arial" size="4" color="#0000ff"><B>2. Utilisation 
+                    en pr&eacute;vision :</B> </font>
+                  <font face=""Arial" size="4">Cela suppose qu'on nous donne 
+                    ou qu'on ait calcul&eacute; une estimation des ventes pour 
+                    l'ann&eacute;e suivante.<BR>
+                    Supposons qu'on nous donne une estimation de 1800 K€ pour 
+                    les ventes annuelles de l'ann&eacute;e 2002. Il faut alors 
+                    :</font>
+                  <font face=""Arial" size="4">- calculer la valeur trimestrielle 
+                    moyenne des ventes : Ventes annuelles / 4 = 1800 / 4 = 450.<BR>
+                    - multiplier cette valeur par les coefficients de chaque trimestre.<BR>
+                    On peut r&eacute;sumer ces op&eacute;rations dans un tableau 
+                    :</font></TD>
+                <TD colSpan=4> <DIV align=center><font face=""Arial" color="#ff0000" size="4"><B>Le 
+                    total des coefficient est &eacute;gal &agrave; 1</B></font><font size="4" face=""Arial">. 
+                    </font></DIV>
+                  
+                  <font face=""Arial" color="#0000ff" size="4"><B>2. Utilisation 
+                  en pr&eacute;vision :</B></font> <font face=""Arial" size="4">Cela 
+                    suppose qu'on nous donne ou qu'on ait calcul&eacute; une estimation 
+                    des ventes pour l'ann&eacute;e suivante.<BR>
+                    Supposons qu'on nous donne une estimation de 1800 K€ pour 
+                    les ventes annuelles de l'ann&eacute;e 2002. Il faut alors 
+                    :</font>
+                  <font face=""Arial" size="4">- multiplier cette valeur par 
+                    les coefficients de chaque trimestre.</font>
+                  <font face=""Arial" size="4">On peut r&eacute;sumer ces op&eacute;rations 
+                    dans un tableau</font></TD>
+              </TR>
+              <TR> 
+                <TD width="10%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Trimestres</B></font></DIV></TD>
+                <TD width="11%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Coefficients</B></font></DIV></TD>
+                <TD width="10%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Op&eacute;rations</B></font></DIV></TD>
+                <TD width="19%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Pr&eacute;v. 
+                    Trim.</B></font></DIV></TD>
+                <TD width="9%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Trimestre</B></font></DIV></TD>
+                <TD width="7%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Coefficients</B></font></DIV></TD>
+                <TD width="15%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Op&eacute;rations</B></font></DIV></TD>
+                <TD width="19%" bgColor=#000099> <DIV align=center><font color="#ffffff" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B>Pr&eacute;v. 
+                    Trim.</B></font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1</font></DIV></TD>
+                <TD width="11%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.76</font></DIV></TD>
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">450 
+                    * 0.76</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">343</font></DIV></TD>
+                <TD width="9%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1</font></DIV></TD>
+                <TD width="7%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.190</font></DIV></TD>
+                <TD width="15%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1800 
+                    * 0.190</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">343</font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">2</font></DIV></TD>
+                <TD width="11%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.95</font></DIV></TD>
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">450 
+                    * 0.95</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">428</font></DIV></TD>
+                <TD width="9%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">2</font></DIV></TD>
+                <TD width="7%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.238</font></DIV></TD>
+                <TD width="15%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1800 
+                    * 0.238</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">428</font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">3</font></DIV></TD>
+                <TD width="11%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1.38</font></DIV></TD>
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">450 
+                    * 1.38</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">623</font></DIV></TD>
+                <TD width="9%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">3</font></DIV></TD>
+                <TD width="7%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.345</font></DIV></TD>
+                <TD width="15%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1800 
+                    * 0.345</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">623</font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">4</font></DIV></TD>
+                <TD width="11%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.90</font></DIV></TD>
+                <TD width="10%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">450 
+                    * 0.9</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">406</font></DIV></TD>
+                <TD width="9%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">4</font></DIV></TD>
+                <TD width="7%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">0.226</font></DIV></TD>
+                <TD width="15%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1800 
+                    * 0.226</font></DIV></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">406</font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD width="10%"> <font face=""Arial" size="4">&nbsp; </font></TD>
+                <TD width="11%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">4</font></DIV></TD>
+                <TD width="10%"> <font face=""Arial" size="4">&nbsp; </font></TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1 
+                    800</font></DIV></TD>
+                <TD width="9%"><font size="4">&nbsp;</font> </TD>
+                <TD width="7%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1</font></DIV></TD>
+                <TD width="15%"><font size="4">&nbsp;</font> </TD>
+                <TD width="19%"> <DIV align=center><font size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif">1 
+                    800</font></DIV></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </div>
+        <div align="justify">
+<TABLE cellSpacing=1 borderColorDark=#0000cc width="90%" 
+      borderColorLight=#0000cc border=1>
+            <TBODY>
+              <TR> 
+                <TD bgColor=#FFFFFF> <DIV align=center><font color="#ff0000" size="6" face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif"><B><A name=rem></A>Remarques 
+                    : </B></font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD> <font face=""Arial" size="4">- Si dans les deux m&eacute;thodes 
+                    les coefficients sont diff&eacute;rents, les pr&eacute;visions 
+                    obtenues doivent &ecirc;tre identiques ;<BR>
+                    - Les m&eacute;thodes ont &eacute;t&eacute; pr&eacute;sent&eacute;es 
+                    pour des ventes trimestrielles ; mais la d&eacute;marche est 
+                    strictement identique pour des ventes mensuelles.</font>
+                  <font face=""Arial" size="4">- Dans la premi&egrave;re m&eacute;thode, 
+                    il suffit de diviser les ventes annuelles par 12 pour obtenir 
+                    les ventes mensuelles moyennes. <BR>
+                    - Dans la seconde m&eacute;thode, il faut diviser les ventes 
+                    mensuelles par les ventes annuelles et, dans la pr&eacute;vision, 
+                    multiplier les ventes annuelles par les coefficients mensuels 
+                    obtenus.</font></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </div>
+        </TD>
+  </TR>
+  </TBODY> 
+</TABLE>
+<script src="classenpoche-responsive.js"></script>
+</body>
+
+</HTML>
+

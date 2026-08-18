@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'École Nomade</title>
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    body { background: #f5f7ff; }
+    .hero {
+      background: #cc2200;
+      color: #fff;
+      padding: 20px 16px 18px;
+      text-align: center;
+    }
+    .hero h1 { margin: 0; font-size: 1.7rem; color: #fff !important; }
+    .main { max-width: 680px; margin: 0 auto; padding: 20px 16px 48px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #cc2200; color: #fff !important; padding: 10px 20px;
+      border-radius: 50px; font-size: 1rem !important; font-weight: 700;
+      margin-bottom: 20px; text-decoration: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    }
+    .section { background: #fff; border-radius: 14px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,80,.09); }
+    .sec-title {
+      background: #cc220018; color: #cc2200;
+      font-size: 1.05rem; font-weight: 800; padding: 12px 16px;
+      border-bottom: 2px solid #cc220030;
+    }
+    .sec-links { padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+    .link-btn {
+      display: block; padding: 14px 12px; border-radius: 8px;
+      color: #1a1a2e !important; font-size: 1.05rem !important;
+      text-decoration: none !important; font-weight: 500;
+      transition: background .15s; touch-action: manipulation;
+    }
+    .link-btn::before { content: "▶ "; font-size: .7em; color: #cc2200; }
+    .link-btn:hover, .link-btn:active { background: #cc220012; color: #cc2200 !important; }
+    @media (max-width: 480px) {
+      .link-btn { padding: 16px 12px; font-size: 1.1rem !important; }
+    }
+  </style>
+
+<TITLE>La notion et le calcul de co&ucirc;t</TITLE>
+
+</HEAD>
+<BODY onresize=ACELoadMenu() text="#000000" vLink="#ff0000" aLink="#008000" 
+link="#0000ff" bgColor="#FFFFFF" 
+onload=ACELoadMenu()>
+<TABLE dir=ltr cellSpacing=0 cellPadding=0 width="70%" border=0>
+  <TBODY> 
+  <TR> 
+    <TD vAlign=top> 
+      <TABLE borderColorDark="#0000cc" width="90%" align="center 
+      border" ColorLight="#0000cc" border="1">
+        <TBODY> 
+        <TR> 
+          <TD width="24%"> <FONT face="Arial> 
+            <DIV align=center> 
+              <font face=""Arial, Helvetica, sans-serif" size="6" color="#ff0000"><B>R&eacute;visions 
+               <BR>
+                </B></font>
+            </DIV>
+            </FONT></TD>
+          <TD width="50%" bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="4"> 
+            <DIV align=center><font size="6"><B>La notion et le calcul des co&ucirc;ts</B></font></DIV>
+            </FONT></TD>
+          <TD width="26%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+                       </FONT></TD>
+        </TR>
+        </TBODY> 
+      </TABLE>
+      <DIV align="center"> <FONT 
+      face="Arial><BR>
+        </font> 
+        <TABLE borderColorDark=#0000cc width="60%" borderColorLight="#0000cc" 
+      border=1>
+          <TBODY> 
+          <TR> 
+            <TD> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">1. 
+              <A 
+            href="#prob">Probl&egrave;me pos&eacute;</A><BR>
+              2. <A 
+            href="#def">D&eacute;finition</A><BR>
+              3. <A 
+            href="#pre">Pr&eacute;cision : prix ou co&ucirc;ts ?</A><BR>
+              4. <A 
+            href="#cal">Calcul des co&ucirc;ts</A><BR>
+              5. <A 
+            href="#ex">Exemple</A> </font></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial>&nbsp; </FONT> 
+        <TABLE borderColorDark=#0000cc width="90%" borderColorLight=#0000cc 
+      border=1>
+          <TBODY> 
+          <TR> 
+            <TD bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><B><A name=prob></A><font size="6">Probl&egrave;me pos&eacute;</font></B></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial> 
+              <font face=""Arial, Helvetica, sans-serif" size="4">La notion 
+                de co&ucirc;t est complexe, car elle fait appel &agrave; la th&eacute;orie des organisations 
+                des entreprise et au management.<BR>
+                Il faut se souvenir que, SOMMAIREMENT, une entreprise est organis&eacute;e 
+                selon trois niveaux (ou centres de co&ucirc;ts) principaux :</font>
+              <BLOCKQUOTE> 
+                <font face=""Arial, Helvetica, sans-serif" size="4" color="#0000ff"><B>L'approvisionnement<BR>
+                  La Production<BR>
+                  La distribution</B></font>
+              </BLOCKQUOTE>
+              <font face=""Arial, Helvetica, sans-serif" size="4">Par le biais 
+                de la comptabilit&eacute; analytique, on peut ramener toutes les charges 
+                &agrave; ces trois centres de co&ucirc;ts.</font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial>&nbsp; </FONT> 
+        <TABLE borderColorDark=#0000cc width="90%" borderColorLight=#0000cc 
+      border=1>
+          <TBODY> 
+          <TR> 
+            <TD bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><B><A name=def></A><font size="6">D&eacute;finition</font></B></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial> 
+              <font face=""Arial, Helvetica, sans-serif" size="4">Un COUT repr&eacute;sente 
+                la valeur d'un produit &agrave; un stade donn&eacute; de sa conception. Ainsi 
+                on peut, selon le mod&egrave;le pr&eacute;sent&eacute; pr&eacute;c&eacute;demment, mettre en &eacute;vidence 
+                trois co&ucirc;ts :</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4"><B><FONT 
+            color=#0000ff>Le co&ucirc;t d'achat</FONT></B> : ensemble des charges support&eacute;es 
+                au stade de l'approvisionnement.<BR>
+                <FONT 
+            color=#0000ff><B>Le co&ucirc;t de production</B></FONT> : ensemble des charges 
+                support&eacute;es au stade de la production.<BR>
+                <FONT 
+            color=#0000ff><B>Le co&ucirc;t de revient</B></FONT> : ensemble des charges 
+                support&eacute;es au stade de la distribution.</font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial>&nbsp; </FONT> 
+        <TABLE borderColorDark=#0000cc width="90%" borderColorLight=#0000cc 
+      border=1>
+          <TBODY> 
+          <TR> 
+            <TD bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><B><A name=pre></A><font size="6">Pr&eacute;cision : 
+                prix ou co&ucirc;ts ?</font></B></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial> 
+              <font face=""Arial, Helvetica, sans-serif" size="4">Pour comprendre 
+                la diff&eacute;rence entre prix et co&ucirc;ts, il faut raisonner en termes 
+                de flux :</font>
+              <BLOCKQUOTE> 
+                <font face=""Arial, Helvetica, sans-serif" size="4">Pour les 
+                  flux <FONT color=#0000ff><B>internes</B></FONT> &agrave; l'entreprise, 
+                  on parle de <B><FONT color=#0000ff>co&ucirc;ts</FONT></B> ;<BR>
+                  Pour les flux entre l'entreprise et son environnement (achat 
+                  ou vente), on parle de <B><FONT 
+            color=#0000ff>prix</FONT></B>.</font>
+              </BLOCKQUOTE>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial>&nbsp; </FONT> 
+        <TABLE borderColorDark=#0000cc width="90%" borderColorLight=#0000cc 
+      border=1>
+          <TBODY> 
+          <TR> 
+            <TD bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><B><A name=cal></A><font size="6">Calcul des co&ucirc;ts</font></B></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial> 
+              <FONT face=""Arial, Helvetica, sans-serif" size=2 color="#006600"><B><I><font size="4">Si 
+                l'on ne tient pas compte des stocks :</font></I></B></FONT>
+              <font face=""Arial, Helvetica, sans-serif" size="4">Une entreprise 
+                ach&egrave;te des mati&egrave;res au prix d'achat ;<BR>
+                L'approvisionnement et le stockage entrainent des charges d'approvisionnement.<BR>
+                L'addition du prix d'achat et des charges d'approvisionnement 
+                donne le <B><FONT 
+            color=#0000ff>COUT D'ACHAT</FONT></B>.</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">Pour transformer 
+                les mati&egrave;res en produit, l'entreprise subit des charges de production.<BR>
+                L'addition du COUT D'ACHAT et des charges de production donne 
+                le <B><FONT color=#0000ff>COUT DE PRODUCTION</FONT></B>.</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">Pour distribuer 
+                ses produits, l'entreprise subit des charges de distribution.<BR>
+                L'addition du COUT DE PRODUCTION et des charges de distribution 
+                donne le <FONT color=#0000ff><B>COUT DE REVIENT</B></FONT></font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial>&nbsp; </FONT> 
+        <TABLE borderColorDark=#0000cc width="90%" borderColorLight=#0000cc 
+      border=1>
+          <TBODY> 
+          <TR bgColor=#FFFFFF> 
+            <TD colSpan=5> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><B><A name=ex></A><font size="6">Exemple</font></B></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD colSpan=5> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">Pour 
+              fabriquer un produit, une entreprise utilise 200 g d'une mati&egrave;re 
+              A achet&eacute;e 10 euros le Kg et 400 g d'une mati&egrave;re B achet&eacute;e 8 euros 
+              le Kg. Les charges d'approvisionnement repr&eacute;sentent 10% du prix 
+              d'achat.<BR>
+              La fabrication co&ucirc;te 6 minutes de main d'oeuvre &agrave; 50 euros de l'heure 
+              et 2 euros de fournitures.<BR>
+              La distribution co&ucirc;te 8% du prix de vente qui est de 20 euros </font></TD>
+          </TR>
+          <TR bgColor=#000066> 
+            <TD width="28%"><font size="4"></font> </TD>
+            <TD width="13%"> <FONT face="Arial, Helvetica, sans-serif size="6" color="#ffffff"> 
+              <DIV align=center><font size="4"><B>Quantit&eacute;</B></font></DIV>
+              </FONT></TD>
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6" color="#ffffff"> 
+              <DIV align=center><font size="4"><B>Montant unitaire</B></font></DIV>
+              </FONT></TD>
+            <TD width="26%"> <FONT face="Arial, Helvetica, sans-serif size="6" color="#ffffff"> 
+              <DIV align=center><font size="4"><B>Calcul</B></font></DIV>
+              </FONT></TD>
+            <TD width="19%"> <FONT face="Arial, Helvetica, sans-serif size="6" color="#ffffff"> 
+              <DIV align=center><font size="4"><B>Montant</B></font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="28%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">Prix 
+              achat mat. A </font></TD>
+            <TD width="13%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0.2</font></DIV>
+              </FONT></TD>
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">10</font></DIV>
+              </FONT></TD>
+            <TD width="26%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">0.2 
+              * 10 </font></TD>
+            <TD width="19%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">2</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="28%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">Prix 
+              achat mat. B </font></TD>
+            <TD width="13%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0.4</font></DIV>
+              </FONT></TD>
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">8</font></DIV>
+              </FONT></TD>
+            <TD width="26%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">0.4 
+              * 8 </font></TD>
+            <TD width="19%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">3.2</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="28%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">Prix 
+              d'achat A + B </font></TD>
+            <TD width="13%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">.</font></DIV>
+              </FONT></TD>
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">.</font></DIV>
+              </FONT></TD>
+            <TD width="26%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">2 
+              + 3.2 </font></TD>
+            <TD width="19%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">5.2</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="28%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">Charges 
+              d'approvisionnement </font></TD>
+            <TD width="13%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">10%</font></DIV>
+              </FONT></TD>
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">5.2</font></DIV>
+              </FONT></TD>
+            <TD width="26%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">10% 
+              * 5.2 </font></TD>
+            <TD width="19%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0.52</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="28%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" color="#ff0000" size="4"><B>COUT 
+              D'ACHAT</B> </font></TD>
+            <TD width="13%"> <FONT face="Arial> 
+              <DIV align=center><font size="4">.</font></DIV>
+              </FONT></TD>
+            <TD width="14%"> <FONT face="Arial> 
+              <DIV align=center><font size="4">.</font></DIV>
+              </FONT></TD>
+            <TD width="26%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" color="#ff0000" size="4"><B>5.2 
+              + 0.52</B> </font></TD>
+            <TD width="19%"> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><font size="4"><B>5.72</B></font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="28%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">Main 
+              d'oeuvre </font></TD>
+            <TD width="13%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0.1</font></DIV>
+              </FONT></TD>
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">50</font></DIV>
+              </FONT></TD>
+            <TD width="26%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">0.1 
+              * 50 </font></TD>
+            <TD width="19%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">5</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="28%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">Fournitures 
+              </font></TD>
+            <TD width="13%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">.</font></DIV>
+              </FONT></TD>
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">.</font></DIV>
+              </FONT></TD>
+            <TD width="26%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">. 
+              </font></TD>
+            <TD width="19%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">2</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="28%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" color="#ff0000" size="4"><B>COUT 
+              DE PRODUCTION</B> </font></TD>
+            <TD width="13%"> <FONT face="Arial> 
+              <DIV align=center><font size="4">.</font></DIV>
+              </FONT></TD>
+            <TD width="14%"> <FONT face="Arial> 
+              <DIV align=center><font size="4">.</font></DIV>
+              </FONT></TD>
+            <TD width="26%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" color="#ff0000" size="4"><B>5.72 
+              + 5 + 2</B> </font></TD>
+            <TD width="19%"> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><font size="4"><B>12.72</B></font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="28%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">Charges 
+              de distribution </font></TD>
+            <TD width="13%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">8%</font></DIV>
+              </FONT></TD>
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">20</font></DIV>
+              </FONT></TD>
+            <TD width="26%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">8% 
+              * 20 </font></TD>
+            <TD width="19%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">1.60</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="28%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" color="#ff0000" size="4"><B>COUT 
+              DE REVIENT</B> </font></TD>
+            <TD width="13%"> <FONT face="Arial> 
+              <DIV align=center><font size="4">.</font></DIV>
+              </FONT></TD>
+            <TD width="14%"> <FONT face="Arial> 
+              <DIV align=center><font size="4">.</font></DIV>
+              </FONT></TD>
+            <TD width="26%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" color="#ff0000" size="4"><B>12.72 
+              + 1.60</B> </font></TD>
+            <TD width="19%"> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><font size="4"><B>14.32</B></font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="28%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" color="#ff0000" size="4"><B>MARGE</B> 
+              </font></TD>
+            <TD width="13%"> <FONT face="Arial> 
+              <DIV align=center><font size="4">.</font></DIV>
+              </FONT></TD>
+            <TD width="14%"> <FONT face="Arial> 
+              <DIV align=center><font size="4">.</font></DIV>
+              </FONT></TD>
+            <TD width="26%"> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" color="#ff0000" size="4"><B>20 
+              - 14.32</B> </font></TD>
+            <TD width="19%"> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><font size="4"><B>5.68</B></font></DIV>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+ </DIV>
+      
+    </TD>
+  </TR>
+  </TBODY> 
+</TABLE>
+<script src="classenpoche-responsive.js"></script>
+</body>
+
+</HTML>
+

@@ -1,0 +1,708 @@
+ 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'École Nomade</title>
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    body { background: #f5f7ff; }
+    .hero {
+      background: #cc2200;
+      color: #fff;
+      padding: 20px 16px 18px;
+      text-align: center;
+    }
+    .hero h1 { margin: 0; font-size: 1.7rem; color: #fff !important; }
+    .main { max-width: 680px; margin: 0 auto; padding: 20px 16px 48px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #cc2200; color: #fff !important; padding: 10px 20px;
+      border-radius: 50px; font-size: 1rem !important; font-weight: 700;
+      margin-bottom: 20px; text-decoration: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    }
+    .section { background: #fff; border-radius: 14px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,80,.09); }
+    .sec-title {
+      background: #cc220018; color: #cc2200;
+      font-size: 1.05rem; font-weight: 800; padding: 12px 16px;
+      border-bottom: 2px solid #cc220030;
+    }
+    .sec-links { padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+    .link-btn {
+      display: block; padding: 14px 12px; border-radius: 8px;
+      color: #1a1a2e !important; font-size: 1.05rem !important;
+      text-decoration: none !important; font-weight: 500;
+      transition: background .15s; touch-action: manipulation;
+    }
+    .link-btn::before { content: "▶ "; font-size: .7em; color: #cc2200; }
+    .link-btn:hover, .link-btn:active { background: #cc220012; color: #cc2200 !important; }
+    @media (max-width: 480px) {
+      .link-btn { padding: 16px 12px; font-size: 1.1rem !important; }
+    }
+  </style>
+
+<TITLE>Untitled Document</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+<SCRIPT language=JavaScript1.2>var ace_path = '';</SCRIPT>
+<SCRIPT language=JavaScript1.2 
+src="file:///D|/BTS%20MUC/Calculs_commerciaux/Prix%20psychologique_fichiers/acemenu_loader.js"></SCRIPT>
+<META content="petitkar 111, default" name="Microsoft Theme">
+<META content="l, default" name="Microsoft Border">
+</HEAD>
+
+<BODY onresize=ACELoadMenu() text=#000000 vLink=#ff0000 aLink=#008000 
+link=#0000ff bgColor=#FFFFFF onload=ACELoadMenu()>
+<TABLE dir=ltr cellSpacing=0 cellPadding=0 width="70%" border=0>
+  <TBODY> 
+  <TR> 
+    <TD vAlign=top> 
+      <TABLE borderColorDark=#0000cc width="90%" align=center 
+      borderColorLight=#0000cc border=1>
+        <TBODY> 
+        <TR> 
+          <TD width="24%"> <FONT face="Arial> 
+            <DIV align=center> 
+              <font face=""Arial, Helvetica, sans-serif" size="6" color="#ff0000"><B>R&eacute;visions 
+                MUC<BR>
+                </B></font><font face=""Arial, Helvetica, sans-serif" size="6">Ch. 
+                Visticot - avril 2003</font>
+            </DIV>
+            </FONT></TD>
+          <TD width="50%" bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="4"> 
+            <DIV align=center><font size="6"><SPAN style="TEXT-TRANSFORM: uppercase"><B>Le 
+              prix psychologique</B></SPAN></font></DIV>
+            </FONT></TD>
+          <TD width="26%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+            <DIV align=center><a name="haut"></a><a href="btsaco_revisions.htm"><font size="4">Retour 
+              Sommaire</font></a></DIV>
+            </FONT></TD>
+        </TR>
+        </TBODY> 
+      </TABLE>
+      <FONT 
+      face="Arial>&nbsp; </FONT> 
+      <DIV align=center><FONT 
+      face="Arial><BR>
+        &nbsp; </font> 
+        <TABLE borderColorDark=#0000cc width="29%" align=center 
+      borderColorLight=#0000cc border=1>
+          <TBODY> 
+          <TR> 
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <font size="4">0. <A 
+            href="#pb">Probl&egrave;me pos&eacute;</A>.<BR>
+                1. <A 
+            href="#meth">M&eacute;thode</A>.<BR>
+                2. <A 
+            href="#mc">M&eacute;thode de calcul</A>.<BR>
+                3. <A 
+            href="#tc">Tableau de calcul</A>.<BR>
+                4. <A 
+            href="#def">D&eacute;finition</A>.<BR>
+                5. <A 
+            href="#lim">Limites de la m&eacute;thode</A>.</font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial> 
+        &nbsp;
+        </FONT> 
+        <TABLE borderColorDark=#0000cc width="90%" borderColorLight=#0000cc 
+      border=1>
+          <TBODY> 
+          <TR> 
+            <TD> <FONT face="Arial><FONT 
+            face=""Arial, Helvetica, sans-serif" size=4 color="#ff0000"><B><A 
+            name=pb></A><font size="4">19.95 euros !</font></B></FONT><font face=""Arial, Helvetica, sans-serif" size="4"> 
+              Ce n'est pas un prix psychologique, mais ce qu'on appelle un prix 
+              magique, ou encore prix rompu. </font> 
+              <font face=""Arial, Helvetica, sans-serif" size="4">Le probl&egrave;me 
+                du prix psychologique est diff&eacute;rent, c'est celui qui &eacute;tablit le 
+                meilleur arbitrage possible, dans l'esprit du consommateur, entre 
+                la qualit&eacute; et le prix.</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">Quand il ach&egrave;te 
+                un produit, le consommateur h&eacute;site entre deux raisonnements :</font>
+              <font face="Wingdings" size="4" color="#ff0000"><B>L</B></font><font face=""Arial, Helvetica, sans-serif" size="4"> 
+                C'est trop cher, je me fais avoir …<BR>
+                <FONT color=#ff0000 face="Wingdings"><B>L</B></FONT> A ce prix 
+                l&agrave;, &ccedil;a ne doit pas &ecirc;tre bon, je me fais avoir …</font> 
+              <font face=""Arial, Helvetica, sans-serif" size="4" color="#0000ff"><B>Le 
+                prix psychologique est celui pour lequel le consommateur pense 
+                qu'il en a pour son argent, qu'il ne se fait pas avoir.</B></font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial><BR>
+        <A 
+      href="#haut"><font face=""Arial, Helvetica, sans-serif" size="4">Retour haut 
+        de page</font></A><BR>
+        </FONT> 
+        <TABLE borderColorDark=#0000cc width="90%" borderColorLight=#0000cc 
+      border=1>
+          <TBODY> 
+          <TR> 
+            <TD> <FONT face="Arial><FONT 
+            face=""Arial, Helvetica, sans-serif" size=2 color="#0000ff"><B><A 
+            name=meth></A><font size="4">1. M&eacute;thode : </font></B></FONT> 
+              <font face=""Arial, Helvetica, sans-serif" size="4">Une entreprise 
+                qui veut conna&icirc;tre le juste prix d'un produit qu'elle veut lancer, 
+                va interroger, par enqu&ecirc;te, un &eacute;chantillon repr&eacute;sentatif de consommateurs, 
+                auxquels elle va pr&eacute;senter le produit, proposer une liste de prix 
+                en posant les deux questions suivantes :</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4" color="#0000ff"><B>Q1 
+                : au dessus de quel prix n'ach&egrave;teriez-vous pas le produit car 
+                vous estimeriez qu'il est trop cher ?</B></font>
+              <font color="#0000ff" size="4"><B><FONT face=""Arial, Helvetica, sans-serif">Q2 
+                : au dessous de quel prix n'ach&egrave;teriez-vous pas le produit car 
+                vous estimeriez qu'il est de mauvaise qualit&eacute; </FONT>?<BR>
+                <BR>
+                <FONT face=""Arial, Helvetica, sans-serif">Exemple : </FONT></B><FONT 
+            face=""Arial, Helvetica, sans-serif" color="#333333">une entreprise 
+                a fait cette enqu&ecirc;te aupr&egrave;s de 1000 personnes, et a obtenu les 
+                r&eacute;sultats suivants :</FONT></font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial><BR>
+        </FONT> 
+        <TABLE borderColorDark=#0000cc width="60%" borderColorLight=#0000cc 
+      border=1>
+          <TBODY> 
+          <TR bgColor=#000099> 
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif color="#ffffff" size="6"> 
+              <DIV align=center><font size="4"><B>Prix</B></font></DIV>
+              </FONT></TD>
+            <TD width="37%"> <FONT face="Arial, Helvetica, sans-serif color="#ffffff" size="6"> 
+              <DIV align=center><font size="4"><B>Nombre personnes ayant r&eacute;pondu 
+                Trop Cher</B></font></DIV>
+              </FONT></TD>
+            <TD width="49%"> <FONT face="Arial, Helvetica, sans-serif color="#ffffff" size="6"> 
+              <DIV align=center><font size="4"><B>Nombre de personnes ayant r&eacute;pondu 
+                Mauvaise Qualit&eacute;</B></font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">1</font></DIV>
+              </FONT></TD>
+            <TD width="37%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD width="49%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">430</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">2</font></DIV>
+              </FONT></TD>
+            <TD width="37%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD width="49%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">280</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">3</font></DIV>
+              </FONT></TD>
+            <TD width="37%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">70</font></DIV>
+              </FONT></TD>
+            <TD width="49%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">200</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">4</font></DIV>
+              </FONT></TD>
+            <TD width="37%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">110</font></DIV>
+              </FONT></TD>
+            <TD width="49%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">70</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">5</font></DIV>
+              </FONT></TD>
+            <TD width="37%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">170</font></DIV>
+              </FONT></TD>
+            <TD width="49%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">20</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">6</font></DIV>
+              </FONT></TD>
+            <TD width="37%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">240</font></DIV>
+              </FONT></TD>
+            <TD width="49%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">7</font></DIV>
+              </FONT></TD>
+            <TD width="37%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">330</font></DIV>
+              </FONT></TD>
+            <TD width="49%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">8</font></DIV>
+              </FONT></TD>
+            <TD width="37%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">80</font></DIV>
+              </FONT></TD>
+            <TD width="49%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD width="14%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">Total</font></DIV>
+              </FONT></TD>
+            <TD width="37%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">1000</font></DIV>
+              </FONT></TD>
+            <TD width="49%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">1000</font></DIV>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial><BR>
+        <A 
+      href="#haut"><font face=""Arial, Helvetica, sans-serif" size="4">Retour haut 
+        de page</font></A><BR>
+        </FONT> 
+        <TABLE borderColorDark=#0000cc width="90%" borderColorLight=#0000cc 
+      border=1>
+          <TBODY> 
+          <TR> 
+            <TD> <FONT face="Arial><FONT 
+            face=""Arial, Helvetica, sans-serif" size=2 color="#0000ff"><B><A 
+            name=mc></A><font size="4">2. M&eacute;thode de calcul. </font></B></FONT> 
+              <font face=""Arial, Helvetica, sans-serif" size="4">L'enqu&ecirc;te, 
+                en fait, ne fait que r&eacute;v&eacute;ler les m&eacute;contents :</font>
+              <font face="Wingdings" size="4" color="#ff0000"><B>L</B></font><font face=""Arial, Helvetica, sans-serif" size="4"> 
+                un certain pourcentage des gens sont m&eacute;contents parce que c'est 
+                trop cher.<BR>
+                <FONT 
+            color=#ff0000 face="Wingdings"><B>L</B></FONT> un certain pourcentage 
+                des gens sont m&eacute;contents parce que c'est de mauvaise qualit&eacute;</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">On peut penser 
+                que le meilleur prix est celui pour lequel il y a le moins de 
+                m&eacute;contents possible !</font>
+              <BLOCKQUOTE> 
+                <font face=""Arial, Helvetica, sans-serif" size="4">1. On transforme 
+                  les r&eacute;ponses obtenues en pourcentages.<BR>
+                  2. Ensuite, on cumule ces pourcentages, en commen&ccedil;ant toujours 
+                  par les plus faibles.<BR>
+                  3. On additionne ces cumuls (pour obtenir le % de gens m&eacute;content 
+                  d'un prix)<BR>
+                  4. On calcule enfin (100% - le pourcentage de gens m&eacute;contents) 
+                  : on obtient le pourcentage de gens qui ont envie d'acheter 
+                  &agrave; ce prix.</font>
+              </BLOCKQUOTE>
+              <font face=""Arial, Helvetica, sans-serif" size="4" color="#0000ff"><B><A name=tc></A>3. 
+                On obtient le tableau de calcul suivant :</B></font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial><BR>
+        </FONT> 
+        <TABLE borderColorDark=#0000cc width="90%" borderColorLight=#0000cc 
+      border=1>
+          <TBODY> 
+          <TR bgColor=#000099> 
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#ffffff" size="6"> 
+              <DIV align=center><font size="4"><B>Prix</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#ffffff" size="6"> 
+              <DIV align=center><font size="4"><B>R&eacute;ponse<BR>
+                QA </B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#ffffff" size="6"> 
+              <DIV align=center><font size="4"><B>R&eacute;ponse<BR>
+                QB </B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#ffffff" size="6"> 
+              <DIV align=center><font size="4"><B>% QA</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#ffffff" size="6"> 
+              <DIV align=center><font size="4"><B>% QB</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#ffffff" size="6"> 
+              <DIV align=center><font size="4"><B>%cum A</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#ffffff" size="6"> 
+              <DIV align=center><font size="4"><B>%cum B</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#ffffff" size="6"> 
+              <DIV align=center><font size="4"><B>%cumA+<BR>
+                %cumB</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#ffffff" size="6"> 
+              <DIV align=center><font size="4"><B>100% -<BR>
+                pr&eacute;c&eacute;dent </B></font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">1</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">430</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">43</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">100</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">100</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">2</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">280</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">28</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">57</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">57</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">43</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD height=29> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">3</font></DIV>
+              </FONT></TD>
+            <TD height=29> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">70</font></DIV>
+              </FONT></TD>
+            <TD height=29> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">200</font></DIV>
+              </FONT></TD>
+            <TD height=29> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">7</font></DIV>
+              </FONT></TD>
+            <TD height=29> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">20</font></DIV>
+              </FONT></TD>
+            <TD height=29> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">7</font></DIV>
+              </FONT></TD>
+            <TD height=29> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">29</font></DIV>
+              </FONT></TD>
+            <TD height=29> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">36</font></DIV>
+              </FONT></TD>
+            <TD height=29> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">64</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR bgColor=#ccffff> 
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#0000ff" size="6"> 
+              <DIV align=center><font size="4"><B>4</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#0000ff" size="6"> 
+              <DIV align=center><font size="4"><B>110</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#0000ff" size="6"> 
+              <DIV align=center><font size="4"><B>70</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#0000ff" size="6"> 
+              <DIV align=center><font size="4"><B>11</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#0000ff" size="6"> 
+              <DIV align=center><font size="4"><B>70</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#0000ff" size="6"> 
+              <DIV align=center><font size="4"><B>18</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#0000ff" size="6"> 
+              <DIV align=center><font size="4"><B>9</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#0000ff" size="6"> 
+              <DIV align=center><font size="4"><B>27</B></font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif color="#0000ff" size="6"> 
+              <DIV align=center><font size="4"><B>73</B></font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">5</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">170</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">20</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">17</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">20</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">35</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">2</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">37</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">63</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">6</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">240</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">24</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">59</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">59</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">41</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">7</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">330</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">33</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">92</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">92</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">8</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">8</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">80</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">8</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">100</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">100</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">0</font></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD><font size="4"></font> </TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">1000</font></DIV>
+              </FONT></TD>
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <DIV align=center><font size="4">1000</font></DIV>
+              </FONT></TD>
+            <TD><font size="4"></font> </TD>
+            <TD><font size="4"></font> </TD>
+            <TD><font size="4"></font> </TD>
+            <TD><font size="4"></font> </TD>
+            <TD><font size="4"></font> </TD>
+            <TD><font size="4"></font> </TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial><BR>
+        </FONT> 
+        <TABLE borderColorDark=#0000cc width="90%" borderColorLight=#0000cc 
+      border=1>
+          <TBODY> 
+          <TR> 
+            <TD> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4">Le 
+              prix psychologique est de 4 euros : c'est celui pour lequel le plus 
+              de personnes sont satisfaites du prix. C'est pourquoi on appelle 
+              &eacute;galement ce prix :<I><FONT color=#0000ff><B> prix d'acceptation</B></FONT></I> 
+              </font></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial><BR>
+        <A 
+      href="#haut"><font face=""Arial, Helvetica, sans-serif" size="4">Retour haut 
+        de page</font></A><BR>
+        </FONT> 
+        <TABLE borderColorDark=#0000cc width="90%" borderColorLight=#0000cc 
+      border=1>
+          <TBODY> 
+          <TR> 
+            <TD> <FONT face="Arial><FONT 
+            face=""Arial, Helvetica, sans-serif" size=2 color="#ff0000"><B><A 
+            name=def></A><font size="4">4. D&eacute;finition :</font></B> </FONT> 
+              <font face=""Arial, Helvetica, sans-serif" size="4">On appelle 
+                prix psychologique, ou prix d'acceptabilit&eacute;, le prix pour lequel 
+                le pourcentage de gens qui ont envie d'acheter &agrave; ce prix, est 
+                le plus &eacute;lev&eacute;. C'est-&agrave;-dire celui pour lequel il y a le moins 
+                de m&eacute;contents.</font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial><BR>
+        <A 
+      href="#haut"><font face=""Arial, Helvetica, sans-serif" size="4">Retour haut 
+        de page</font></A><BR>
+        </FONT> 
+        <TABLE borderColorDark=#0000cc width="90%" borderColorLight=#0000cc 
+      border=1>
+          <TBODY> 
+          <TR> 
+            <TD> <FONT face="Arial><FONT 
+            face=""Arial, Helvetica, sans-serif" size=2><B><FONT color=#0000ff><A 
+            name=lim></A><font size="4">5. limites de la m&eacute;thode</font></FONT></B><font size="4">. 
+              </font></FONT> 
+              <font face=""Arial, Helvetica, sans-serif" size="4">Cette m&eacute;thode 
+                ne donne au d&eacute;cideur qu'un aper&ccedil;u de ce que les consommateurs 
+                sont pr&ecirc;ts &agrave; payer pour le produit.</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">Mais comme 
+                toute enqu&ecirc;te, les r&eacute;sultats sont li&eacute;s &agrave; la pr&eacute;cision de l'&eacute;chantillon.</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">D'autre part, 
+                le d&eacute;cideur doit tenir compte d'autres facteurs :</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">* les prix 
+                de la concurrence ;<BR>
+                * le co&ucirc;t de revient du produit ;<BR>
+                * la n&eacute;cessit&eacute; de d&eacute;gager un profit ;<BR>
+                * la notori&eacute;t&eacute; et l'image de marque de l'entreprise.<BR>
+                * le positionnement du produit et la coh&eacute;rence avec les autres 
+                variables mercatiques.<BR>
+                * l'information recueillie vieillit vite, elle est donc limit&eacute;e 
+                dans le temps.</font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial, Helvetica, sans-serif size="6"> 
+        <A href="#haut"><font size="4">Retour haut de page</font></A>
+        </font></DIV>
+      
+    </TD>
+  </TR>
+  </TBODY> 
+</TABLE>
+<script src="classenpoche-responsive.js"></script>
+</body>
+
+</HTML>
+

@@ -1,0 +1,233 @@
+ 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'École Nomade</title>
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    body { background: #f5f7ff; }
+    .hero {
+      background: #cc2200;
+      color: #fff;
+      padding: 20px 16px 18px;
+      text-align: center;
+    }
+    .hero h1 { margin: 0; font-size: 1.7rem; color: #fff !important; }
+    .main { max-width: 680px; margin: 0 auto; padding: 20px 16px 48px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #cc2200; color: #fff !important; padding: 10px 20px;
+      border-radius: 50px; font-size: 1rem !important; font-weight: 700;
+      margin-bottom: 20px; text-decoration: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    }
+    .section { background: #fff; border-radius: 14px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,80,.09); }
+    .sec-title {
+      background: #cc220018; color: #cc2200;
+      font-size: 1.05rem; font-weight: 800; padding: 12px 16px;
+      border-bottom: 2px solid #cc220030;
+    }
+    .sec-links { padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+    .link-btn {
+      display: block; padding: 14px 12px; border-radius: 8px;
+      color: #1a1a2e !important; font-size: 1.05rem !important;
+      text-decoration: none !important; font-weight: 500;
+      transition: background .15s; touch-action: manipulation;
+    }
+    .link-btn::before { content: "▶ "; font-size: .7em; color: #cc2200; }
+    .link-btn:hover, .link-btn:active { background: #cc220012; color: #cc2200 !important; }
+    @media (max-width: 480px) {
+      .link-btn { padding: 16px 12px; font-size: 1.1rem !important; }
+    }
+  </style>
+
+<TITLE>L'&eacute;chantillonnage</TITLE>
+
+</HEAD>
+<BODY onresize=ACELoadMenu() text=#000000 vLink=#ff0000 aLink=#008000 
+link=#0000ff bgColor=#FFFFFF onload=ACELoadMenu()>
+<TABLE dir=ltr cellSpacing=0 cellPadding=0 width="70%" border=0>
+  <TBODY> 
+  <TR> 
+    <TD vAlign=top> 
+      <TABLE borderColorDark=#0000cc width="90%" align=center 
+      borderColorLight=#0000cc border=1>
+        <TBODY> 
+        <TR> 
+          <TD width="24%"> <FONT face="Arial> 
+            <DIV align=center> 
+              <font face=""Arial, Helvetica, sans-serif" size="6" color="#ff0000"><B>R&eacute;visions 
+               <BR>
+                </B></font>
+            </DIV>
+            </FONT></TD>
+          <TD width="50%" bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="4"> 
+            <DIV align=center><font size="6"><B>L'&eacute;chantillonnage dans une enqu&ecirc;te</B></font></DIV>
+            </FONT></TD>
+          <TD width="26%"> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+            <DIV align=center><font size="6"><a name="haut"></a><a href="bts.htm"><font size="4">Retour 
+              Sommaire</font></a></font></DIV>
+            </FONT></TD>
+        </TR>
+        </TBODY> 
+      </TABLE>
+      <DIV align=center> <FONT 
+      face="Arial><BR>
+        </font> 
+        <TABLE cellSpacing=1 borderColorDark=#0000cc width="90%" 
+      borderColorLight=#0000cc border=1>
+          <TBODY> 
+          <TR> 
+            <TD bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><B><font size="6">Probl&egrave;me pos&eacute;</font></B></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial> 
+              <font face=""Arial, Helvetica, sans-serif" size="4">Il y a deux 
+                fa&ccedil;ons de r&eacute;liser une enqu&ecirc;te :</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">- <B><FONT 
+            color=#0000ff>de mani&egrave;re exhaustive</FONT></B> : on interroge <B><FONT color=#ff0000>toute</FONT></B> 
+                la population concern&eacute;e. Par exemple, on interroge <B><FONT color=#ff0000>tous</FONT></B> 
+                les &eacute;l&egrave;ves d'une classe ; on interroge <B><FONT 
+            color=#ff0000>toutes</FONT></B> les personnes d'un quartier.</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">- <B><FONT 
+            color=#0000ff>par &eacute;chantillon</FONT></B> : on interroge une partie 
+                seulement de la population concern&eacute;e. Par exemple, on interroge 
+                75 &eacute;l&egrave;ves parmi les 900 &eacute;l&egrave;ves du lyc&eacute;e ; on interroge 200 personnes 
+                dans la population d'Arcachon (12 000 habitants)</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">Si l'on interroge 
+                un &eacute;chantillon, il importe que les r&eacute;sultats trouv&eacute;s dans l'&eacute;chantillon 
+                soient <I><B><FONT 
+            color=#ff0000>repr&eacute;sentatifs</FONT></B></I> de la population toute 
+                enti&egrave;re.</font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">La r&eacute;alisation 
+                d'un &eacute;chantillonnage <B><FONT color=#ff0000>repr&eacute;sentatif</FONT></B> 
+                met en oeuvre des techniques statistiques compliqu&eacute;es.<BR>
+                Il faut retenir qu'il y a deux m&eacute;thodes principales pour r&eacute;aliser 
+                un &eacute;chantillon : </font>
+              <font face=""Arial, Helvetica, sans-serif" size="4">- les<A 
+            href="#prob"> m&eacute;thodes probabilistes</A> ;<BR>
+                - les <A 
+            href="#NP">m&eacute;thodes non-probabilistes</A>.</font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial, Helvetica, sans-serif size="6"> 
+        <A 
+      href="#haut"><font size="4">Retour haut de page</font></A>
+        </FONT> 
+        <TABLE cellSpacing=1 borderColorDark=#0000cc width="90%" 
+      borderColorLight=#0000cc border=1>
+          <TBODY> 
+          <TR> 
+            <TD bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><B><font size="6"><A name=prob></A>Les m&eacute;thodes 
+                probabilistes d'&eacute;chantillonnage</font></B></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <font face=""Arial," helvetica,="Helvetica," sans-serif="sans-serif" size="4"><B><FONT 
+            color=#0000ff>D&eacute;finition</FONT></B> : une m&eacute;thode d'&eacute;chantillonnage 
+              est dite probabiliste lorsque tous les individus de la population 
+              de base ont la m&ecirc;me chance (au sens des probabilit&eacute;s) de faire partie 
+              de l'&eacute;chantillon.<BR>
+              <FONT color=#0000ff><B>Par exemple</B></FONT> : si l'on fait une 
+              enqu&ecirc;te pour un commer&ccedil;ant du Centre-Ville d'Arcachon et que l'on 
+              se contente d'interroger des personnes [pour ce qu'on croit &ecirc;tre] 
+              au hasard dans le Centre-Ville, l'&eacute;chantillon ne sera pas probabiliste 
+              car les habitants des quartiers p&eacute;riph&eacute;riques auront moins de chance 
+              d'&ecirc;tre interrog&eacute;s que ceux du Centre-Ville. </font></TD>
+          </TR>
+          <TR> 
+            <TD> <font face=""Arial" size="4"><FONT 
+            face=""Arial, Helvetica, sans-serif" color=#0000ff><B>Technique possible</B></FONT><FONT 
+            face=""Arial, Helvetica, sans-serif"> : Il faut prendre la liste compl&egrave;te 
+              des habitants d'Arcachon, et, sur cette liste, constituer un &eacute;chantillon 
+              en prenant une personne sur 20 ou sur 50 (taux d'achantillonnnage). 
+              Cet &eacute;chantillon sera r&eacute;ellement repr&eacute;sentatif de la population.</FONT> 
+              </font></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial> 
+        <FONT face=""Arial, Helvetica, sans-serif" size=2><A 
+      href="#haut"><font size="4">Retour haut de page</font></A></FONT><BR>
+          <BR>
+        
+        </FONT> 
+        <TABLE cellSpacing=1 borderColorDark=#0000cc width="90%" 
+      borderColorLight=#0000cc border=1>
+          <TBODY> 
+          <TR> 
+            <TD bgColor=#FFFFFF> <FONT face="Arial, Helvetica, sans-serif color="#ff0000" size="6"> 
+              <DIV align=center><B><font size="6"><A name=NP></A>Les m&eacute;thodes 
+                non-probabilistes d'&eacute;chantillonnage</font></B></DIV>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial, Helvetica, sans-serif size="6"> 
+              <font size="4">Dans cette m&eacute;thode, on ne construit pas l'&eacute;chantillon 
+                au hasard, mais en tenant compte des caract&eacute;ristiques de la population 
+                de base. On appelle <B><FONT color=#0000ff>quotas</FONT></B> les 
+                pourcentages li&eacute;s &agrave; ces caract&eacute;ristiques.</font>
+              </FONT></TD>
+          </TR>
+          <TR> 
+            <TD> <FONT face="Arial> 
+              <font color="#0000ff" size="4"><B>M&eacute;thode des quotas</B></font><font size="4"> 
+                : On part de la population r&eacute;elle : par exemple 12 000 habitants. 
+                On analyse cette population :<BR>
+                - il y a 6 480 femmes : soit<B><FONT 
+            color=#009900> 6480 / 12000 * 100 =</FONT></B> 54%<BR>
+                - il y a donc 5 520 hommes : soit <B><FONT color=#009900>5520 
+                / 12000 * 100</FONT></B> = 46%<BR>
+                54% et 46% sont les <I><B><FONT 
+            color=#0000ff>quotas</FONT></B></I> li&eacute;s &agrave; la caract&eacute;ristique "sexe" 
+                de la population.</font>
+              <font size="4">On d&eacute;cide d'interroger 500 personnes dans la ville. 
+                500 est la taille de l'&eacute;chantillon.<BR>
+                Pour que celui-ci soit repr&eacute;sentatif de la population, il faudra 
+                interroger :<BR>
+                - 500 * 54% = 270 femmes et<BR>
+                - 500 * 46% = 230 hommes.</font>
+              <font size="4">On peut calculer &eacute;galement d'autres quotas : <BR>
+                - selon les tranches d'&acirc;ge, si l'on veut que les r&eacute;sultats soient 
+                significatifs selon l'&acirc;ge, <BR>
+                - selon la population des quartiers si l'on veut que les r&eacute;ponses 
+                de l'&eacute;chantillon repr&eacute;sentent fid&egrave;lement la r&eacute;partition g&eacute;ographique 
+                des habitants &agrave; l'int&eacute;rieur de la ville. <BR>
+                - Etc ...<BR>
+                <BR>
+                On peut &eacute;galement coupler plusieurs quotas (sexe, &acirc;ge, quartiers). 
+                </font>
+              <font size="4">Il faut alors que la taille de l'&eacute;chantillon soit 
+                suffisamment importante pour que chaque partie d'&eacute;chantillon d&eacute;termin&eacute;e 
+                par les quotas ne soit pas troip petite. (De mani&egrave;re empirique, 
+                une partie d'&eacute;chantillon ne devrait pas descendre en dessous de 
+                30 individus).</font>
+              </FONT></TD>
+          </TR>
+          </TBODY> 
+        </TABLE>
+        <FONT 
+      face="Arial> 
+        <FONT face=""Arial, Helvetica, sans-serif" size=2><A 
+      href="#haut"><font size="4">Retour haut de page</font></A></FONT><BR>
+        
+        </font></DIV>
+      
+    </TD>
+  </TR>
+  </TBODY> 
+</TABLE>
+<script src="classenpoche-responsive.js"></script>
+</body>
+
+</HTML>
+

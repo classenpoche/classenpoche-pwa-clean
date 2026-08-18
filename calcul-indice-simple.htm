@@ -1,0 +1,312 @@
+ 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'École Nomade</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: "Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            text-align: center;
+			font-size: 38px;
+            }
+        
+
+        .logo {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .socle {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .socle a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .levels {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .level {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .level img {
+            width: 14px;
+            height: 14px;
+            margin-right: 8px;
+        }
+
+        .level a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sixieme { color: red; }
+        .cinquieme { color: #00aa00; }
+        .quatrieme { color: #00aa00; }
+        .troisieme { color: #ff9900; }
+        .seconde { color: #ff9900; }
+        .premiere { color: #9900cc; }
+        .terminale { color: #0000ff; }
+        .bts { color: red; }
+
+        .adresse {
+            color: red;
+            font-weight: bold;
+            margin: 25px 0;
+        }
+
+        .adresse a {
+            color: red;
+            word-break: break-word;
+        }
+
+        .retour {
+            margin-top: 20px;
+        }
+
+        .retour a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Smartphone */
+        @media (max-width: 480px) {
+            .levels {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+<TITLE>Le calcul d'un indice simple</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+<SCRIPT language=JavaScript1.2>var ace_path = '';</SCRIPT>
+<SCRIPT language=JavaScript1.2 
+src="file:///D|/BTS%20MUC/Calculs_commerciaux/Le%20calcul%20d%27un%20indice%20simple_fichiers/acemenu_loader.js"></SCRIPT>
+<META content="petitkar 111, default" name="Microsoft Theme">
+<META content="l, default" name="Microsoft Border">
+</HEAD>
+<BODY onresize=ACELoadMenu() text=#000000 vLink=#ff0000 aLink=#008000 
+link=#0000ff bgColor=#FFFFFF 
+onload=ACELoadMenu()>
+<TABLE dir=ltr cellSpacing=0 cellPadding=0 width="13%" border=0>
+  <TBODY>
+    <TR> 
+      <TD vAlign=top> <TABLE borderColorDark=#0000cc width="90%" align=center 
+      borderColorLight=#0000cc border=1>
+          <TBODY>
+            <TR> 
+              <TD width="50%" bgColor=#FFFFFF height="42"> <DIV align=center><font color="#ff0000" size="4" face=""Arial" helvetica,="Helvetica," sans-serif="sans-serif"><B>Le 
+                  calcul d'un INDICE simple</B></font></DIV></TD>
+            </TR>
+          </TBODY>
+        </TABLE>
+        <DIV align=center> <FONT size="4" 
+      face="Arial><BR>
+          </font> 
+          <TABLE borderColorDark=#0000cc width="130" borderColorLight=#0000cc 
+      border=1>
+            <TBODY>
+              <TR> 
+                <TD bgColor=#FFFFFF> <DIV align=center><font color="#ff0000" size="4" face=""Arial" ><B>Probl&egrave;me 
+                    pos&eacute;</B></font></DIV></TD>
+              </TR>
+              <TR> 
+                <TD height="234"> <font size="4" face=""Arial">La lecture de l'&eacute;volution 
+                  de valeurs num&eacute;riques (des productions, des prix ...) 
+                  n'est pas toujours facile.<BR>
+                  Un moyen simple pour palier cette difficult&eacute; est de r&eacute;duire 
+                  cette valeur &agrave; un chiffre simple.<BR>
+                  C'est ce qu'on appelle un indice.Un indice est caract&eacute;ris&eacute; 
+                  par sa base, c'est-&agrave;-dire l'ann&eacute;e de r&eacute;f&eacute;rence 
+                  de la comparaison. Cela peut &ecirc;tre la premi&egrave;re ann&eacute;e, 
+                  mais aussi n'importe quelle autre ann&eacute;e. </font></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+          <FONT size="4" 
+      face="Arial><BR>
+          </FONT> 
+          <TABLE borderColorDark=#0000cc width="130" borderColorLight=#0000cc 
+      border=0>
+            <TBODY>
+              <TR bgColor=#FFFFFF> 
+                <TD colSpan=4> <FONT face="Arial size="6" color="#ff0000"> 
+                  <DIV align=center><font size="4" face=""Arial"><B>Exemple</B></font></DIV>
+                  </FONT></TD>
+              </TR>
+              <TR bgcolor="#FFFFFF"> 
+                <TD width="21%"> <FONT face="Arial color="#ffffff" size="6"> 
+                  <DIV align=center><font color="#0000FF" size="4" face=""Arial"><B>Ann&eacute;e</B></font></DIV>
+                  </FONT></TD>
+                <TD width="28%"> <FONT face="Arial color="#ffffff" size="6"> 
+                  <DIV align=center><font color="#0000FF" size="4" face=""Arial"><B>Prix 
+                    du filet de boeuf (E/Kg)</B></font></DIV>
+                  </FONT></TD>
+                <TD width="26%"> <FONT face="Arial color="#ffffff" size="6"> 
+                  <DIV align=center><font color="#0000FF" size="4" face=""Arial"><B>Calcul</B></font></DIV>
+                  </FONT></TD>
+                <TD width="25%"> <FONT face="Arial color="#ffffff" size="6"> 
+                  <DIV align=center><font color="#0000FF" size="4" face=""Arial"><B>Valeur 
+                    de l'indice</B></font></DIV>
+                  </FONT></TD>
+              </TR>
+              <TR> 
+                <TD width="21%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">1998</font></DIV>
+                  </FONT></TD>
+                <TD width="28%"><FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">14</font></DIV>
+                  </FONT></TD>
+                <TD width="26%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">14 / 17 * 100</font></DIV>
+                  </FONT></TD>
+                <TD width="25%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">82.3</font></DIV>
+                  </FONT></TD>
+              </TR>
+              <TR> 
+                <TD width="21%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">1999</font></DIV>
+                  </FONT></TD>
+                <TD width="28%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">15</font></DIV>
+                  </FONT></TD>
+                <TD width="26%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">15 / 17 * 100</font></DIV>
+                  </FONT></TD>
+                <TD width="25%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">88.2</font></DIV>
+                  </FONT></TD>
+              </TR>
+              <TR> 
+                <TD width="21%" bgColor=#99ffff> <FONT face="Arial color="#0000ff" size="6"> 
+                  <DIV align=center><font size="4" face=""Arial"><B>2000</B></font></DIV>
+                  </FONT></TD>
+                <TD width="28%" bgColor=#99ffff> <FONT face="Arial color="#0000ff" size="6"> 
+                  <DIV align=center><font size="4" face=""Arial"><B>17</B></font></DIV>
+                  </FONT></TD>
+                <TD width="26%" bgColor=#99ffff> <FONT face="Arial color="#0000ff" size="6"> 
+                  <DIV align=center><font size="4" face=""Arial"><B>100</B></font></DIV>
+                  </FONT></TD>
+                <TD width="25%" bgColor=#99ffff> <FONT face="Arial color="#0000ff" size="6"> 
+                  <DIV align=center><font size="4" face=""Arial"><B>100</B></font></DIV>
+                  </FONT></TD>
+              </TR>
+              <TR> 
+                <TD width="21%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">2001</font></DIV>
+                  </FONT></TD>
+                <TD width="28%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">19</font></DIV>
+                  </FONT></TD>
+                <TD width="26%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">19 / 17 *100</font></DIV>
+                  </FONT></TD>
+                <TD width="25%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">111.8</font></DIV>
+                  </FONT></TD>
+              </TR>
+              <TR> 
+                <TD width="21%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">2002</font></DIV>
+                  </FONT></TD>
+                <TD width="28%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">21</font></DIV>
+                  </FONT></TD>
+                <TD width="26%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">21 / 17 * 100</font></DIV>
+                  </FONT></TD>
+                <TD width="25%"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">123.5</font></DIV>
+                  </FONT></TD>
+              </TR>
+              <TR> 
+                <TD> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">2003</font></DIV>
+                  </FONT></TD>
+                <TD> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">22</font></DIV>
+                  </FONT></TD>
+                <TD> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">22 / 17 * 100</font></DIV>
+                  </FONT></TD>
+                <TD> <FONT face="Arial size="6"> 
+                  <DIV align=center><font size="4" face=""Arial">129.4</font></DIV>
+                  </FONT></TD>
+              </TR>
+              <TR> 
+                <TD colspan="4"> <FONT face="Arial size="6"> 
+                  <DIV align=center><font face=""Arial" helvetica,="Helvetica," sans-serif="sans-serif" size="4">1. 
+                    On choisit l'ann&eacute;e qui servira de base &agrave; l'indice. 
+                    Dans notre exemple, c'est l'anne 2000.<br>
+                    2. On divise toutes les autres valeurs, par la valeur de l'ann&eacute;e 
+                    de base </font></DIV>
+                  </FONT></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+          <FONT size="4" 
+      face="Arial><BR>
+          </FONT> 
+          <TABLE borderColorDark=#0000cc cellPadding=" " width="130" 
+      borderColorLight=#0000cc border=1>
+            <TBODY>
+              <TR> 
+                <TD bgColor=#FFFFFF> <FONT face="Arial color="#ff0000" size="6"> 
+                  <DIV align=center><font size="4" face=""Arial"><B>Remarque</B></font></DIV>
+                  </FONT></TD>
+              </TR>
+              <TR> 
+                <TD> <font face=""Arial" helvetica,="Helvetica," sans-serif="sans-serif" size="4">L'exemple 
+                  pr&eacute;sent&eacute; est celui d'un indice simple.<BR>
+                  Des indices peuvent &ecirc;tre construits qui comportent plusieurs 
+                  produits, pr&eacute;sents en quantit&eacute;s diff&eacute;rentes 
+                  dans le calcul de l'indice. C'est le cas de l'indice des prix 
+                  &agrave; la consommation, r&eacute;alis&eacute; par l'INSEE 
+                  &nbsp; </font></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+          <FONT 
+      face="Arial> 
+          <font size="4" face=""Arial"><a href="btsmuc.htm">Retour </a> </font>
+          </font></DIV></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BODY>
+</HTML>
+
