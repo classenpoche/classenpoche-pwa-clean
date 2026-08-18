@@ -339,3 +339,31 @@ button:active {
     }
 
 }
+.home-button-container {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0 14px 30px;
+}
+
+.home-button {
+    display: block;
+    width: 100%;
+
+    padding: 14px 18px;
+
+    background: #dbe5f4;
+    color: #1f2937;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.home-button:active {
+    transform: scale(0.98);
+}
