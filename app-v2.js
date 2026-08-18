@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <h1>📚 Classenpoche</h1>
         <p>Choisis une matière</p>
     `;
-
+alert("ÉTAPE 2");
 
     // -------------------------------------
     // Service Worker
