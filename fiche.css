@@ -1,0 +1,415 @@
+/* =====================================================
+   fiche.css
+   Design cartes pédagogiques Classenpoche
+   Mobile-first
+===================================================== */
+
+
+/* ---------- Base ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 20px;
+
+    font-family: "Inter", Arial, sans-serif;
+
+    background: #eef3fb;
+    color: #1f2937;
+
+    line-height: 1.6;
+}
+html {
+    font-size: 20px !important;
+}
+
+body {
+    font-size: 20px !important;
+}
+
+#fiches {
+    font-size: 20px !important;
+}
+
+.fiche-card {
+    font-size: 20px !important;
+}
+
+.fiche-card * {
+    font-size: inherit !important;
+}
+
+/* ---------- Titre ---------- */
+
+h1 {
+    text-align: center;
+
+    font-size: 2rem;
+
+    color: #1d4ed8;
+
+    margin-bottom: 25px;
+}
+
+
+h2 {
+    margin-top: 0;
+
+    color: #1e40af;
+
+    font-size: 1.35rem;
+}
+
+
+
+/* ---------- Conteneur des fiches ---------- 
+
+#fiches {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+
+/* ---------- Carte ---------- 
+
+.fiche-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.08);
+
+    transition: transform 0.2s ease;
+}
+
+
+
+.fiche-card:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* ---------- Avatar ---------- 
+
+.fiche-avatar {
+
+    font-size: 3rem;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* ---------- Période ---------- 
+
+.fiche-periode {
+
+    text-align: center;
+
+    font-weight: bold;
+
+    color: #64748b;
+
+    margin-bottom: 15px;
+}
+
+
+
+/* ---------- Texte ---------- 
+
+.fiche-resume {
+
+    font-size: 1.05rem;
+
+}
+
+
+
+.fiche-bloc {
+
+    background: #f8fafc;
+
+    border-radius: 12px;
+
+    padding: 12px;
+
+    margin-top: 15px;
+
+}
+
+
+
+.fiche-bloc strong {
+
+    color: #2563eb;
+
+}
+
+
+
+/* ---------- Bouton ---------- 
+.fiche-btn {
+
+    display: block;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+
+.fiche-btn:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+
+/* ---------- Tablette ---------- 
+
+/*@media (min-width: 700px) {
+
+
+    #fiches {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        max-width: 1000px;
+
+    }
+
+}*/
+
+
+
+/* ---------- Grand écran ---------- 
+
+/*@media (min-width: 1100px) {
+
+
+    #fiches {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}*/
+
+/* ---------- Mobile et petits écrans ---------- 
+
+#fiches {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+
+/* ---------- Tablette uniquement ---------- 
+
+@media (min-width: 900px) {
+
+    #fiches {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+/* ---------- Grand écran ---------- 
+
+@media (min-width: 1200px) {
+
+    #fiches {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+/* Correction mobile Classenpoche : une seule colonne 
+@media (max-width: 899px) {
+
+    #fiches {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+    }
+
+    .fiche-card {
+        width: 100% !important;
+    }
+
+}*/
+
+/* ---------- Conteneur des fiches ---------- */
+
+#fiches {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+/* ---------- Carte ---------- */
+
+.fiche-card {
+
+    width: 100%;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+}
+
+
+/* ---------- Tablette ---------- */
+
+@media (min-width: 900px) {
+
+    #fiches {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* ---------- Ordinateur ---------- */
+
+@media (min-width: 1200px) {
+
+    #fiches {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+/* Test de forçage mobile */
+#fiches {
+    display: block !important;
+}
+
+.fiche-card {
+    display: block !important;
+    width: 100% !important;
+}
+
+/* Agrandissement lecture mobile Classenpoche */
+
+.fiche-card {
+
+    font-size: 1.15rem !important;
+
+    padding: 25px !important;
+
+}
+
+
+.fiche-card h2 {
+
+    font-size: 1.6rem !important;
+
+    line-height: 1.3;
+
+}
+
+
+.fiche-card p {
+
+    font-size: 1.15rem !important;
+
+    line-height: 1.7;
+
+}
+
+
+
+.fiche-lien {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.fiche-lien:hover {
+    text-decoration: underline;
+}
+
+
+
+.fiche-avatar {
+
+    font-size: 3.5rem;
+
+}
+
+
+body {
+
+    font-size: 18px;
+
+}

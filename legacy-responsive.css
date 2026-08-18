@@ -1,0 +1,26 @@
+(function(){
+
+const style=document.createElement("style");
+
+style.innerHTML=`
+
+body,
+p,
+div,
+font,
+a,
+span,
+b,
+strong {
+
+font-size:38px !important;
+
+line-height:1.6 !important;
+
+}
+
+`;
+
+document.head.appendChild(style);
+
+})();

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Test économistes</title>
+
+<link rel="stylesheet" href="fiche.css">
+</head>
+
+<body>
+
+<h1>Les économistes</h1>
+
+<div id="fiches"></div>
+
+
+
+<!--<script type="module">
+
+import economistes from "./economistes.js";
+
+console.log(economistes);
+
+document.getElementById("fiches").innerHTML = 
+`
+<h2>Test réussi</h2>
+<p>Nombre d'entrées : ${economistes.length}</p>
+<p>Premier économiste : ${economistes[0].nom}</p>
+`;
+
+</script>-->
+
+<script type="module">
+
+import economistes from "./economistes.js";
+import "./fiche.js";
+
+window.donnees = economistes;
+
+</script>
+
+</body>
+
+</html>

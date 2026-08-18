@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'École Nomade</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .socle {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .socle a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .levels {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .level {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .level img {
+            width: 14px;
+            height: 14px;
+            margin-right: 8px;
+        }
+
+        .level a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sixieme { color: red; }
+        .cinquieme { color: #00aa00; }
+        .quatrieme { color: #00aa00; }
+        .troisieme { color: #ff9900; }
+        .seconde { color: #ff9900; }
+        .premiere { color: #9900cc; }
+        .terminale { color: #0000ff; }
+        .bts { color: red; }
+
+        .adresse {
+            color: red;
+            font-weight: bold;
+            margin: 25px 0;
+        }
+
+        .adresse a {
+            color: red;
+            word-break: break-word;
+        }
+
+        .retour {
+            margin-top: 20px;
+        }
+
+        .retour a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Smartphone */
+        @media (max-width: 480px) {
+            .levels {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+<title>L'&eacute;cole nomade</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8>
+<link rel="stylesheet" href="./responsive.css">
+</head>
+<body bgcolor="#FFFFFF" text="#000099" link="#0000FF" vlink="#CC0000" alink="#FF0000">
+<p align="center"><img src="new-logo.jpg" width="99" height="50"><br>
+  <img src="Images/agric.jpg" width="30" height="30"></p>
+<p align="left"><strong><font color="#FF0000" size="2">Quel avenir pour la plan&egrave;te 
+  et l&#8217;esp&egrave;ce humaine ?<br>
+  (Nicolas Hulot)</font></strong></p>
+<p><font color="#0000FF" size="2">Le pacte &eacute;cologique : une mobilisation 
+  pour placer l&#8217;&eacute;cologie au c&#339;ur du d&eacute;bat public</font></p>
+<p><font color="#0000FF" size="2">(...) Sommes-nous civilis&eacute;s en profondeur 
+  ? Je suis d&eacute;sol&eacute;, mais &agrave; l&#8217;observation de notre monde, 
+  j&#8217;ai quand m&ecirc;me humblement tendance &agrave; penser, qu&#8217;&agrave; 
+  bien d&#8217;&eacute;gards, nous sommes encore des hommes pr&eacute;historiques 
+  englu&eacute;s dans la barbarie des origines. </font></p>
+<p><font color="#0000FF" size="2">Comment peut-on s&#8217;accommoder que notre 
+  civilisation ou tout au moins l&#8217;intitul&eacute; que nous lui donnons, 
+  puisse supporter que nous spolions, en l&#8217;espace de quelques d&eacute;cennies, 
+  ce fantastique h&eacute;ritage que quatre milliards et demi d&#8217;ann&eacute;es 
+  d&#8217;&eacute;volution nous a l&eacute;gu&eacute;, alors que nous sommes cens&eacute;s 
+  en &ecirc;tre de simples usufruitiers ? Nous mettons les g&eacute;n&eacute;rations 
+  juste derri&egrave;re nous dans une path&eacute;tique impasse plan&eacute;taire. 
+  Comment pouvons-nous penser &ecirc;tre civilis&eacute;s quand on bafoue, on 
+  profane, on transgresse &agrave; ce point ce qui est un don du ciel : la Terre 
+  ? Avons-nous oubli&eacute; quelle incroyable combinaison de facteurs il faut 
+  et il a fallu pour que la vie puisse s&#8217;&eacute;panouir sur terre ? Parfois 
+  je me dis que cette combinaison de facteurs revient &agrave; la m&ecirc;me probabilit&eacute; 
+  qu&#8217;il y aurait de prendre une bo&icirc;te avec des lettres d&#8217;imprimerie, 
+  de la jeter par terre et que l&#8217;article 1 de la D&eacute;claration des 
+  droits de l&#8217;homme soit soudainement &eacute;crit sur ce parquet. Quelle 
+  d&eacute;mocratie, quel projet de soci&eacute;t&eacute;, quel capital de valeurs 
+  pourra r&eacute;sister &agrave; l&#8217;effondrement de nos ressources naturelles 
+  et &agrave; l&#8217;onde de choc des cons&eacute;quences des bouleversements 
+  climatiques ? Aucun. Je pense et je le crains, comme l&#8217;a dit une chercheuse 
+  du CNRS que le retour &agrave; l&#8217;ensauvagement soit quelque chose de tout 
+  &agrave; fait plausible. Gardons simplement &agrave; l&#8217;esprit ce qui s&#8217;est 
+  pass&eacute; dans un pays civilis&eacute;, il y a de cela quelques mois &agrave; 
+  la Nouvelle Orl&eacute;ans. Quand la nature se rebelle chacun n&#8217;a d&#8217;autre 
+  objectif que de tirer son &eacute;pingle du jeu. Si nous ne construisons pas 
+  urgemment cette soci&eacute;t&eacute; de mod&eacute;ration, cette soci&eacute;t&eacute; 
+  &laquo; d&#8217;abondance frugale &raquo; comme l&#8217;a dit un gar&ccedil;on 
+  qui s&#8217;appelle Jean-Baptiste de Foucauld, nous serons contraints d&#8217;aller 
+  vers une soci&eacute;t&eacute; de rationnement. Et pardon de le dire, mais je 
+  crains que notre vernis d&eacute;mocratique vole en &eacute;clats. On n&#8217;avait 
+  sinc&egrave;rement pas besoin de cette difficult&eacute; suppl&eacute;mentaire. 
+  On se serait bien pass&eacute; de l&#8217;imp&eacute;ratif &eacute;cologique 
+  et de l&#8217;imp&eacute;ratif climatique. Franchement, le monde n&#8217;avait 
+  pas besoin de cela ! Quand on regarde d&eacute;j&agrave; l&#8217;&eacute;tat 
+  de la plan&egrave;te en faisant abstraction quelques secondes de cette nouvelle 
+  injonction, on se dit une fois encore : &laquo; franchement on aurait pu s&#8217;en 
+  passer &raquo;. </font></p>
+<p><font color="#0000FF" size="2">Observons l&#8217;&eacute;tat d&#8217;extr&ecirc;me 
+  tension de notre plan&egrave;te. Sous un effet pervers et que l&#8217;on n&#8217;avait 
+  pas vu venir de la communication. Pardon de faire une petite parenth&egrave;se, 
+  mais c&#8217;est important. On a tous pens&eacute; que la communication allait 
+  sauver l&#8217;humanit&eacute;, que les hommes en se d&eacute;couvrant allaient 
+  tellement mieux se comprendre. Eh bien, c&#8217;est exactement l&#8217;effet 
+  inverse qui s&#8217;est produit ; elle a mis au grand jour les iniquit&eacute;s, 
+  les injustices qui deviennent totalement insupportables. Ajoutez &agrave; cet 
+  incroyable laminoir d&#8217;identit&eacute;s culturelles que subissent sans 
+  le demander un certain nombre de cultures, tout cela cr&eacute;e un d&eacute;s&eacute;quilibre 
+  qui rend la conduite de nos soci&eacute;t&eacute;s particuli&egrave;rement d&eacute;licate. 
+  </font></p>
+<p><font color="#0000FF" size="2">Et dans ce contexte radical, tendu, arrive un 
+  ph&eacute;nom&egrave;ne que certains avaient vu venir mais que nous commen&ccedil;ons 
+  tout juste &agrave; prendre en compte, qui est l&#8217;imp&eacute;ratif &eacute;cologique 
+  et climatique. On a touch&eacute; aux grands &eacute;quilibres. Nous sommes 
+  en train, en quelques d&eacute;cennies, de compromettre 50% du vivant ! Nous 
+  nous privons de ce patrimoine qui n&#8217;est que, ni plus ni moins, nos ressources 
+  naturelles. Alors, en fait, aujourd&#8217;hui nous n&#8217;avons que deux choix. 
+  C&#8217;est simple. Ou nous laissons le temps nous dicter le changement ou nous 
+  d&eacute;cidons ensemble d&#8217;op&eacute;rer ce changement. Et croyez-moi, 
+  nous sommes simplement somm&eacute;s de changer si nous ne voulons pas dispara&icirc;tre 
+  ! Et ce n&#8217;est pas simple. De la m&ecirc;me mani&egrave;re que personne 
+  ne peut se penser, par son statut social, g&eacute;ographique, la&iuml;c ou 
+  religieux, immunis&eacute; contre les cons&eacute;quences des d&eacute;sordres 
+  climatiques et des d&eacute;sordres &eacute;cologiques, personne ne peut se 
+  sentir d&eacute;douan&eacute; ou d&eacute;responsabilis&eacute;. Chacun devra 
+  prendre sa part de responsabilit&eacute;. </font></p>
+<p><font color="#0000FF" size="2">Pourquoi ? Parce qu&#8217;on a &eacute;voqu&eacute; 
+  cette notion parfois un peu confuse de d&eacute;veloppement durable. Je ne vais 
+  pas me lancer ici dans une analyse s&eacute;mantique. Mais, &agrave; quoi se 
+  r&eacute;sume cet imp&eacute;ratif ou cet objectif de d&eacute;veloppement durable, 
+  dans une soci&eacute;t&eacute; ou des soci&eacute;t&eacute;s occidentales qui 
+  &eacute;taient jusqu&#8217;&agrave; pr&eacute;sent sous le culte ou m&ecirc;me 
+  la fascination de la croissance quantitative ? Eh bien l&#8217;&eacute;quation 
+  du d&eacute;veloppement durable, elle est simple. Dans un monde qui va vers 
+  la raret&eacute; ou qui la d&eacute;couvre, nous r&eacute;alisons que nous vivons 
+  dans une plan&egrave;te excessivement petite et que l&#8217;impact de l&#8217;homme 
+  est devenu &#8211; on peut le regretter ou s&#8217;enorgueillir &#8211; une 
+  v&eacute;ritable force g&eacute;ologique. Eh bien, comment faire en sorte que 
+  cette croissance &eacute;conomique qui est essentielle si on veut un meilleur 
+  partage durable et &eacute;quitable des richesses ? Et comment peut-on le combiner 
+  avec une d&eacute;croissance obligatoire d&#8217;un certain nombre de flux de 
+  mati&egrave;res, de ressources ou d&#8217;&eacute;nergies qui viennent &agrave; 
+  &eacute;puisement ? Quand on a pos&eacute; cette simple question, on voit bien 
+  la complexit&eacute; de l&#8217;exercice et on voit bien que personne l&agrave; 
+  o&ugrave; il est ne pourra &eacute;chapper &agrave; sa part de responsabilit&eacute;, 
+  car d&#8217;un bout &agrave; l&#8217;autre de la cha&icirc;ne, si nous ne sommes 
+  pas anim&eacute;s du m&ecirc;me objectif, si chacun n&#8217;est pas convaincu 
+  que c&#8217;est pour notre b&eacute;n&eacute;fice et ceux de nos enfants, on 
+  n&#8217;y arrivera pas. </font></p>
+<p><font color="#0000FF" size="2">Gardons &agrave; l&#8217;esprit, comme cela 
+  a &eacute;t&eacute; &eacute;voqu&eacute;, que les premiers qui vont subir les 
+  cons&eacute;quences de tous ces d&eacute;sordres, ce sont toujours les m&ecirc;mes. 
+  Ceux qui vont subir ne seront pas ceux qui auront provoqu&eacute;. Et quand 
+  on me dit encore, &#8211; un peu moins depuis quelque temps je vous l&#8217;accorde 
+  &#8211; : &laquo; Mais tout &ccedil;a, ce sont des pr&eacute;occupations de 
+  riches ! &raquo;. Non ! C&#8217;est un devoir urgent de riche, parce que m&ecirc;me 
+  dans nos soci&eacute;t&eacute;s, ceux qui auront le plus de difficult&eacute; 
+  pour faire face &agrave; la hausse des co&ucirc;ts, &#8211; parce que tout ce 
+  qui devient rare va devenir de plus en plus cher &#8211; , c&#8217;est toujours 
+  les m&ecirc;mes cat&eacute;gories. Alors, avons-nous les outils ? Pouvons-nous 
+  faire face ? Sommes-nous d&eacute;j&agrave; dans la fatalit&eacute; ou sommes-nous 
+  simplement dans le fatalisme ? J&#8217;ai tendance &agrave; penser qu&#8217;aujourd&#8217;hui 
+  mais pas demain nous poss&eacute;dons encore les cartes de notre destin en main. 
+  Si nous restons dans la fourchette basse des changements climatiques, j&#8217;ai 
+  tendance &agrave; penser &#8211; mais ce n&#8217;est qu&#8217;un sentiment &#8211; 
+  que c&#8217;est &agrave; l&#8217;&eacute;chelle de l&#8217;humain. Si nous allons 
+  vers la fourchette haute, j&#8217;ai tendance &agrave; penser que cela nous 
+  &eacute;chappera compl&egrave;tement et que nous subirons le chaos. Parce que 
+  nous ne sommes pas totalement d&eacute;munis. M&ecirc;me si nous sommes &agrave; 
+  un carrefour de crise complexe o&ugrave; nous cumulons dette &eacute;conomique, 
+  dette &eacute;cologique, pic d&eacute;mographique, mais quand m&ecirc;me, le 
+  XIXe si&egrave;cle, le XXe si&egrave;cle ont pos&eacute; sur la table de nos 
+  soci&eacute;t&eacute;s de fantastiques outils. Le probl&egrave;me, comme l&#8217;avait 
+  tr&egrave;s bien vu Einstein, c&#8217;est que notre &eacute;poque se caract&eacute;rise 
+  par la profusion des moyens et la confusion des intentions. Eh bien, il est 
+  temps de redonner un sens clair au progr&egrave;s. Et c&#8217;est en ce sens 
+  d&#8217;ailleurs que pour finir, cet imp&eacute;ratif &eacute;cologique ou climatique 
+  qui vient de nous tomber dessus, est peut-&ecirc;tre une magnifique opportunit&eacute;. 
+  Par ce qu&#8217;en fin de compte, il nous oblige &agrave; un rendez-vous critique 
+  pour nos soci&eacute;t&eacute;s, individuellement et collectivement. Et je pense 
+  que si nous n&#8217;avions pas eu cet imp&eacute;ratif l&agrave;, de toute fa&ccedil;on, 
+  nous allions vers une impasse. &laquo; La science a fait de nous des dieux avant 
+  de faire de nous des hommes &raquo;, avait dit Jean Rostand. Restons humains. 
+  Passons de ce si&egrave;cle des vanit&eacute;s au si&egrave;cle de l&#8217;humilit&eacute;. 
+  Et je pense qu&#8217;en cela, ce rendez-vous critique nous oblige &agrave; un 
+  examen de conscience individuel et collectif et c&#8217;est tant mieux. Nous 
+  avons des outils technologiques, scientifiques, historiques, &eacute;conomiques 
+  splendides. Le g&eacute;ni humain n&#8217;a plus besoin de nous faire, pardon, 
+  la d&eacute;monstration de son emballement. Nous avons simplement besoin de 
+  lui redonner une feuille de route claire. Pourquoi est-ce que j&#8217;ai parl&eacute; 
+  des outils &eacute;galement historiques ? Parce qu&#8217;est-ce qui nous distingue 
+  des civilisations qui ont disparu au cours des &acirc;ges ? Une chose : nous 
+  avons la lecture parfaite de notre devenir, nous savons que nous devons changer, 
+  nous savons que nous arrivons &agrave; l&#8217;&eacute;puisement d&#8217;un 
+  certain nombre de ressources, nous voyons la vague arriver. En revanche, nous 
+  avons un petit d&eacute;nominateur commun avec la plupart de ces civilisations 
+  : l&#8217;aveuglement. Mandela l&#8217;avait dit &laquo; notre plus grande danger, 
+  ce n&#8217;est pas notre puissance, c&#8217;est notre aveuglement &raquo;.</font></p>
+<p><font color="#0000FF" size="2">J&#8217;ai appel&eacute; avec d&#8217;autres, 
+  ici en France, &agrave; une sorte de mobilisation des consciences et des &eacute;nergies 
+  autour d&#8217;un pacte &eacute;cologique, simplement parce, conscient de la 
+  gravit&eacute; de la complexit&eacute;, je sais que nous aurons besoin dans 
+  cette nouvelle symphonie : que chacun joue sa note, que chacun apporte sa contribution. 
+  On aura besoin des &eacute;conomistes. Il faudra sortir de cette vision dogmatique 
+  du tout lib&eacute;ral. Le probl&egrave;me n&#8217;est pas de savoir si nous 
+  sommes ou pas ultra-lib&eacute;raux. Le probl&egrave;me est de savoir si nous 
+  pouvons continuer &agrave; &eacute;mettre des ch&egrave;ques sans provisions. 
+  Est-ce que nous pouvons nous accommoder d&#8217;une soci&eacute;t&eacute; de 
+  consommation qui continue de programmer l&#8217;obsolescence de ses biens de 
+  consommation ? Est-ce qu&#8217;on peut continuer de s&#8217;accommoder d&#8217;une 
+  soci&eacute;t&eacute; que j&#8217;appelle la &laquo; civilisation du g&acirc;chis 
+  &raquo;. ? Vous avez cit&eacute; Gandhi tout &agrave; l&#8217;heure qui a effectivement 
+  dit que &laquo; il y a assez de tout dans le monde pour satisfaire aux besoins 
+  de l&#8217;homme mais pas assez pour assouvir son avidit&eacute; &raquo;. Et 
+  le pionnier de l&#8217;&eacute;cologie, Ren&eacute; Dubos, disait aussi : &laquo; 
+  ce n&#8217;est pas l&#8217;homme qui pose probl&egrave;me, c&#8217;est la masse 
+  de choses inutiles qu&#8217;il tra&icirc;ne derri&egrave;re lui &raquo;. Et 
+  j&#8217;esp&egrave;re qu&#8217;il y aura encore un peu de place, de temps en 
+  temps, pour le superflu. Un peu. Mais il y a de la marge entre cette civilisation 
+  mat&eacute;rialiste &agrave; outrance : poss&eacute;der pour exister. Victor 
+  Hugo avait bien vu le danger : &laquo; &agrave; force de vouloir poss&eacute;der, 
+  c&#8217;est nous-m&ecirc;mes qui sommes devenus poss&eacute;d&eacute;s &raquo;. 
+  Il faut nous rassembler &#8211; c&#8217;est une occasion unique &#8211; autour 
+  de cet objectif, parce que si c&#8217;est un objet suppl&eacute;mentaire de 
+  division, on n&#8217;y arrivera pas. Et cette propension que nous avons ici 
+  et ailleurs &agrave; l&#8217;affrontement, &agrave; regarder la faiblesse de 
+  l&#8217;autre plut&ocirc;t que ce qu&#8217;il a de plus fort, eh bien tout cela 
+  doit &ecirc;tre maintenant battu en br&egrave;che. On a besoin de chacun. C&#8217;est 
+  l&#8217;esprit de ce pacte &eacute;cologique pour lequel j&#8217;appelle tous 
+  ceux qui le veulent &agrave; nous rejoindre, simplement pour cr&eacute;er une 
+  dynamique collective d&#8217;exigence collective.</font></p>
+<p><font color="#0000FF" size="2">Enfin, je voudrais pr&eacute;ciser ce que j&#8217;entends 
+  quand je dis que cet imp&eacute;ratif peut &ecirc;tre aussi une opportunit&eacute;. 
+  On nous a vant&eacute; le XXIe si&egrave;cle comme un si&egrave;cle qui serait 
+  le si&egrave;cle de l&#8217;&eacute;thique ou le si&egrave;cle de la spiritualit&eacute;. 
+  Il serait temps d&#8217;ailleurs parce que l&#8217;homme n&#8217;est plus reli&eacute; 
+  &agrave; rien et c&#8217;est probablement d&#8217;ailleurs la raison de son 
+  grand d&eacute;sarroi. Eh bien, l&#8217;imp&eacute;ratif &eacute;cologique nous 
+  oblige urgemment &agrave; inscrire trois formes de solidarit&eacute;. Une solidarit&eacute; 
+  dans l&#8217;espace parce que, comme on l&#8217;a dit tout &agrave; l&#8217;heure, 
+  les premi&egrave;res victimes, ce seront ceux du Sud notamment. Et vous le savez 
+  tr&egrave;s bien d&#8217;ailleurs, un degr&eacute; d&#8217;&eacute;l&eacute;vation 
+  de temp&eacute;rature dans la fourchette basse, dans la bande sah&eacute;lienne, 
+  &ccedil;a rend l&#8217;usage des sols impossible, &ccedil;a rend l&#8217;acc&egrave;s 
+  &agrave; l&#8217;eau encore plus difficile, &ccedil;a rend le pr&eacute;l&egrave;vement 
+  des ressources halieutiques encore plus probl&eacute;matique. Et que personne 
+  n&#8217;imagine que nous pourrons observer cela &agrave; l&#8217;abri derri&egrave;re 
+  nos fronti&egrave;res. Non. Ils auront toute l&eacute;gitimit&eacute; pour aller 
+  voir ailleurs, pour trouver des sols et des zones plus viables. La deuxi&egrave;me 
+  notion de solidarit&eacute;, j&#8217;y suis profond&eacute;ment attach&eacute;, 
+  parce que cela fait partie des transgressions qui nous ont laiss&eacute;s totalement 
+  insouciants depuis quelques d&eacute;cennies, c&#8217;est que nous nous sommes 
+  d&eacute;solidaris&eacute;s du vivant. L&#8217;homme pense pouvoir d&eacute;tacher 
+  sa branche de l&#8217;arbre de la cr&eacute;ation impun&eacute;ment. Au-del&agrave; 
+  de l&#8217;aspect &eacute;thique, je dirais que c&#8217;est &#8211; pour employer 
+  un euph&eacute;misme &#8211; une b&ecirc;tise ou en tout cas la pire des vanit&eacute;s. 
+  Vous savez, j&#8217;ai toujours pens&eacute; que la blessure la pire inflig&eacute;e 
+  &agrave; l&#8217;amour propre de l&#8217;humanit&eacute; &#8211; et encore d&#8217;ailleurs 
+  cette blessure n&#8217;est toujours pas cicatris&eacute;e &#8211; c&#8217;est 
+  quand Darwin nous a fait la d&eacute;monstration que nous n&#8217;avions, nous 
+  les hommes, pas fait l&#8217;objet d&#8217;une cr&eacute;ation s&eacute;par&eacute;e. 
+  De la m&ecirc;me mani&egrave;re que nous avons longtemps, et que certains continuent 
+  de refuser cette communaut&eacute; d&#8217;origine avec tout ce qui vit sur 
+  terre, nous nous ent&ecirc;tons &agrave; accepter que nous avons une communaut&eacute; 
+  de destin. Et il est temps que nous sonnions la r&eacute;conciliation avec tout 
+  ce qui vit sur terre. Enfin, et c&#8217;est probablement ce qui nous r&eacute;unit 
+  ici, c&#8217;est que cette injonction &eacute;cologique ou climatique nous oblige 
+  &agrave; une troisi&egrave;me forme de solidarit&eacute; : la solidarit&eacute; 
+  avec le futur, car nos enfants sauront que nous savions et que nous n&#8217;avons 
+  rien fait !</font></p>
+<p><font color="#0000FF" size="2"><br>
+  Intervention de Nicolas Hulot &agrave; l&#8217;UNESCO, Paris.<br>
+  Dialogues du XXI&egrave;me si&egrave;cle &laquo; Quel avenir pour la plan&egrave;te 
+  et l&#8217;esp&egrave;ce humaine ? &raquo;</font></p>
+<p><font color="#0000FF" size="2">UNESCO, 25 novembre 2006</font></p>
+<p align="left"><font color="#0000FF" size="2"><a href="index.htm"> Retour</a></font></p>
+<blockquote> 
+  <div align="center"> 
+    <p><font size="2" color="#0000FF" ><b><a href="index.htm">Contact</a></b></font> 
+    </p>
+  </div>
+</blockquote>
+<script src="./classenpoche-responsive.js"></script>
+</body>
+</html>

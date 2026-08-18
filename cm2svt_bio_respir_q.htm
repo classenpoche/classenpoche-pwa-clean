@@ -1,0 +1,144 @@
+<html>
+<head>
+
+  <meta name="description" content="site de cours et d'information sur l'économie,les courants, les économistes, les pensées, les grands thèmes, les théories, la chronologie, la bibliographie et tous les outils pour préparer vos cours et vos examens">
+<meta name="keywords" content="cours gratuits, révisions, quizz, quiz, questions,">
+  <meta name="robots" content="INDEX,FOLLOW,ALL">
+  <meta name="robots" content="all">
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../inc/style.css" rel="stylesheet" type="text/css">
+  <link href="../../inc/menu.css" rel="stylesheet" type="text/css"> 
+  <link href="../../inc/mobile.css" rel="stylesheet" type="text/css">
+  <script src="../../inc/fonctions.js"></script>
+  <script language="JavaScript">
+</script>
+ <script>
+
+var firsttryright=0;
+
+function checkme(notries, sanswer, canswer) {
+
+    if (sanswer==canswer) {
+
+        if (notries==1) {
+
+            firsttryright++;
+
+            document.status.firsttry.value=firsttryright;
+        }
+
+        return "correct !";
+
+    } else {
+
+        return "Faux !";
+    }
+}
+
+</script> 
+</head>
+<BODY bgcolor="#FFFFFF" text="#0000CC" link="#000099" vlink="#CC0000" alink="#FF0000">
+<div align="justify">
+
+<font size="+4"> 
+<hr width="120" align="left">
+</font> <b>Biologie<br>
+</font></b></font><font color="#FF0000" ><b>La respiration</b></font></font> 
+</font> 
+<form>
+  <li>Quel gaz est n&eacute;cessaire &agrave; la vie ?</font><br>
+    <select name='select' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+      <option>choisissez</option>
+      <option>Le dioxyde de carbone </option>
+      <option>L&#146;oxyg&egrave;ne </option>
+      <option>Le gaz carbonique </option>
+    </select>
+    &nbsp; <br>
+    <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+    <input type='hidden' name='answer' value='L&#146;oxyg&egrave;ne'oxyg&egrave;ne'>
+    <input type='hidden' name='tries' value='0'>
+    </font>
+</form>
+<br>
+  </font>
+<form>
+  <li> O&ugrave; va l'air que tu respires ?&nbsp;</font><br>
+    <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+      <option selected>choisissez </option>
+      <option>Dans les poumons </option>
+      <option>Dans le coeur </option>
+      <option>Dans les organes </option>
+    </SELECT>
+    &nbsp;<br>
+    <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+    <input type='hidden' name='answer' value='Dans les poumons'>
+    <input type='hidden' name='tries' value='0'>
+    </font>
+</form>
+<br>
+  </font>
+<form>
+  <li>Que se passe-t-il dans une alv&eacute;ole pulmonaire ?<br></font> 
+    <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+      <option selected>choisissez </option>
+      <option>L&#146;oxyg&egrave;ne va dans le sang </option>
+      <option>L&#146;air va dans le sang </option>
+      <option>Le CO2 va dans le sang </option>
+    </SELECT>
+    &nbsp;<br>
+    <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+    <input type='hidden' name='answer' value='L&#146;oxyg&egrave;ne va dans le sang'>
+    <input type='hidden' name='tries' value='0'>
+    </font>
+</form>
+<br>
+  </font>
+<form>
+  <li> L'oxyg&egrave;ne sert :&nbsp;</font><br>
+    <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+      <option selected>choisissez </option>
+      <option>&agrave; faire gonfler les poumons</option>
+      <option>&agrave; faire br&ucirc;ler les aliments</option>
+      <option>&agrave; faire gonfler les muscles</option>
+    </SELECT>
+    &nbsp;<br>
+    <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+    <input type='hidden' name='answer' value='&agrave; faire br&ucirc;ler les aliments'>
+    <input type='hidden' name='tries' value='0'>
+    </font>
+</form>
+<br>
+  </font>
+<form>
+  <li> La combustion des aliments dans les organes produit :&nbsp;</font><br>
+    <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+      <option selected>choisissez </option>
+      <option>De l&#146;oxyg&egrave;ne </option>
+      <option>Du sang </option>
+      <option>Du dioxyde de carbone </option>
+    </SELECT>
+    &nbsp;<br>
+    <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+    <input type='hidden' name='answer' value='Du dioxyde de carbone'>
+    <input type='hidden' name='tries' value='0'>
+    </font>
+</form>
+<table cellpadding="3" cellspacing="3" width="107" align="left" bgcolor="#FFFFCC">
+  <tr> 
+    <td align="left" width="15%"> <form name="status">
+        <font color="#0000FF" size="6">Vous avez<br>
+          obtenu<br>
+          <input type="text" name="firsttry" value="0" size="4" maxlength="3">
+          r&eacute;ponse(s)<br>
+          correcte(s) au<br>
+          premier essai. </font></font></font>
+      </form></td>
+  </tr>
+</table>
+&nbsp;
+<script src="classenpoche-responsive.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html> <html lang="fr"> <head> <meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width,initial-scale=1"> 
+
+<title>Classenpoche</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2c3e50">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style> *{ margin:0; padding:0; box-sizing:border-box; } 
+body{ font-family:'Inter',sans-serif; background:#eef3fb; color:#222; max-width:480px; margin:auto; }
+/* En-tête */ 
+
+
+
+.header{ background:linear-gradient(135deg,#2563eb,#4f46e5); color:white; padding:22px 20px 35px; border-radius:0 0 28px 28px; box-shadow:0 8px 25px rgba(0,0,0,.15); }
+
+
+.header img{
+    width: 120px;      /* ajustez entre 60 et 120 px */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 12px; /* optionnel */
+}
+
+.logo{ text-align:center; margin-bottom:15px; } 
+.logo img{ width:60px; height:auto; filter:brightness(0) invert(1); } 
+.header h1{ text-align:center; font-size:1.9rem; font-weight:80; }
+.header p{ text-align:center; margin-top:8px; opacity:.9; font-size:1rem; } 
+/* Zone principale */ 
+.main{ padding:18px; } /* Cartes */ 
+.card{ display:flex; align-items:center; gap:18px; background:white; margin-bottom:16px; padding:18px; border-radius:22px; text-decoration:none; box-shadow: 0 4px 15px rgba(0,0,0,.08); transition:.2s; } .card:hover, 
+.card:active{ transform:translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,.15); } .icon{ width:62px; height:62px; border-radius:18px; display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:700; flex-shrink:0; } 
+.content{ flex:1; } .content h2{ font-size:1.35rem; margin-bottom:4px; } .content p{ color:#666; font-size:.95rem; }
+/* Couleurs */ 
+.cm2 .icon{ background:#d1fae5; } .cm2 h2{ color:#047857; } .six .icon{ background:#fee2e2; } .six h2{ color:#b91c1c; } .cinq .icon{ background:#dcfce7; } .cinq h2{ color:#15803d; } .quatre .icon{ background:#dbeafe; } .quatre h2{ color:#0369a1; } .trois .icon{ background:#fed7aa; } .trois h2{ color:#c2410c; } .seconde .icon{ background:#ffedd5; } .seconde h2{ color:#ea580c; } .premiere .icon{ background:#f3e8ff; } .premiere h2{ color:#7e22ce; } .term .icon{ background:#dbeafe; } .term h2{ color:#1d4ed8; } .bts .icon{ background:#fce7f3; } .bts h2{ color:#be185d; }
+
+@media (min-width:400px){
+
+    .content h2{
+        font-size:2rem;
+    }
+
+    .content p{
+        font-size:2rem;
+    }
+
+    .icon{
+        width:80px;
+        height:100px;
+        font-size:60px;
+    }
+}
+
+/* Barre inférieure type application */ 
+.bottom{ position:sticky; bottom:0; background:white; display:flex; justify-content:space-around; padding:14px; box-shadow:0 -4px 18px rgba(0,0,0,.1); border-radius:20px 20px 0 0; }
+.bottom div{ text-align:center; font-size:.8rem; color:#666; }
+.bottom span{ display:block; font-size:1.4rem; margin-bottom:4px; } </style> 
+</head>
+
+<body> 
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
+<div class="header"> 
+
+<img src="new-logo.jpg" alt="Logo">  
+
+<h1>L'École Nomade</h1> <p>Apprendre partout, réussir toujours</p> </div> <div class="main"> <a href="cm2.htm" class="card cm2"> <div class="icon">📚</div> <div class="content"> <h2>CM2</h2> <p>Socle de connaissances</p> </div> </a> <a href="6.htm" class="card six"> <div class="icon">🎒</div> <div class="content"> <h2>6ème</h2> <p>Entrée au collège</p> </div> </a> <a href="5.htm" class="card cinq"> <div class="icon">✏️</div> <div class="content"> <h2>5ème</h2> <p>Collège</p> </div> </a> <a href="4.htm" class="card quatre"> <div class="icon">🔬</div> <div class="content"> <h2>4ème</h2> <p>Collège</p> </div> </a> <a href="3.htm" class="card trois"> <div class="icon">🏆</div> <div class="content"> <h2>3ème</h2> <p>Préparation au brevet</p> </div> </a> <a href="2.htm" class="card seconde"> <div class="icon">📖</div> <div class="content"> <h2>2nde</h2> <p>Lycée</p> </div> </a> <a href="1.htm" class="card premiere"> <div class="icon">🎓</div> <div class="content"> <h2>1ère</h2> <p>Lycée</p> </div> </a> <a href="term.htm" class="card term"> <div class="icon">⭐</div> <div class="content"> <h2>Terminale</h2> <p>Préparation au Bac</p> </div> </a> <a href="bts.htm" class="card bts"> <div class="icon">🚀</div> <div class="content"> <h2>BTS</h2> <p>Études supérieures</p> </div> </a> </div> <div class="bottom"> <div><span>🏠</span>Accueil</div> <div><span>📚</span>Cours</div> <div><span>📝</span>Quiz</div>  </div> </body> </html>

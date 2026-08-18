@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'École Nomade</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .socle {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .socle a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .levels {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .level {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .level img {
+            width: 14px;
+            height: 14px;
+            margin-right: 8px;
+        }
+
+        .level a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sixieme { color: red; }
+        .cinquieme { color: #00aa00; }
+        .quatrieme { color: #00aa00; }
+        .troisieme { color: #ff9900; }
+        .seconde { color: #ff9900; }
+        .premiere { color: #9900cc; }
+        .terminale { color: #0000ff; }
+        .bts { color: red; }
+
+        .adresse {
+            color: red;
+            font-weight: bold;
+            margin: 25px 0;
+        }
+
+        .adresse a {
+            color: red;
+            word-break: break-word;
+        }
+
+        .retour {
+            margin-top: 20px;
+        }
+
+        .retour a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Smartphone */
+        @media (max-width: 480px) {
+            .levels {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8>
+<link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body>
+<!--  Champ de recherche Google -->
+<center>
+<FORM method=GET action="http://www.google.fr/pda">
+<TABLE bgcolor="#FFFFFF"><tr>
+        <td height="56" align="center"> <A HREF="http://www.google.fr/pda"> <IMG SRC="http://www.google.com/logos/Logo_25wht.gif" border="0" 
+ALT="Google" align="absmiddle"></A><br>
+          <INPUT TYPE=text name=q size=15 maxlength=255 value="">
+<INPUT TYPE=hidden name=hl value=fr>
+          <br>
+          <INPUT type=submit name=btnG VALUE="Recherche">
+</td></tr></TABLE>
+</FORM>
+</center>
+<!-- Google -->
+<script src="./classenpoche-responsive.js"></script>
+</body>
+</html>
