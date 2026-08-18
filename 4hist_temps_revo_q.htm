@@ -1,0 +1,307 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'École Nomade</title>
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    body { background: #f5f7ff; }
+    .hero {
+      background: #cc2200;
+      color: #fff;
+      padding: 20px 16px 18px;
+      text-align: center;
+    }
+    .hero h1 { margin: 0; font-size: 1.7rem; color: #fff !important; }
+    .main { max-width: 680px; margin: 0 auto; padding: 20px 16px 48px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #cc2200; color: #fff !important; padding: 10px 20px;
+      border-radius: 50px; font-size: 1rem !important; font-weight: 700;
+      margin-bottom: 20px; text-decoration: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    }
+    .section { background: #fff; border-radius: 14px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,80,.09); }
+    .sec-title {
+      background: #cc220018; color: #cc2200;
+      font-size: 1.05rem; font-weight: 800; padding: 12px 16px;
+      border-bottom: 2px solid #cc220030;
+    }
+    .sec-links { padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+    .link-btn {
+      display: block; padding: 14px 12px; border-radius: 8px;
+      color: #1a1a2e !important; font-size: 1.05rem !important;
+      text-decoration: none !important; font-weight: 500;
+      transition: background .15s; touch-action: manipulation;
+    }
+    .link-btn::before { content: "▶ "; font-size: .7em; color: #cc2200; }
+    .link-btn:hover, .link-btn:active { background: #cc220012; color: #cc2200 !important; }
+    @media (max-width: 480px) {
+      .link-btn { padding: 16px 12px; font-size: 1.1rem !important; }
+    }
+  </style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>4&egrave;me LA REVOLUTION FRANCAISE</title>
+<meta name="Microsoft Border" content="tb">
+<meta name="author" content="Dufour Marie-Odile et Doucet Corinne">
+<meta name="description" content="QCM sur la r&eacute;volution fran&ccedil;aise.">
+<meta name="keywords" content="histoire, niveau college,classe de 4eme.">
+<meta name="generator" content="Namo WebEditor v3.0">
+<SCRIPT language=JavaScript><!--// hide
+// hide
+/* GameQuiz v1.0 by Wizzz.
+   Copyright (c) of Wizzz, 1997.
+   Permission to use, edit, etc. granted as long as the head section is intact!
+   Modifictions et ajouts par Eric Dromer... &agrave; suivre...
+*/
+
+var rep = new Array;
+var faite = new Array;
+var score = 0;
+
+// rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+// valeurs &agrave; modifier (a b c ou d) :
+
+rep[1] = "b";
+rep[2] = "c";
+rep[3] = "b";
+rep[4] = "a";
+rep[5] = "c";
+rep[6] = "d";
+rep[7] = "b";
+rep[8] = "c";
+rep[9] = "d";
+rep[10] = "d";
+
+// rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+
+function Engine(question, reponse) {
+        if (reponse != rep[question]) {
+                if (!faite[question]) {
+                        faite[question] = -1;
+                        alert("Faux! Ton score est de : " + score + "  La bonne r&eacute;ponse &eacute;tait en -" + rep[question] + "-");
+                        }
+                else {
+                        alert("Tu as d&eacute;j&agrave; r&eacute;pondu &agrave; cette question !");
+                        }
+                }
+        else {
+                if (!faite[question]) {
+                        faite[question] = -1;
+                        score++;
+                        alert("Bien! Ton score est de : " + score);
+                        }
+                else { 
+                        alert("Tu as d&eacute;j&agrave; r&eacute;pondu &agrave; cette question !");
+                        }
+                }
+}
+
+function NextLevel () {
+        if (score >= 11) {
+                alert("Tricheur !");
+                }
+        if (score > 9 && score < 11) {
+                alert(score + "/10 " + "Un coup de chance !... peut-&ecirc;tre.");
+                }
+        if (score > 8 && score <= 9) {
+                alert(score + "/10 " + "Bien, mais... pas parfait.");
+                }
+        if (score >= 5 && score <= 8) {
+                alert(score + "/10 " + "Pas mal, on a vu mieux que cela cependant...");
+                }
+        if (score >= 1 && score < 5) {
+                alert(score + "/10 " + "Pas terrible... un autre essai ?");
+                }
+        if (score < 1) {
+                alert(score + "/10 " + "Un autre essai ?");
+                }
+
+// ======================================================
+// ligne qui suit &agrave; modifier pour envoyer le formulaire
+// (mais indiquez la m&eacute;thode dans la balise du formulaire) :
+// document.quest.submit()
+
+// ligne qui suit pour vider le formulaire :
+faite = new Array;
+score = 0;
+//ligne suivante &agrave; d&eacute;sactiver si IE3 ou -
+document.quest.reset();
+}
+
+
+// --></SCRIPT>
+<meta name="namo-theme" content="Freezer; vert">
+<style><!--
+h1 { font-family:Arial; font-size:12pt; color:rgb(2,167,230); }
+h2 { font-family:Arial; font-size:12pt; color:rgb(51,207,240); }
+p { font-family:Arial; color:rgb(128,128,128); }
+p.namo-bullet1 { font-family:Arial; font-size:12pt; color:rgb(77,37,180); }
+p.namo-bullet2 { font-family:Arial; font-size:10pt; color:rgb(19,78,200); }
+--></style><link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body bgcolor="#FFCC66" text="gray" link="#8080FF" vlink="gray" alink="#00C6C6">
+<table border="0" cellpadding="0" cellspacing="0" width="15%">
+    <tr>
+        <td height="1949" valign="top">
+      <font face="Comic Sans MS" size="1"
+             color="red"><b><br>
+        </b></font><font size="6"
+ color="red"><b>LA REVOLUTION<br>
+        FRANCAISE</b></font><font face="Comic Sans MS"
+             size="1"><u><br>
+        <font color="#000099">Auteurs</font></u></font><font face="Comic Sans MS" size="1" color="#000099"> 
+        :<br>
+        Marie-Odile<br>
+        Dufour<br>
+        &nbsp; (Coll&egrave;ge<br>
+        RABELAIS)</font><font face="Comic Sans MS" color="#000099"><br>
+        </font><font color="#000099"><a href="index.htm"><font size="6"
+>Retour</font> 
+        </a><font face="Comic Sans MS"><br>
+        </font></font>
+      <form name="quest" method="get">
+        1 De quand date 
+          la prise de la Bastille ? <br>
+          <input type="radio" name="1" value="a" onclick="Engine(1, this.value)">
+          a 1er janvier 1793 <br>
+          <input type="radio"
+             name="1" value="b" onclick="Engine(1, this.value)">
+          b 14 juillet 1789 <br>
+          <input type="radio" name="1" value="c"
+             onclick="Engine(1, this.value)">
+          c 4 ao&ucirc;t 1789 <br>
+          <input type="radio" name="1" value="d" onclick="Engine(1, this.value)">
+          d hier. </font>
+        2 Quand fut d&eacute;capit&eacute; 
+          Louis XVI ? <br>
+          <input type="radio" name="2" value="a" onclick="Engine(2, this.value)">
+          a 12 d&eacute;cembre 1792 <br>
+          <input
+             type="radio" name="2" value="b" onclick="Engine(2, this.value)">
+          b 21 f&eacute;vrier 1793 <br>
+          <input
+             type="radio" name="2" value="c" onclick="Engine(2, this.value)">
+          c 21 janvier 1793 <br>
+          <input type="radio"
+             name="2" value="d" onclick="Engine(2, this.value)">
+          d 2 ao&ucirc;t 1794 </font>
+        3&nbsp; Qui est 
+          Robespierre ? <br>
+          <input
+             type="radio" name="3" value="a" onclick="Engine(3, this.value)">
+          a Un peintre r&eacute;volutionnaire ? <br>
+          <input type="radio" name="3" value="b" onclick="Engine(3, this.value)">
+          b Le chef des montagnards ? <br>
+          <input type="radio" name="3" value="c" onclick="Engine(3, this.value)">
+          c Le chef des girondins ? <br>
+          <input
+             type="radio" name="3" value="d" onclick="Engine(3, this.value)">
+          d L'ami du roi ? </font>
+        4 De quand date 
+          la d&eacute;claration des droits de l'homme et du citoyen ? <br>
+          <input type="radio" name="4" value="a" onclick="Engine(4, this.value)">
+          a 26 ao&ucirc;t 1789 <br>
+          <input type="radio"
+             name="4" value="b" onclick="Engine(4, this.value)">
+          b 4 ao&ucirc;t 1789 <br>
+          <input type="radio" name="4" value="c"
+             onclick="Engine(4, this.value)">
+          c 2 ao&ucirc;t 1789 <br>
+          <input type="radio" name="4" value="d" onclick="Engine(4, this.value)">
+          d 15 ao&ucirc;t 1789 </font>
+        5 Comment se 
+          nomme la femme de Louis XVI ? <br>
+          <input type="radio"
+             name="5" value="a" onclick="Engine(5, this.value)">
+          a Marie de M&eacute;dicis ? <br>
+          <input type="radio" name="5"
+             value="b" onclick="Engine(5, this.value)">
+          b Catherine de M&eacute;dicis ? <br>
+          <input type="radio" name="5" value="c" onclick="Engine(5, this.value)">
+          c Marie Antoinette d'Autriche ? <br>
+          <input type="radio" name="5" value="d" onclick="Engine(5, this.value)">
+          d Marie Bernadette d'Autriche ? </font>
+        6 O&ugrave; est 
+          mort Marat ? <br>
+          <input type="radio" name="6"
+             value="a" onclick="Engine(6, this.value)">
+          a Aux bains publics ? <br>
+          <input type="radio" name="6" value="b" onclick="Engine(6, this.value)">
+          b Aux bancs publics ? <br>
+          <input
+             type="radio" name="6" value="c" onclick="Engine(6, this.value)">
+          c Aux thermes ? <br>
+          <input type="radio"
+             name="6" value="d" onclick="Engine(6, this.value)">
+          d Dans sa baignoire ? </font>
+        7 Que sont les 
+          cahiers de dol&eacute;ances ? <br>
+          <input
+             type="radio" name="7" value="a" onclick="Engine(7, this.value)">
+          a Des cahiers d'&eacute;coliers ? <br>
+          <input type="radio" name="7" value="b" onclick="Engine(7, this.value)">
+          b Des r&eacute;clamations des trois ordres ? <br>
+          <input type="radio" name="7" value="c" onclick="Engine(7, this.value)">
+          c Des demandes des m&eacute;tiers de Paris ? <br>
+          <input type="radio" name="7" value="d" onclick="Engine(7, this.value)">
+          d Des voeux pieux ? </font>
+        8 Qu'est-ce que 
+          la guillotine ? <br>
+          <input type="radio"
+             name="8" value="a" onclick="Engine(8, this.value)">
+          a Un outil arratoire ? <br>
+          <input type="radio" name="8"
+             value="b" onclick="Engine(8, this.value)">
+          b Un instrument de cuisine ? <br>
+          <input type="radio" name="8" value="c"
+             onclick="Engine(8, this.value)">
+          c La rempla&ccedil;ante du bourreau ? <br>
+          <input type="radio" name="8"
+             value="d" onclick="Engine(8, this.value)">
+          d Une locomotive ? </font>
+        9 Quel m&eacute;tier 
+          exer&ccedil;ait Danton ? <br>
+          <input type="radio" name="9" value="a" onclick="Engine(9, this.value)">
+          a Ma&icirc;tre chanteur ? <br>
+          <input
+             type="radio" name="9" value="b" onclick="Engine(9, this.value)">
+          b Journaliste ? <br>
+          <input type="radio"
+             name="9" value="c" onclick="Engine(9, this.value)">
+          c Ecrivain ? <br>
+          <input type="radio" name="9" value="d"
+             onclick="Engine(9, this.value)">
+          d Avocat ? </font>
+        10 Quelle fut 
+          la premi&egrave;re victoire de l'arm&eacute;e r&eacute;volutionnaire 
+          en 1792 ? <br>
+          <input type="radio" name="10"
+             value="a" onclick="Engine(10, this.value)">
+          a Rocroi ? <br>
+          <input type="radio" name="10" value="b" onclick="Engine(10, this.value)">
+          b Varennes ? <br>
+          <input type="radio"
+             name="10" value="c" onclick="Engine(10, this.value)">
+          c I&eacute;na ? <br>
+          <input type="radio" name="10" value="d"
+             onclick="Engine(10, this.value)">
+          d Valmy ? </font><font face="Comic Sans MS" color="#000099"><br>
+          &nbsp; 
+          <input type="button"
+             name="Resultats" value="R&eacute;sultats" onclick="NextLevel()">
+          <br>
+          </font><font color="#000099"><a href="index.htm"><font size="6"
+>Retour</font> 
+          </a></font>
+            </form>
+            &nbsp; </td>
+    </tr>
+</table>
+<script src="classenpoche-responsive.js"></script>
+</body>
+</html>
