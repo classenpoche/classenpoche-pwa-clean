@@ -296,189 +296,206 @@ document.addEventListener("DOMContentLoaded", () => {
     // QUIZ
     // =================================
 
-    function startQuiz(course) {
+ // =================================
+// QUIZ
+// =================================
 
-        const questions =
-            quizzes[course.id];
+function startQuiz(course) {
 
-
-       if (!questions) {
-
-    app.innerHTML = `
-
-        <button id="backCourses">
-            ← Cours
-        </button>
-
-        <h1>⚠️ Quiz introuvable</h1>
-
-        <p>
-            Aucun quiz n'est associé à :
-            <strong>
-                ${course.title}
-            </strong>
-        </p>
-
-    `;
+    const questions =
+        quizzes[course.id];
 
 
-    document
-        .getElementById("backCourses")
-        .addEventListener(
-            "click",
-            () => {
+    // ---------------------------------
+    // Quiz introuvable
+    // ---------------------------------
 
-                showCourses(
-                    course.subject,
-                    course.level
-                );
+    if (!questions) {
 
-            }
-        );
+        app.innerHTML = `
 
-    return;
-}
+            <button id="backCourses">
+                ← Cours
+            </button>
 
-document
-    .getElementById("backQuiz")
-    .addEventListener(
-        "click",
-        () => {
+            <h1>⚠️ Quiz introuvable</h1>
 
-            showCourses(
-                course.subject,
-                course.level
-            );
-
-        }
-    );
-
-
-
-            
-       
-
-
-        let questionIndex = 0;
-        let score = 0;
-
-
-        function showQuestion() {
-
-            const question =
-                questions[questionIndex];
-
-
-            app.innerHTML = `
-
-                <button id="backQuiz">
-                    ← Cours
-                </button>
-
-                <h1>
+            <p>
+                Aucun quiz n'est associé à :
+                <strong>
                     ${course.title}
-                </h1>
+                </strong>
+            </p>
 
-                <p>
-                    Question
-                    ${questionIndex + 1}
-                    /
-                    ${questions.length}
-                </p>
-
-                <div class="quiz-question">
-
-                    <h2>
-                        ${question.q}
-                    </h2>
-
-                    <div id="choices"></div>
-
-                </div>
-
-            `;
+        `;
 
 
-            document
-                .getElementById("backQuiz")
-                .addEventListener(
-                    "click",
-                    () => {
+        document
+            .getElementById("backCourses")
+            .addEventListener(
+                "click",
+                () => {
 
-                        showCourses(
-                            course.subject,
-                            course.level
-                        );
-
-                    }
-                );
-
-
-            const choices =
-                document.getElementById(
-                    "choices"
-                );
-
-
-            question.choices.forEach(
-                (choice, index) => {
-
-                    const button =
-                        document.createElement(
-                            "button"
-                        );
-
-
-                    button.textContent =
-                        choice;
-
-
-                    button.className =
-                        "choice-btn";
-
-
-                    button.addEventListener(
-                        "click",
-                        () => {
-
-                            if (
-                                index ===
-                                question.answer
-                            ) {
-
-                                score++;
-
-                            }
-
-
-                            questionIndex++;
-
-
-                            if (
-                                questionIndex >=
-                                questions.length
-                            ) {
-
-                                finishQuiz();
-
-                            } else {
-
-                                showQuestion();
-
-                            }
-
-                        }
-                    );
-
-
-                    choices.appendChild(
-                        button
+                    showCourses(
+                        course.subject,
+                        course.level
                     );
 
                 }
             );
 
-        }
+        return;
+    }
+
+
+    // ---------------------------------
+    // Variables du quiz
+    // ---------------------------------
+
+    let questionIndex = 0;
+    let score = 0;
+
+
+    // ---------------------------------
+    // Affichage d'une question
+    // ---------------------------------
+
+    function showQuestion() {
+
+        const question =
+            questions[questionIndex];
+
+
+        app.innerHTML = `
+
+            <button
+                id="backQuiz"
+                class="back-course-btn"
+            >
+                ← Retour aux cours
+            </button>
+
+            <h1>
+                ${course.title}
+            </h1>
+
+            <p>
+                Question
+                ${questionIndex + 1}
+                /
+                ${questions.length}
+            </p>
+
+            <div class="quiz-question">
+
+                <h2>
+                    ${question.q}
+                </h2>
+
+                <div id="choices"></div>
+
+            </div>
+
+        `;
+
+
+        // ---------------------------------
+        // Retour aux cours
+        // ---------------------------------
+
+        document
+            .getElementById("backQuiz")
+            .addEventListener(
+                "click",
+                () => {
+
+                    showCourses(
+                        course.subject,
+                        course.level
+                    );
+
+                }
+            );
+
+
+        // ---------------------------------
+        // Réponses
+        // ---------------------------------
+
+        const choices =
+            document.getElementById(
+                "choices"
+            );
+
+
+        question.choices.forEach(
+            (choice, index) => {
+
+                const button =
+                    document.createElement(
+                        "button"
+                    );
+
+
+                button.textContent =
+                    choice;
+
+
+                button.className =
+                    "choice-btn";
+
+
+                button.addEventListener(
+                    "click",
+                    () => {
+
+                        if (
+                            index ===
+                            question.answer
+                        ) {
+
+                            score++;
+
+                        }
+
+
+                        questionIndex++;
+
+
+                        if (
+                            questionIndex >=
+                            questions.length
+                        ) {
+
+                            finishQuiz();
+
+                        } else {
+
+                            showQuestion();
+
+                        }
+
+                    }
+                );
+
+
+                choices.appendChild(
+                    button
+                );
+
+            }
+        );
+
+    }
+
+
+    // ---------------------------------
+    // Démarrage du quiz
+    // ---------------------------------
+
+    showQuestion();
+
+}
 
 
         // =================================
