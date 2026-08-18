@@ -1,0 +1,153 @@
+<html>
+<head>
+
+  <meta name="description" content="site de cours et d'information sur l'économie,les courants, les économistes, les pensées, les grands thèmes, les théories, la chronologie, la bibliographie et tous les outils pour préparer vos cours et vos examens">
+<meta name="keywords" content="cours gratuits, révisions, quizz, quiz, questions,">
+  <meta name="robots" content="INDEX,FOLLOW,ALL">
+  <meta name="robots" content="all">
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../inc/style.css" rel="stylesheet" type="text/css">
+  <link href="../../inc/menu.css" rel="stylesheet" type="text/css"> 
+  <link href="../../inc/mobile.css" rel="stylesheet" type="text/css">
+  <script src="../../inc/fonctions.js"></script>
+  <script language="JavaScript">
+</script>
+ <script>
+
+var firsttryright=0;
+
+function checkme(notries, sanswer, canswer) {
+
+    if (sanswer==canswer) {
+
+        if (notries==1) {
+
+            firsttryright++;
+
+            document.status.firsttry.value=firsttryright;
+        }
+
+        return "correct !";
+
+    } else {
+
+        return "Faux !";
+    }
+}
+
+</script> 
+</head>
+<body bgcolor="#ffffff">
+
+            
+            <b><font color="#000033" size="6" face="Times New Roman, Times, serif"><br>
+Les modes</font></b> 
+<ol>
+
+
+     <form>
+    Question 1 :Le mode indicatif 
+      sert &agrave;?&nbsp;&nbsp; <br>
+      <br>
+      <select name='select' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+       <option>Donner des ordres</option>
+        <option>Exprimer des faits r&eacute;els</option>
+        <option>Exprimer une incertitude</option>
+      </select>
+      &nbsp; 
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='Exprimer des faits r&eacute;els'>
+      <input type='hidden' name='tries' value='0'>
+      </form>
+	  
+	  
+       <form>
+    Question 2 : Le mode imp&eacute;ratif permet?<br>
+      <br>
+      <select name='select' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>de donner des ordres ou des conseils</option>
+        <option>d'exprimer une incertitude</option>
+        <option>d'exprimer des faits r&eacute;els</option>
+      </select>
+      &nbsp; 
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='de donner des ordres ou des conseils'>
+      <input type='hidden' name='tries' value='0'>
+     
+              </form>
+             <form>
+    Question 3 :Quand utilise-t-on 
+      le mode conditionnel?<br>
+      <br>
+      <select name='select' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+      <option>quand on donne des ordres</option>
+        <option>quand il y a une condition</option>
+        <option>quand il y a un incertitude</option>
+      </select>
+      &nbsp; 
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='quand il y a une condition'>
+      <input type='hidden' name='tries' value='0'>
+    
+              </form>
+             <form>
+    Question 4 :Le mode subjonctif<br>
+      <br>
+      <select name='select' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+    <option>indique une incertitude</option>
+        <option>indique un ordre</option>
+        <option>indique une action</option>
+      </select>
+      &nbsp; 
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='indique une incertitude'>
+      <input type='hidden' name='tries' value='0'>
+    
+              </form>
+			  
+    
+ <form>
+    Question 5 :La phrase: J'arrive demain:<br>
+      <br>
+      <select name='select' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>est au mode subjonctif</option>
+        <option>est au mode imp&eacute;ratif</option>
+        <option>est au mode indicatif</option>
+      </select>
+      &nbsp; 
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='est au mode indicatif'>
+      <input type='hidden' name='tries' value='0'>
+    
+      </form>
+	  
+	  
+	  
+<table cellpadding="3" cellspacing="3" width="160" align="left" bgcolor="#FFFFCC">
+    <tr> 
+      <td align="left" width="15%"> 
+        <form name="status">
+          Vous avez<br>
+            obtenu<br>
+            <input type="text" name="firsttry" value="0" size="4" maxlength="3">
+            r&eacute;ponses<br>
+            correctes au<br>
+            premier essai. </font>
+          <b><a href="cm2.htm">Retour 
+            au CM2</a></font></b>
+        </form>
+      </td>
+    </tr>
+  </table>
+
+</ol>
+<script src="classenpoche-responsive.js"></script>
+
+</body>
+</html>

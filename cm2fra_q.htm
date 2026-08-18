@@ -1,0 +1,373 @@
+<html>
+<head>
+
+  <meta name="description" content="site de cours et d'information sur l'économie,les courants, les économistes, les pensées, les grands thèmes, les théories, la chronologie, la bibliographie et tous les outils pour préparer vos cours et vos examens">
+<meta name="keywords" content="cours gratuits, révisions, quizz, quiz, questions,">
+  <meta name="robots" content="INDEX,FOLLOW,ALL">
+  <meta name="robots" content="all">
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../inc/style.css" rel="stylesheet" type="text/css">
+  <link href="../../inc/menu.css" rel="stylesheet" type="text/css"> 
+  <link href="../../inc/mobile.css" rel="stylesheet" type="text/css">
+  <script src="../../inc/fonctions.js"></script>
+  <script language="JavaScript">
+</script>
+ <script>
+
+var firsttryright=0;
+
+function checkme(notries, sanswer, canswer) {
+
+    if (sanswer==canswer) {
+
+        if (notries==1) {
+
+            firsttryright++;
+
+            document.status.firsttry.value=firsttryright;
+        }
+
+        return "correct !";
+
+    } else {
+
+        return "Faux !";
+    }
+}
+
+</script> 
+</head>
+<body bgcolor="#FFFFFF" text="#000099" link="#0000FF" vlink="#CC0000" alink="#FF0000">
+
+<!-- #BeginEditable "Texte_normal" --> 
+<hr width="120" align="left">
+<b>Fran&ccedil;ais CM2</font></b> <br>
+</font><b>Questionnaire g&eacute;n&eacute;ral </b></font> 
+<HR width="110" align="left">
+<b><a href="cm2.htm">Retour 
+au CM2</a></font></b><br>
+</font> 
+<ol>
+  <form>
+    <li><font color="#000099" size="6">Qu'est-ce que le 
+      genre d'un mot ?<br>
+      <select name='select' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>masculin ou f&eacute;minin</option>
+        <option>singulier ou pluriel</option>
+      </select>
+      &nbsp; <br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='masculin ou f&eacute;minin'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Qu'est-ce que le 
+      synonyme d'un mot?<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>un mot qui a un sens voisin</option>
+        <option>un mot qui a un sens different</option>
+        <option>un mot de sens contraire </option>
+      </SELECT>
+      &nbsp;<br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='un mot qui a un sens voisin'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Qu'est-ce que l'homonyme 
+      d'un mot ?<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option>choisissez </option>
+        <option>un mot qui a un sens voisin</option>
+        <option>un mot qui se prononce pareil</option>
+        <option>un mot de sens contraire </option>
+      </SELECT>
+      &nbsp;<br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='un mot qui se prononce pareil'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">La troisi&egrave;me 
+      personne du singulier est :<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>il</option>
+        <option>elles</option>
+        <option>nous</option>
+      </SELECT>
+      &nbsp;<br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='il'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Conjugue le verbe 
+      craindre &agrave; la 3&deg; personne du singulier au pr&eacute;sent:<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>craignent</option>
+        <option>craind</option>
+        <option>craint</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='craint'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Conjugue le verbe 
+      aller &agrave; la 2&deg; personne du singulier au futur ?<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>allas</option>
+        <option>iras</option>
+        <option>allais</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='iras'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Dans la phrase:&quot;Hier 
+      j'ai mang&eacute; des pâtes avec mon p&egrave;re.&quot;, quel est le COD?<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>hier</option>
+        <option>des pattes</option>
+        <option>avec mon p&egrave;re</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='des pâtes'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Le participe a combien 
+      de temps?<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>1 temps</option>
+        <option>2 temps</option>
+        <option>4 temps</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='2 temps'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Quel est l'intrus 
+      ?<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>dormir</option>
+        <option>offrir</option>
+        <option>finir</option>
+        <option>courir</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='finir'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Le compl&eacute;ment 
+      d'objet peut &ecirc;tre ?<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>un nom commun</option>
+        <option>une proposition</option>
+        <option>un pronom personnel</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='un pronom personnel'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Quel est le groupe 
+      de rougir ?<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>1e groupe</option>
+        <option>2e groupe</option>
+        <option>3e groupe</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='2e groupe'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Quel est l' intrus 
+      ?<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>manger</option>
+        <option>aller</option>
+        <option>placer</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='aller'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Quel est l' intrus 
+      ?</font> <font color="#000099" size="6"><br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>r&eacute;unir</option>
+        <option>vendre</option>
+        <option>aller</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='r&eacute;unir'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Choisis la bonne 
+      orthographe.<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>il s&#146;est tromp&eacute;</option>
+        <option>il c&#146;est tromp&eacute;</option>
+        <option>il ses tromp&eacute;</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='il s&#146;est tromp&eacute;'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Quel est le d&eacute;terminant 
+      possessif ?<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>la</option>
+        <option>cette</option>
+        <option>leur</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='leur'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Quel est le d&eacute;terminant 
+      ind&eacute;fini?<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>aucun</option>
+        <option>votre</option>
+        <option>aux</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='aucun'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Quelle phrase est 
+      juste? </font><font color="#000099" size="6"><br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>Je vais &agrave; la piscine.</option>
+        <option>Je vais a la piscine.</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='Je vais &agrave; la piscine.'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Quelle phrase est 
+      juste? </font><font color="#000099" size="6"></font><font color="#000099" size="6"><br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>Ma moto &agrave; un probl&egrave;me.</option>
+        <option>Ma moto a un probl&egrave;me.</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='Ma moto a un probl&egrave;me.'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">P</font><font color="#000099" size="6">ar 
+      quoi peut-on remplacer &quot;et&quot; dans une phrase?<br>
+      <Select Name='question' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option selected>choisissez </option>
+        <option>et puis</option>
+        <option>avait</option>
+        <option>&eacute;tait</option>
+      </SELECT>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='et puis'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <form>
+    <li><font color="#000099" size="6">Par quoi peut-on 
+      remplacer &quot;est&quot; dans une phrase?<br>
+      <select name='select2' onChange='this.form.tries.value=(this.form.tries.value + 1); this.form.feedback.value=checkme(this.form.tries.value, this.options[this.selectedIndex].text, this.form.answer.value)' size="1">
+        <option>choisissez</option>
+        <option>et puis</option>
+        <option>&eacute;tait</option>
+        <option>avait</option>
+      </select>
+      &nbsp;</font><br>
+      <INPUT TYPE='text' NAME='feedback' SIZE='12' MAXLENGTH='10'>
+      <input type='hidden' name='answer' value='&eacute;tait'>
+      <input type='hidden' name='tries' value='0'>
+      </font> 
+  </form>
+  <table cellpadding="3" cellspacing="3" width="160" align="left" bgcolor="#FFFFCC">
+    <tr> 
+      <td align="left" width="15%"> 
+        <form name="status">
+          Vous avez<br>
+            obtenu<br>
+            <input type="text" name="firsttry" value="0" size="4" maxlength="3">
+            r&eacute;ponses<br>
+            correctes au<br>
+            premier essai. </font>
+          <b><a href="cm2.htm">Retour 
+            au CM1/CM2</a></font></b>
+        </form>
+      </td>
+    </tr>
+  </table>
+  &nbsp;
+</ol>
+<!-- #EndEditable --> 
+<script src="classenpoche-responsive.js"></script>
+
+</body>
+<!-- #EndTemplate -->
+</html>
