@@ -212,20 +212,26 @@ button:active {
 #backCourses,
 #backHome {
 
-    min-height: 48px;
+    min-height: 50px;
 
     margin-bottom: 18px;
 
-    padding:
-        10px 16px;
+    padding: 10px 16px;
 
     background: #dbe5f4;
 
-    font-size: 16px;
+    color: #1f2937;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    text-align: left;
 
     box-shadow: none;
-}
 
+    border-radius: 12px;
+}
 
 /* =========================================
    QUIZ
